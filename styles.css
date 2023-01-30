@@ -40,18 +40,23 @@ textarea,
 select {
   margin: 10px 0 0 0;
   width: 100%;
+  min-height: 2em; /*aumentando o tamnho da caixa, para a entrada de texto*/
 }
 
 input, textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
-  color: #ffffff; /*inserindo uma cor psrs o texto ficar visivel na digitação*/
-  min-height: 2em; /*aumentando o tamnho da caixa, para a entrada de texto*/
-
+  color: #ffffff; /*inserindo uma cor para o texto ficar visivel na digitação*/
+  
 }
 
 .inline {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
+}
+
+input[type="submit"] {  /* O código [type="submit"] seleciona elementos input com um atributo name com o valor submit.*/
+  display: block;
+  width: 60%;
 }
