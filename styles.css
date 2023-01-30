@@ -58,5 +58,7 @@ input, textarea {
 
 input[type="submit"] {  /* O código [type="submit"] seleciona elementos input com um atributo name com o valor submit.*/
   display: block;
-  width: 60%;
+  width: 60%;          /* Com um display de block o botão de enviar fica na borda esquerda do elemento pai */
+  width: 60vw;          /*apartir daqui o código foi ajustado o botão enviar para ficar no centro*/
+  margin: 0 auto;
 }
