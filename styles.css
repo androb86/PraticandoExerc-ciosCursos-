@@ -57,8 +57,14 @@ input, textarea {
 }
 
 input[type="submit"] {  /* O código [type="submit"] seleciona elementos input com um atributo name com o valor submit.*/
-  display: block;
-  width: 60%;          /* Com um display de block o botão de enviar fica na borda esquerda do elemento pai */
-  width: 60vw;          /*apartir daqui o código foi ajustado o botão enviar para ficar no centro*/
-  margin: 0 auto;
-}
+  display: block;          /* Com um display de block o botão de enviar fica na borda esquerda do elemento pai */
+  width: 60%;          /*apartir daqui o código foi ajustado o botão enviar para ficar no centro*/
+  margin: em auto;
+  height: 2em;         /*apartir daqui ajustando a largura do botão para aparecer com o resto do formulario*/ 
+  font-size: 1.1rem;  
+  background-color: #3b3b4f; /*apartir daqui clareou e deixou as bordas com destaque*/
+  border-color: white;  
+  min-width: 300px;
+  /*Por último, para o botão de envio, você quer separá-lo do fieldset acima e ajustar sua largura para nunca ficar abaixo de 300px.
+  Altere a propriedade margin para que inclua 1em nas partes superior e inferior e, ao mesmo tempo, 
+  deixe as margens esquerda e direita definidas como auto. Em seguida, defina a largura conforme descrito acima.*/
