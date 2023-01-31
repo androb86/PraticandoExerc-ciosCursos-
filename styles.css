@@ -18,6 +18,7 @@ form {
   max-width: 500px;
   min-width: 300px;
   margin: 0 auto;
+  padding: 2em;
 }
 
 fieldset {
@@ -65,6 +66,15 @@ input[type="submit"] {  /* O código [type="submit"] seleciona elementos input c
   background-color: #3b3b4f; /*apartir daqui clareou e deixou as bordas com destaque*/
   border-color: white;  
   min-width: 300px;
+}
   /*Por último, para o botão de envio, você quer separá-lo do fieldset acima e ajustar sua largura para nunca ficar abaixo de 300px.
-  Altere a propriedade margin para que inclua 1em nas partes superior e inferior e, ao mesmo tempo, 
+  Altere a propriedade margin para que inclua 1em nas partes superior e inferior e, ao mesmo tempo,
   deixe as margens esquerda e direita definidas como auto. Em seguida, defina a largura conforme descrito acima.*/
+
+input[type="file"] {
+    padding: 1px 2px;
+  }
+
+  a {
+    color:#dfdfe2;
+  }
