@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
+
 <head>
-<title>survey-form</title>
+  <title>survey-form</title>
 </head>
 
 <body>
-<h1 id="title">freecodecamp Formulário de pesquisa</h1>
-<p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
-<form id="survey-form">
-  <label for="name" id="name-label">Usuario</label><input id="name" type="text" placeholder="Seu Nome" required />
-  <label for="email" id="email-label">E-mail</label><input id="email" type="email" placeholder="Seu Email" required />
-  <label for="number" id="number-label">Idade</label><input id="number"  type="number" min="13" max="100" placeholder="Ex. 18" required />
-  <select id="dropdown">
- <option value="">(Escolha uma opção)
-   <option value="1">Estudando</option>
-   <option value="2">Trabalhando</option>
-   <option value="3">Desempregado</option>
-  </select>
-  <input type="radio" value="1" name="opcao1" />
-  <input type="radio" value="2" name="opcao2"/>
-  <select id="referencia">
-  <option value="">(Escolha uma opção)</option>
-  <option value="3">Comuninade</option>
-  <option value="4">Projetos</option>
-  </select>
-  <input type="checkbox" value="5" name="opcao-check"/>
-  <input type="checkbox" value="6" name="opcao-check" />
-  <input type="checkbox" value="7" name="opcao-check"/>
- <input type="texarea"/>
+  <h1 id="title">freecodecamp Formulário de pesquisa</h1>
+  <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Usuario<input id="name" type="text" placeholder="Seu Nome" required /></label>
+      <label id="email-label">E-mail<input id="email" type="email" placeholder="Seu Email" required /></label>
+      <label id="number-label">Idade<input id="number" type="number" min="13" max="100" placeholder="Ex. 18"
+          required /></label>
+    </fieldset>
+    <fieldset>
+      <select id="dropdown">
+        <option value="">(Escolha uma opção)
+        <option value="1">Estudando</option>
+        <option value="2">Trabalhando</option>
+        <option value="3">Desempregado</option>
+      </select>
+    </fieldset>
 
+    <fieldset>
+      <select>
+        <input type="radio" value="1" name="opcao1" />
+        <input type="radio" value="2" name="opcao2" />
+        <select id="referencia">
+          <option value="">(Escolha uma opção)</option>
+          <option value="3">Comuninade</option>
+          <option value="4">Projetos</option>
+        </select>
+
+        <input type="checkbox" value="5" name="opcao-check" />
+        <input type="checkbox" value="6" name="opcao-check" />
+        <input type="checkbox" value="7" name="opcao-check" />
+        <input type="texarea" />
+
+        </fildset>
 </body>
+</html>
