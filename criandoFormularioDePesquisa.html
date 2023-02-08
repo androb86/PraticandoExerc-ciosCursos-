@@ -5,17 +5,16 @@
 <head>
   <title>survey-form</title>
 </head>
+
 <body>
   <h1 id="title">freecodecamp Formulário de pesquisa</h1>
   <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
-  <form id="survey-form">
-    <fieldset id="dados">
+  <fieldset id="dados">
+    <form id="survey-form">
       <label id="name-label">Usuario<input id="name" type="text" placeholder="Seu Nome" required /></label>
       <label id="email-label">E-mail<input id="email" type="email" placeholder="Seu Email" required /></label>
       <label id="number-label">Idade<input id="number" type="number" min="13" max="100" placeholder="Ex. 18"
           required /></label>
-    </fieldset>
-    <fieldset>
       <p>Qual opção melhor descreve sua função atual?</p>
       <select id="dropdown">
         <option value="">(Escolha uma opção)
@@ -25,42 +24,34 @@
         <option value="4">prefiro não dizer</option>
         <option value="5">outros</option>
       </select>
-    </fieldset>
-    <fieldset>
-       <p>Você recomendaria o freeCodeCamp a um amigo?</p>
+      <p>Você recomendaria o freeCodeCamp a um amigo?</p>
       <input type="radio" value="1" name="opcao1" />Defenitivamente
       <input type="radio" value="2" name="opcao2" />Talvez
-      <input type="radio" value="3" name="opcao2" />Não Tenho Certeza
-      </fieldset>
-      <fieldset>
-        <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
-        <select id="referencia">
-          <option value="">(Escolha uma opção)</option>
-          <option value="1">Comuninade</option>
-          <option value="2">Projetos</option>
-          <option value="3">Desafios</option>
-          <option value="4">Código Abertos</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <p>O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</p>
-        <input type="checkbox" value="1" name="opcao-check" />Projeto-Front-End
-        <input type="checkbox" value="2" name="opcao-check" />Projeto Back-End
-        <input type="checkbox" value="3" name="opcao-check" />Visualização de dados
-        <input type="checkbox" value="4" name="opcao-check" />Desafios
-        <input type="checkbox" value="5" name="opcao-check" />Comunidade de Códigos Abertos
-        <input type="checkbox" value="6" name="opcao-check" />Sala de ajuda do Gitter
-        <input type="checkbox" value="7" name="opcao-check" />Vídeos
-        <input type="checkbox" value="8" name="opcao-check" />Encontro da Cidade
-        <input type="checkbox" value="9" name="opcao-check" />Wiki
-        <input type="checkbox" value="10" name="opcao-check" />Fórum
-        <input type="checkbox" value="11" name="opcao-check" />Cursos Adicional
-        </fieldset>
-        <fieldset>
-        <p>Algun Comentário</p>
-        <input type="texarea" placeholder="Coloque o seu comentário aqui" /
-        </fieldset>
+      <input type="radio" value="3" name="opcao3" />Não Tenho Certeza
+      <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+      <select id="referencia">
+        <option value="">(Escolha uma opção)</option>
+        <option value="1">Comuninade</option>
+        <option value="2">Projetos</option>
+        <option value="3">Desafios</option>
+        <option value="4">Código Abertos</option>
+      </select>
+      <p>O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</p>
+      <input type="checkbox" value="1" name="opcao-check" />Projeto-Front-End
+      <input type="checkbox" value="2" name="opcao-check" />Projeto Back-End
+      <input type="checkbox" value="3" name="opcao-check" />Visualização de dados
+      <input type="checkbox" value="4" name="opcao-check" />Desafios
+      <input type="checkbox" value="5" name="opcao-check" />Comunidade de Códigos Abertos
+      <input type="checkbox" value="6" name="opcao-check" />Sala de ajuda do Gitter
+      <input type="checkbox" value="7" name="opcao-check" />Vídeos
+      <input type="checkbox" value="8" name="opcao-check" />Encontro da Cidade
+      <input type="checkbox" value="9" name="opcao-check" />Wiki
+      <input type="checkbox" value="10" name="opcao-check" />Fórum
+      <input type="checkbox" value="11" name="opcao-check" />Cursos Adicional
+      <p>Algun Comentário</p>
+      <input type="textarea" placeholder="Coloque o seu comentário aqui" />
+      <input id="submit" type="submit" value="Submit">
+  </fieldset>
 </body>
+
 </html>
-
-
