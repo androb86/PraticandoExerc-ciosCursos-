@@ -1,0 +1,73 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css" />
+  <title>survey-form</title>
+</head>
+
+<body>
+  <form id="survey-form">
+  <h1 id="title">freecodecamp Formulário de pesquisa</h1>
+  <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+ <fieldset id="dados">
+      <label id="name-label"><input id="name" type="text" placeholder="Seu Nome" required />Usuario</label>
+      <label id="email-label"><input id="email" type="email" placeholder="Seu Email" required />E-mail</label>
+      <label id="number-label"><input id="number" type="number" min="13" max="100" placeholder="Ex. 18"
+          required />Idade</label>
+      <p>Qual opção melhor descreve sua função atual?</p>
+      <select id="dropdown">
+        <option value="">(Escolha uma opção)
+        <option value="1">estudante</option>
+        <option value="2">trabalho em tempo integral</option>
+        <option value="3">estuda em tempo integral</option>
+        <option value="4">prefiro não dizer</option>
+        <option value="5">outros</option>
+      </select>
+      <p>Você recomendaria o freeCodeCamp a um amigo?</p>
+      <label for="recomendaria"><input id="Definitivamente" type="radio" value="Definitivamente" name="recomendaria" />Definitivamente</label>
+      <label for="recomendaria"><input id="Talvez" type="radio" value="Talvez" name="recomendaria" />Talvez</label>
+      <label for="recomendaria"><input id="Não-Tenho-Certeza" type="radio" value="Não Tenho Certeza" name="recomendaria" />Não Tenho Certeza</label>
+      <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+      <select id="referencia">
+        <option value="">(Escolha uma opção)</option>
+        <option value="1">Comuninade</option>
+        <option value="2">Projetos</option>
+        <option value="3">Desafios</option>
+        <option value="4">Código Abertos</option>
+      </select>
+      <p>O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</p>
+      <label for="Projeto-Front-End"><input id="Projeto-Front-End" type="checkbox" value="Projeto-Front-End" name="Projeto-Front-End" />Projeto-Front-End</label>
+      <label for="Projeto-Back-End"><input id="Projeto-Back-End" type="checkbox" value="Projeto-Back-End" name="Projeto-Back-End" />Projeto-Back-End</label>
+      <label for="Visualização-de-dados" ><input id="Visualização-de-dados" type="checkbox" value="visualização de dados" name="visualização de dados" />Visualização de dados</label>
+      <label for="Desafios"><input id="Desafios" type="checkbox" value="Desafios" name="Desafios" />Desafios</label>
+      <label for="Comunidade-de-Códigos-Abertos"><input id="Comunidade-de-Códigos-Abertos" type="checkbox" value="Comunidade de Códigos Abertos" name="Comunidade de Códigos Abertos" />Comunidade de Códigos Abertos</label>
+      <label for="Sala-de-ajuda-do-Gitter"><input id="Sala-de-ajuda-do-Gitter"type="checkbox" value="Sala de ajuda do Gitter" name="Sala de ajuda do Gitter" />Sala de ajuda do Gitter</label>
+      <label for="Videos"><input id="Videos" type="checkbox" value="Videos" name="video" />Vídeos</label>
+      <label for="Encontro-da-Cidade"><input id="Encontro-da-Cidade" type="checkbox" value="Encontro da Cidade" name="Encontro da Cidade" />Encontro da Cidade</label>
+      <label for="Wiki"><input id="Wiki" type="checkbox" value="Wiki" name="Wiki" />Wiki</label>
+      <label for="checkbox"><input type="checkbox" value="Fórum" name="Fórum" />Fórum</label>
+      <label for="Cursos-Adicional"><input id="Cursos-Adicional" type="checkbox" value="Cursos Adicional" name="Cursos Adicional" />Cursos Adicional</label>
+       <label for="comentario">Algum comentário ou sugestão?
+      <textarea id="comentario" name="comentario" placeholder="Coloque o seu comentário aqui" /></textarea>
+      </label>
+      <input id="submit" type="submit" value="submit">
+      </label>
+      
+  </fieldset>
+  </form>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
