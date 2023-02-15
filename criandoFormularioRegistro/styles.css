@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em; /*aumentando o tamnho da caixa, para a entrada de texto*/
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff; /*inserindo uma cor para o texto ficar visivel na digitação*/
+  
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {  /* O código [type="submit"] seleciona elementos input com um atributo name com o valor submit.*/
+  display: block;          /* Com um display de block o botão de enviar fica na borda esquerda do elemento pai */
+  width: 60%;          /*apartir daqui o código foi ajustado o botão enviar para ficar no centro*/
+  margin: em auto;
+  height: 2em;         /*apartir daqui ajustando a largura do botão para aparecer com o resto do formulario*/ 
+  font-size: 1.1rem;  
+  background-color: #3b3b4f; /*apartir daqui clareou e deixou as bordas com destaque*/
+  border-color: white;  
+  min-width: 300px;
+}
+  /*Por último, para o botão de envio, você quer separá-lo do fieldset acima e ajustar sua largura para nunca ficar abaixo de 300px.
+  Altere a propriedade margin para que inclua 1em nas partes superior e inferior e, ao mesmo tempo,
+  deixe as margens esquerda e direita definidas como auto. Em seguida, defina a largura conforme descrito acima.*/
+
+input[type="file"] {
+    padding: 1px 2px;
+  }
+
+  a {
+    color:#dfdfe2;
+  }
