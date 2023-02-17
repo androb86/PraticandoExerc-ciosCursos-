@@ -32,4 +32,8 @@ Substitua a propriedade padding com overflow definido como hidden - o que faz co
     background-color: #8f0401;
     margin: auto; /* Centralize o elemento .two definindo a margin como auto. */
   }
+  /* Você não precisa usar sempre pixels ao dimensionar um elemento.Crie uma nova regra, .three, e defina sua width para 91%. */
+  .three {
+    width: 91%;
+  }
   
