@@ -35,5 +35,13 @@ Substitua a propriedade padding com overflow definido como hidden - o que faz co
   /* Você não precisa usar sempre pixels ao dimensionar um elemento.Crie uma nova regra, .three, e defina sua width para 91%. */
   .three {
     width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto; /* Centralize o elemento .three na tela definindo a margin como auto. */
+    /*É útil fazer com que suas margens empurrem em uma determinada direção.
+    Neste caso, a margem inferior do elemento .one empurra .two 20 pixels para baixo.
+    No seletor .two, use a propriedade abreviada margin para definir a margem superior como 0, 
+    a margem horizontal como auto e a margem inferior como 20px. Isso removerá a margem superior, centralizará o elemento na horizontal e definirá a margem inferior como 20 pixels.*/
+    margin: 0 auto 20px;
   }
   
