@@ -6,5 +6,8 @@
   /* Escreva uma nova regra usando o seletor de classe .frame.Use a declaração abreviada de border para dar ao elemento .frame uma borda sólida e preta com uma largura de 50px. */
   .frame {
     border: 50px solid black;
+    width: 500px; /* O quadro é muito largo. No seletor .frame, defina a width como 500 pixels. */
+    padding: 50px; /*Use o preenchimento (padding) para ajustar o espaçamento dentro de um elemento.Em .frame, use a propriedade abreviada padding para aumentar o espaço entre os elementos .frame e .canvas em 50px. A propriedade abreviada aumentará o espaço acima, abaixo, na esquerda e na direita da borda do elemento e da tela dentro dele. */
+    margin: 20px auto; /* Use margens para ajustar o espaçamento fora de um elemento. Usando a propriedade margin, dê ao elemento .frame uma margem vertical de 20px e uma margem horizontal de auto. Isso moverá o frame para baixo 20 pixels e o centralizará na página na horizontal. */
   }
   
