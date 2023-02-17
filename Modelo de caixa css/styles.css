@@ -28,5 +28,8 @@ Substitua a propriedade padding com overflow definido como hidden - o que faz co
   /* Criando uma regra de CSS que use o seletor .two e defina a width como 475 pixels. */
   .two {
     width: 475px;
+    height: 200px;
+    background-color: #8f0401;
+    margin: auto; /* Centralize o elemento .two definindo a margin como auto. */
   }
   
