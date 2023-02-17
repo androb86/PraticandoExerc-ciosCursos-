@@ -31,6 +31,7 @@ Aqui está um exemplo de uma regra que adiciona um desfoque (blur) de 3px:*/
     margin: 20px auto; /*  Use margens para posicionar o elemento .one na tela. Adicione a propriedade abreviada margin com uma margem vertical de 20px e uma margem horizontal de auto. */
     box-shadow: 0 0 3px 3px #efb762; /* Os retângulos são pequenos demais e suas bordas não possuem uma qualidade suave de pintura.
     Aumente a área e suavize as bordas de .one definindo sua box-shadow como 0 0 3px 3px #efb762. */
+    border-radius: 9px; /*Arredonde cada canto do elemento .one em 9 pixels usando a propriedade border-radius. */
   }
   /* Criando uma regra de CSS que use o seletor .two e defina a width como 475 pixels. */
   .two {
@@ -44,6 +45,7 @@ Aqui está um exemplo de uma regra que adiciona um desfoque (blur) de 3px:*/
     a margem horizontal como auto e a margem inferior como 20px. Isso removerá a margem superior, centralizará o elemento na horizontal e definirá a margem inferior como 20 pixels.*/
     margin: 0 auto 20px;
     box-shadow: 0 0 3px 3px #8f0401;
+    border-radius: 8px 10px; /* Use a propriedade border-radius no seletor .two para definir os raios superior esquerdo e inferior direito como 8px e os raios do canto superior direito e inferior esquerdo como 10px. */
   }
   /* Você não precisa usar sempre pixels ao dimensionar um elemento.Crie uma nova regra, .three, e defina sua width para 91%. */
   .three {
