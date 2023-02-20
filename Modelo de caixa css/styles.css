@@ -32,6 +32,8 @@ Aqui está um exemplo de uma regra que adiciona um desfoque (blur) de 3px:*/
     box-shadow: 0 0 3px 3px #efb762; /* Os retângulos são pequenos demais e suas bordas não possuem uma qualidade suave de pintura.
     Aumente a área e suavize as bordas de .one definindo sua box-shadow como 0 0 3px 3px #efb762. */
     border-radius: 9px; /*Arredonde cada canto do elemento .one em 9 pixels usando a propriedade border-radius. */
+	transform: rotate(-0.6deg); /*Gire todos os retângulos para dar a eles mais um visual imperfeito, como se fosse pintado à mão.
+	Use a propriedade transform no seletor .one com o valor rotate para girar o elemento no anti-horário em 0,6 graus.*/
   }
   /* Criando uma regra de CSS que use o seletor .two e defina a width como 475 pixels. */
   .two {
