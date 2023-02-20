@@ -48,6 +48,7 @@ Aqui está um exemplo de uma regra que adiciona um desfoque (blur) de 3px:*/
     margin: 0 auto 20px;
     box-shadow: 0 0 3px 3px #8f0401;
     border-radius: 8px 10px; /* Use a propriedade border-radius no seletor .two para definir os raios superior esquerdo e inferior direito como 8px e os raios do canto superior direito e inferior esquerdo como 10px. */
+	transform: rotate(0.4deg);
   }
   /* Você não precisa usar sempre pixels ao dimensionar um elemento.Crie uma nova regra, .three, e defina sua width para 91%. */
   .three {
@@ -60,6 +61,7 @@ Aqui está um exemplo de uma regra que adiciona um desfoque (blur) de 3px:*/
     /*A propriedade border-radius aceita até quatro valores para arredondar os cantos superior esquerdo, superior direito, inferior direito e inferior esquerdo.
     Arredonde o canto superior esquerdo de .three em 30 pixels, o canto superior direito em 25 pixels, o canto inferior direito em 60 pixels e o canto inferior esquerdo em 12 pixels.*/
     border-radius: 30px 25px 60px 12px; 
+	transform: rotate(-0.2deg);
   }
   /*Crie uma regra que tenha como destino .one e .two e aumente o efeito de blur para 1 pixel.*/
   .one, .two {
