@@ -71,6 +71,15 @@ Crie um seletor .gallery e torne-o um contêiner flex.*/
    max-width: 1400px;
    margin: 0 auto;
 
+    /*Suas imagens precisam de espaço entre elas.
+
+    A propriedade abreviada gap do CSS define as lacunas (gaps), também conhecidas como calhas, entre as linhas e as colunas. 
+    A propriedade gap e suas subpropriedades row-gap e column-gap fornecem essa funcionalidade para layouts flex, grid e multicolunas. 
+    Você aplica a propriedade ao elemento contêiner.
+    Dê ao seu contêiner flex .gallery uma propriedade gap com o valor 16px. */
+
+    gap: 16px;
+
 }
 
 
@@ -88,5 +97,27 @@ Também defina a propriedade height para 300px para manter suas imagens com um t
     preencher o contêiner img enquanto mantém a proporção, resultando em um corte para o ajuste. */
 
     object-fit: cover;
+    border-radius: 10px; /*suavizando as bordas*/
 
 } 
+
+/* O pseudoelemento ::after cria um elemento que é o último filho do elemento selecionado. 
+Você pode usá-lo para adicionar um elemento vazio após a última imagem. 
+Se você der a esse elemento a mesma width das imagens, 
+ele empurrará a última imagem para a esquerda quando a galeria estiver em um layout de duas colunas. 
+Neste momento, ele está no centro porque você definiu justify-content: center no contêiner flex.
+
+Exemplo:
+
+.container::after {
+  content: "";
+  width: 860px;
+}
+Crie um novo seletor usando um pseudoelemento ::after no elemento .gallery. 
+Adicione uma propriedade content definida como uma string vazia "" e defina 350px como o valor da propriedade width. */
+
+.gallery::after {
+    content: "";
+    width: 350px;
+
+}
