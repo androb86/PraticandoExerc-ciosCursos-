@@ -24,6 +24,35 @@ Adicione uma border-bottom com o valor de 4px solid #fdb347.
     border-bottom: 4px solid #fdb347; /*apartir daqui adicionei uma pequena borda na parter inferior de 4px e uma cor*/
 }
 
+/*Flexbox é um layout de CSS unidimensional que pode controlar a forma como os itens são espaçados e alinhados dentro de um contêiner.
+Para usá-lo, dê a um elemento uma propriedade display de flex. Isto fará do elemento um contêiner flex. Todos os filhos direto de um contêiner flex são chamados de itens flex.
+Crie um seletor .gallery e torne-o um contêiner flex.*/
+.gallery {
+    display: flex; /*apartir daqui, as fotos ficaram alinhadas todas na horizontal*/
+    
+    /* O Flexbox tem um eixo principal e um eixo cruzado. O eixo principal é definido pela propriedade flex-direction, que tem quatro valores possíveis:
+
+    row (padrão): eixo horizontal com os itens flex items da esquerda para a direita
+    row-reverse: eixo horizontal com os itens flex da direita para a esquerda
+    column: eixo vertical com os itens flex de cima para baixo
+    column-reverse: eixo vertical com os itens flex de baixo para cima
+    
+    Observação: os eixos e direções serão diferentes, dependendo da direção do texto. Os valores mostrados são para uma direção de texto da esquerda para a direita.
+    Experimente os diferentes valores para ver como eles afetam o layout.
+    Quando estiver pronto, defina explicitamente uma flex-direction de row no elemento .gallery. */
+
+    flex-direction: row;
+
+    /* A propriedade flex-wrap determina como os itens flex se comportam quando o contêiner flex for muito pequeno. 
+    Defini-la como wrap permitirá que os itens sejam associados à próxima linha ou coluna. nowrap (padrão) 
+    impedirá que os itens sejam associados ou que encolham, se necessário.
+    Faça com que seus itens flex sejam associados à próxima linha quando eles ficarem sem espaço. */
+
+    flex-wrap: wrap; /*apartir daqui as fotos ficaram alinhadas para proximas linhas, organizadas*/ 
+
+
+}
+
 /* As imagens são muito grandes. Crie um seletor .gallery img para localizar suas imagens. 
 Dê a elas uma width de 100% e uma max-width de 350px para que encolham conforme necessário, mas não fiquem muito grandes.
 Também defina a propriedade height para 300px para manter suas imagens com um tamanho uniforme. */
