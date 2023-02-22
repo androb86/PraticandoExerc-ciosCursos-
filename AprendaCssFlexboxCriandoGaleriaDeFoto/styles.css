@@ -50,8 +50,26 @@ Crie um seletor .gallery e torne-o um contêiner flex.*/
 
     flex-wrap: wrap; /*apartir daqui as fotos ficaram alinhadas para proximas linhas, organizadas*/ 
 
+   /*  A propriedade justify-content determina como os itens dentro de um contêiner flex são posicionados no eixo principal, 
+    afetando a posição e o espaço ao seu redor.
+    Dê ao seletor .gallery a propriedade justify-content com o valor de center. */
 
-}
+    justify-content: center; /*apartir daqui as fotos tiveram um espaçamento nos lados, ficando ajustado no centro*/
+
+    /* A propriedade align-items posiciona o conteúdo do flex ao longo do eixo transversal. Neste caso, 
+    com flex-direction definido como row, o eixo cruzado seria vertical.
+    Para centralizar as imagens na vertical, dê ao seletor .gallery uma propriedade align-items definida como center.
+ */
+
+    align-items: center;
+
+    /* Dê ao seletor .gallery uma propriedade padding definida como 20px 10px para criar algum espaço em torno do contêiner.
+    Então, dê a ele uma max-width de 1400px e adicione uma margin de 0 auto para centralizá-la.
+} */
+
+padding: 20px 10px;
+max-width: 1400px;
+margin: 0 auto;
 
 /* As imagens são muito grandes. Crie um seletor .gallery img para localizar suas imagens. 
 Dê a elas uma width de 100% e uma max-width de 350px para que encolham conforme necessário, mas não fiquem muito grandes.
