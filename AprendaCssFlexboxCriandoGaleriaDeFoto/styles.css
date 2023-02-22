@@ -1,4 +1,4 @@
-/* Normalize seu modelo de caixa criando um seletor * e dê a ele com a propriedade box-sizing definida como border-box. */
+/* /* Normalize seu modelo de caixa criando um seletor * e dê a ele com a propriedade box-sizing definida como border-box. */
 * {
     box-sizing: border-box;
 }
@@ -63,13 +63,16 @@ Crie um seletor .gallery e torne-o um contêiner flex.*/
 
     align-items: center;
 
-    /* Dê ao seletor .gallery uma propriedade padding definida como 20px 10px para criar algum espaço em torno do contêiner.
+/* Dê ao seletor .gallery uma propriedade padding definida como 20px 10px para criar algum espaço em torno do contêiner.
     Então, dê a ele uma max-width de 1400px e adicione uma margin de 0 auto para centralizá-la.
-} */
+ */
 
-padding: 20px 10px;
-max-width: 1400px;
-margin: 0 auto;
+   padding: 20px 10px;
+   max-width: 1400px;
+   margin: 0 auto;
+
+}
+
 
 /* As imagens são muito grandes. Crie um seletor .gallery img para localizar suas imagens. 
 Dê a elas uma width de 100% e uma max-width de 350px para que encolham conforme necessário, mas não fiquem muito grandes.
@@ -78,4 +81,4 @@ Também defina a propriedade height para 300px para manter suas imagens com um t
     width: 100%;
     max-width: 350px;
     height:300px;
-}
+} 
