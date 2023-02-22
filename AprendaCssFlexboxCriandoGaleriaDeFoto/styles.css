@@ -1,0 +1,4 @@
+/* Normalize seu modelo de caixa criando um seletor * e dê a ele com a propriedade box-sizing definida como border-box. */
+* {
+    box-sizing: border-box;
+}
