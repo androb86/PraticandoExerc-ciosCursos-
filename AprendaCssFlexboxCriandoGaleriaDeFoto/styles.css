@@ -2,3 +2,11 @@
 * {
     box-sizing: border-box;
 }
+/* As imagens são muito grandes. Crie um seletor .gallery img para localizar suas imagens. 
+Dê a elas uma width de 100% e uma max-width de 350px para que encolham conforme necessário, mas não fiquem muito grandes.
+Também defina a propriedade height para 300px para manter suas imagens com um tamanho uniforme. */
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height:300px;
+}
