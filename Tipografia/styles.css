@@ -1,5 +1,34 @@
+/* Se você inspecionar o elemento .label com as ferramentas de desenvolvedor do seu navegador, 
+poderá notar que ele de fato possui 288 pixels de largura ao invés de 270. 
+Isto porque, por padrão, o navegador inclui a borda e o padding quando determina o tamanho de um elemento.
+Para resolver isso, redefina o modelo da caixa criando um seletor * e dê a ele o atributo de box-sizing que é propriedade de border-box.
+ */
+ * {
+    box-sizing: border-box;
+ }
+
+html {
+    font-size: 16px;
+}
+
 /* Crie um seletor body e dê a ele a propriedade font-family definida como Open Sans com sans-serif como alternativa.
 Lembre-se de que fontes com espaços no nome devem estar entre aspas no CSS. */
 body {
     font-family: "Open Sans", sans-serif;
+}
+/* Criado um seletor .label e dê a ele um border definido como 2px solid black. */
+
+.label {
+    border: 2px solid black;
+    width: 270px; /* O bom uso do espaço em branco pode trazer foco aos elementos importantes da página e ajudar a guiar os olhos do usuário através do texto.*/
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+/* Lembre-se de que o uso de h1, h2 e tags similares determinam a estrutura semântica do seu HTML. 
+No entanto, você pode ajustar o CSS desses elementos para controlar o fluxo visual e a hierarquia.
+Crie uma regra para h1 e defina a propriedade font-weight para 800. 
+Isto deixará o texto do elemento h1 em negrito. */
+h1 {
+    font-weight: 800;
 }
