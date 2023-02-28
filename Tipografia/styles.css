@@ -1,0 +1,5 @@
+/* Crie um seletor body e dê a ele a propriedade font-family definida como Open Sans com sans-serif como alternativa.
+Lembre-se de que fontes com espaços no nome devem estar entre aspas no CSS. */
+body {
+    font-family: "Open Sans", sans-serif;
+}
