@@ -31,4 +31,10 @@ Crie uma regra para h1 e defina a propriedade font-weight para 800.
 Isto deixará o texto do elemento h1 em negrito. */
 h1 {
     font-weight: 800;
+    text-align: center;
+    margin: -4px 0 -4px 0; /*Ajuste o posicionamento do h1 dando-lhe uma margem superior e inferior de -4px e uma margem esquerda e direita de 0.*/
+}
+
+p {
+    margin: 0 0 0 0; /*removendo as margens*/
 }
