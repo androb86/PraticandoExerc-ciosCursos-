@@ -30,11 +30,26 @@ No entanto, você pode ajustar o CSS desses elementos para controlar o fluxo vis
 Crie uma regra para h1 e defina a propriedade font-weight para 800. 
 Isto deixará o texto do elemento h1 em negrito. */
 h1 {
-    font-weight: 800;
+    
     text-align: center;
     margin: -4px 0 -4px 0; /*Ajuste o posicionamento do h1 dando-lhe uma margem superior e inferior de -4px e uma margem esquerda e direita de 0.*/
+    /*A propriedade letter-spacing pode ser usada para ajustar o espaço entre cada caractere de texto em um elemento.
+     Dê ao seletor h1 uma propriedade letter-spacing definida como 0.15px para deixá-los um pouco mais afastados.*/
+    letter-spacing: 0.15px; 
 }
 
 p {
     margin: 0 0 0 0; /*removendo as margens*/
+}
+
+/* Crie um seletor para o novo .divider e defina a propriedade border-bottom como 1px solid #888989. 
+Também dê a ele uma margem superior e inferior de 2px. 
+Não deve ter qualquer margem esquerda ou direita. */
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0 2px 0;
+} 
+
+.bold {
+    font-weight: 800;
 }
