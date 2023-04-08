@@ -29,7 +29,7 @@ body {
 No entanto, você pode ajustar o CSS desses elementos para controlar o fluxo visual e a hierarquia.
 Crie uma regra para h1 e defina a propriedade font-weight para 800. 
 Isto deixará o texto do elemento h1 em negrito. */
-h1 {
+ header h1 {    /*Agora atualize o seletor h1 para que seja header h1 e tenha como destino o elemento h1 dentro do novo header */
     
     text-align: center;
     margin: -4px 0 -4px 0; /*Ajuste o posicionamento do h1 dando-lhe uma margem superior e inferior de -4px e uma margem esquerda e direita de 0.*/
