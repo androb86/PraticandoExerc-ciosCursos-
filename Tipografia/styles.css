@@ -64,4 +64,5 @@ Também crie um seletor .large, .medium e defina a propriedade background-color 
 
 .large, .medium {
     background-color: black;
+    border: 0;
 }
