@@ -93,3 +93,21 @@ align-items definida como flex-end. */
     justify-content: space-between;
     align-items: flex-end;
 }
+
+/* Crie um seletor .left-container p definindo as margens superior e inferior como -5px
+e as margens esquerda e direita como -2px. 
+Defina também o font-size como 2em e a font-weight como 700. */
+
+.left-container p{
+    margin: -5px -2px -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Crie um seletor .calories-info span, ajuste seu font-size para 2.4em e font-weight para 700. */
+
+.calories-info span{
+    font-size: 2.4em;
+    font-weight: 700;
+
+}
