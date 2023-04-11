@@ -66,3 +66,14 @@ Também crie um seletor .large, .medium e defina a propriedade background-color 
     background-color: black;
     border: 0;
 }
+
+
+
+/* A unidade rem representa root em e é relativa ao tamanho da fonte do elemento html.
+
+Crie um seletor .small-text e defina font-size como 0.85rem, o que representaria aproximadamente 13.6px 
+(lembre-se de que você definiu o html como tendo um font-size de 16px). */
+
+.small-text{
+    font-size: 0.85rem;
+}
