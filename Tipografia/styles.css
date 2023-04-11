@@ -83,3 +83,13 @@ Crie um seletor .small-text e defina font-size como 0.85rem, o que representaria
 .calories-info h2{
     margin: 0;
 }
+
+/* Crie um seletor .calories-info e defina a propriedade display como flex. 
+Também dê a ele uma propriedade justify-content definida como space-between e 
+align-items definida como flex-end. */
+
+.calories-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
