@@ -125,3 +125,15 @@ Crie um seletor .right e use a propriedade justify-content para fazer isso. */
 .right{
     justify-content: flex-end;
 }
+
+/* Crie um seletor .indent e dê a ele a propriedade margin-left definida como 1em. */
+.indent{
+    margin-left: 1em;
+}
+
+/* Crie um seletor .daily-value p para mirar todos os elementos p na seção daily-value. 
+Dê a esse novo seletor uma border-bottom definida como 1px solid #888989. */
+
+.daily-value p{
+    border-bottom: 1px solid #888989;
+}
