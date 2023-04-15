@@ -134,6 +134,6 @@ Crie um seletor .right e use a propriedade justify-content para fazer isso. */
 /* Crie um seletor .daily-value p para mirar todos os elementos p na seção daily-value. 
 Dê a esse novo seletor uma border-bottom definida como 1px solid #888989. */
 
-.daily-value p{
+.daily-value p:not(.no-divider){  /*usando o pseudosseletor :not*/
     border-bottom: 1px solid #888989;
 }
