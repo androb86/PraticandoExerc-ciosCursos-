@@ -131,6 +131,10 @@ Crie um seletor .right e use a propriedade justify-content para fazer isso. */
     margin-left: 1em;
 }
 
+.double-indent{
+    margin: 2em;
+}
+
 /* Crie um seletor .daily-value p para mirar todos os elementos p na seção daily-value. 
 Dê a esse novo seletor uma border-bottom definida como 1px solid #888989. */
 
