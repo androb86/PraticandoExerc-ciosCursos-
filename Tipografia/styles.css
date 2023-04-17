@@ -142,3 +142,18 @@ Dê a esse novo seletor uma border-bottom definida como 1px solid #888989. */
 .daily-value p:not(.no-divider){  /*usando o pseudosseletor :not*/
     border-bottom: 1px solid #888989;
 }
+
+/* Crie um seletor .note e defina o tamanho da fonte como 0.6rem. 
+Também defina as margens superiores e inferiores como 5px, 
+removendo as margens da esquerda e direita. */
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+
+/* Dê ao seletor .note um preenchimento à esquerda e à direita de 8px, removendo o preenchimento inferior e superior. 
+Também defina a propriedade text-indent como -8px.
+Com estas últimas mudanças, o rótulo nutricional está completo! */
+   padding: 0 8px;
+   text-indent: -8px;
+}
