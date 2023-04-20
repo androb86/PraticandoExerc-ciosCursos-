@@ -1,0 +1,14 @@
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+/*Uma propriedade útil de um SVG (gráficos vetoriais escaláveis) é o atributo path (caminho), 
+que permite que a imagem seja dimensionada sem afetar a resolução da imagem resultante.
+Atualmente, o img está assumindo que é o tamanho padrão, o que é muito grande. Para arrumar, 
+dimensione a imagem usando o id como seletor e defina a largura width como max(100px, 18vw).*/
+#logo {
+    width: max(100px, 18vw);
+}
