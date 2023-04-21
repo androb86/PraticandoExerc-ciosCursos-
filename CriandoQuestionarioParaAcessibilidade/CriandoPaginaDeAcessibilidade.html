@@ -61,11 +61,18 @@ Adicione os seguintes atributos aria-labelledby aos elementos section:
 Então, dentro de cada elemento section, aninhe um elemento h2 com um id que corresponda ao atributo aria-labelledby correspondente.
 Dê a cada h2 conteúdo de texto adequado. -->
 
+<!-- Preenchendo o conteúdo do quiz, abaixo de #student-info, adicione três elementos div com uma class de info.
+Em seguida, dentro de cada div aninhe um elemento label e um elemento input. -->
 
+<!-- Tendo em mente as práticas recomendadas para entradas de formulário, dê a cada input um atributo type e name apropriado. 
+Em seguida, dê ao primeiro input um atributo placeholder. -->
 
 <main>
  <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
     <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
+     <div class="info"><label for="student-name">Nome</label><input id="student-name" type="text" name="student-name" placeholder="Nome"/></div>
+     <div class="info"><label for="student-email"></label>Email<input id="student-email" type="email" name="student-email" placeholder="Email" /></div>
+     <div class="info"><label for="birth-date">Data de Nascimento</label><input id="birth-date" type="date" name="birth-date" placeholder="Data de Nascimento" /></div>
     <sectio role="region" aria-labelledby="html-questions"><h2 id="html-questions">Html</h2></section>
     <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">Css</h2></section>
  </form>    
