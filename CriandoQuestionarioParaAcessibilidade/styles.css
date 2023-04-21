@@ -48,3 +48,18 @@ nav > ul {
     display: flex;
     justify-content: space-evenly;
 }
+
+/* O tipo de letra desempenha um papel importante na acessibilidade de uma página. 
+Algumas fontes são mais fáceis de ler do que outras. 
+Isso é especialmente verdadeiro em telas de baixa resolução.
+Altere a fonte dos elementos h1 e h2 para Verdana e use outra fonte segura para a Web na família sans-serif como substituto.
+Além disso, adicione um border-bottom de 4px solid #dfdfe2 aos elementos h2 para tornar as seções distintas. 
+*Você deve definir o segundo valor da propriedade font-family para outra fonte sans-serif, fonte segura da web. Dica: eu escolheria Tahoma.*/
+
+h1, h2 {
+    font-family: Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+}
