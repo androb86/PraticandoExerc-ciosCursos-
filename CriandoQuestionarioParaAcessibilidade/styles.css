@@ -9,6 +9,17 @@ body {
 que permite que a imagem seja dimensionada sem afetar a resolução da imagem resultante.
 Atualmente, o img está assumindo que é o tamanho padrão, o que é muito grande. Para arrumar, 
 dimensione a imagem usando o id como seletor e defina a largura width como max(100px, 18vw).*/
+
+/*Como descrito no guia de estilo do freeCodeCamp, 
+o logotipo deve manter uma proporção de 35 / 4 e um preenchimento (padding) ao redor do texto.
+Primeiro, altere a background-color para #0a0a23 para ver o logotipo. 
+Em seguida, use a propriedade aspect-ratio para definir a proporção desejada de 35 / 4. 
+Por fim, adicione um padding de 0.4rem ao redor.*/
+
 #logo {
     width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
 }
+
