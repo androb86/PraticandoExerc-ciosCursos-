@@ -45,11 +45,29 @@ Dentro do elemento main, crie um formulário com três elementos section dentro 
 Em seguida, faça o formulário enviar o conteúdo para https://freecodecamp.org/practice-project/accessibility-quiz, 
 usando o método correto. -->
 
+<!-- Para aumentar a acessibilidade da página, o atributo role pode ser usado para indicar para tecnologias assistivas a finalidade por trás de um elemento na página. 
+O atributo role é parte da Iniciativa de Acessibilidade da Web (WAI) e aceita valores pré-definidos.
+Dê a cada elemento section a função region. -->
+
+<!-- A função de cada region requer um rótulo, o que ajuda os usuários de leitores de tela a entenderem o propósito da região. 
+Um método para adicionar um rótulo é adicionar um elemento de título dentro da região e, em seguida, 
+referenciá-lo com o atributo aria-labelledby.
+Adicione os seguintes atributos aria-labelledby aos elementos section:
+
+    student-info
+    html-questions
+    css-questions
+
+Então, dentro de cada elemento section, aninhe um elemento h2 com um id que corresponda ao atributo aria-labelledby correspondente.
+Dê a cada h2 conteúdo de texto adequado. -->
+
+
+
 <main>
  <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-    <section></section>
-    <section></section>
-    <section></section>
+    <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
+    <sectio role="region" aria-labelledby="html-questions"><h2 id="html-questions">Html</h2></section>
+    <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">Css</h2></section>
  </form>    
 </main>       
 </body>
