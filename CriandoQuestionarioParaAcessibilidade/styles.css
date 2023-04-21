@@ -41,3 +41,10 @@ h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
 }
+
+/*Marque os elementos da lista não ordenados dentro dos elementos nav e use Flexbox para espaçar igualmente os elementos filhos.*/
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
