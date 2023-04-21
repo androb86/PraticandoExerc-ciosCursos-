@@ -23,3 +23,21 @@ Por fim, adicione um padding de 0.4rem ao redor.*/
     padding: 0.4rem;
 }
 
+/*Faça com que o header ocupe toda a largura de seu contêiner pai, 
+defina sua height como 50px e defina a background-color para #1b1b32. 
+Em seguida, defina o display para usar o Flexbox.*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+}
+
+/*Altere a cor da fonte h1 para #f1be32, 
+e defina o tamanho da fonte para min(5vw, 1.2em).*/
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+}
