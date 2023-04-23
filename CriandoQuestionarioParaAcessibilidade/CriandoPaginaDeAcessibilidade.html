@@ -67,9 +67,15 @@ Em seguida, dentro de cada div aninhe um elemento label e um elemento input. -->
 <!-- Tendo em mente as práticas recomendadas para entradas de formulário, dê a cada input um atributo type e name apropriado. 
 Em seguida, dê ao primeiro input um atributo placeholder. -->
 
+<!-- Dentro do segundo elemento section, adicione dois elementos div com uma classe question-block.
+Agora, dentro de cada div.question-block, adicione um elemento p com texto de números sendo incrementados, 
+começando em 1, e um elemento fieldset com uma classe de question. -->
+
 <main>
  <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
     <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
+     <div class="question-block"><p>1</p><fieldset class="question"><legend></legend><ul><li></li><li></li></ul></fieldset></div>
+     <div class="question-block"><p>2</p><fieldset class="question"><legend></legend><ul><li></li><li></li></ul></fieldset></div>
      <div class="info"><label for="student-name">Nome:</label><input id="student-name" type="text" name="student-name" /></div>
      <div class="info"><label for="student-email"></label>Email<input id="student-email" type="email" name="student-email" placeholder="Email" /></div>
      <div class="info"><label for="birth-date">Data de Nascimento<span class="sr-only">(Date of Birth)</span></label><input id="birth-date" type="date" name="birth-date" placeholder="Data de Nascimento" /></div>
