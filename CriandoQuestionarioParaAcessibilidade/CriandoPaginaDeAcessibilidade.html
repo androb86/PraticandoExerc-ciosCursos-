@@ -74,8 +74,8 @@ começando em 1, e um elemento fieldset com uma classe de question. -->
 <main>
  <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
     <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
-     <div class="question-block"><p>1</p><fieldset class="question"><legend></legend><ul><li></li><li></li></ul></fieldset></div>
-     <div class="question-block"><p>2</p><fieldset class="question"><legend></legend><ul><li></li><li></li></ul></fieldset></div>
+     <div class="question-block"><p>1</p><fieldset class="question" name="questao"><legend>O elemento legend representa uma legenda para o conteúdo de seu elemento fieldset pai</legend><ul class="answers-list"><li></li><li></li></ul></fieldset></div>
+     <div class="question-block"><p>2</p><fieldset class="question" name="questao"><legend>Um elemento de rótulo que aninha um elemento de entrada deve ter um atributo for com o mesmo valor que o id da entrada</legend><ul class="answers-list"><li></li><li></li></ul></fieldset></div>
      <div class="info"><label for="student-name">Nome:</label><input id="student-name" type="text" name="student-name" /></div>
      <div class="info"><label for="student-email"></label>Email<input id="student-email" type="email" name="student-email" placeholder="Email" /></div>
      <div class="info"><label for="birth-date">Data de Nascimento<span class="sr-only">(Date of Birth)</span></label><input id="birth-date" type="date" name="birth-date" placeholder="Data de Nascimento" /></div>
