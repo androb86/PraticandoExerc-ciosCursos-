@@ -81,12 +81,16 @@ Dê ao primeiro o id de q1-a1. Dê ao resto deles os ids de q1-a2, q2-a1 e q2-a2
 ainda é uma prática recomendada vincular explicitamente um label com seu elemento input correspondente.
 Agora, adicione um atributo for a cada um dos quatro labels que vincule o label ao input de botão de opção correspondente. -->
 
+<!-- Insira um texto nos elementos label, de modo que o input aninhado em cada um deles venha antes do texto. 
+Em seguida, dê aos elementos input um value correspondente ao texto.
+O texto deve ser True ou False. -->
+
 
 <main>
  <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
     <section role="region" aria-labelledby="student-info"><h2 id="student-info">Student Info</h2></section>
-     <div class="question-block"><p>1</p><fieldset class="question" name="html-question-one"><legend>O elemento legend representa uma legenda para o conteúdo de seu elemento fieldset pai</legend><ul class="answers-list"><li><label for="q1-a1"><input type="radio" id="q1-a1" /></label></li><li><label for="q1-a2"><input type="radio" id="q1-a2" /></label></li></ul></fieldset></div>
-     <div class="question-block"><p>2</p><fieldset class="question" name="html-question-one"><legend>Um elemento de rótulo que aninha um elemento de entrada deve ter um atributo for com o mesmo valor que o id da entrada</legend><ul class="answers-list"><li><label for="q2-a1"><input type="radio" id="q2-a1" /></label></li><li><label for="q2-a2"><input type="radio" id="q2-a2" /></label></li></ul></fieldset></div>
+     <div class="question-block"><p>1</p><fieldset class="question" name="html-question-one"><legend>O elemento legend representa uma legenda para o conteúdo de seu elemento fieldset pai</legend><ul class="answers-list"><li><label for="q1-a1"><input type="radio" id="q1-a1" value="True"/>True</label></li><li><label for="q1-a2"><input type="radio" id="q1-a2" value="False"/>False</label></li></ul></fieldset></div>
+     <div class="question-block"><p>2</p><fieldset class="question" name="html-question-one"><legend>Um elemento de rótulo que aninha um elemento de entrada deve ter um atributo for com o mesmo valor que o id da entrada</legend><ul class="answers-list"><li><label for="q2-a1"><input type="radio" id="q2-a1" value="True" />True</label></li><li><label for="q2-a2"><input type="radio" id="q2-a2" Value="False"/>False</label></li></ul></fieldset></div>
      <div class="info"><label for="student-name">Nome:</label><input id="student-name" type="text" name="student-name" /></div>
      <div class="info"><label for="student-email"></label>Email<input id="student-email" type="email" name="student-email" placeholder="Email" /></div>
      <div class="info"><label for="birth-date">Data de Nascimento<span class="sr-only">(Date of Birth)</span></label><input id="birth-date" type="date" name="birth-date" placeholder="Data de Nascimento" /></div>
