@@ -88,9 +88,27 @@ O texto deve ser True ou False. -->
 <!-- Se você clicar nos botões de opção, poderá notar que ambos dentro do mesmo campo verdadeiro/falso podem ser selecionados ao mesmo tempo.
 Agrupe os inputs relevantes juntos, de modo que apenas um de cada par possa ser selecionado por vez. -->
 
-<!-- (13) A seção final deste quiz conterá uma lista suspensa e uma caixa de texto.
+<!-- (35) A seção final deste quiz conterá uma lista suspensa e uma caixa de texto.
 Comece aninhando uma div com uma class de formrow e aninhe quatro elementos div dentro dela, 
 alternando os atributos class delas com question-block e answer. -->
+
+<!-- (36) Dentro dos elementos div.question-block, aninhe um elemento label e dê ao elemento label conteúdo de texto -->
+
+<!--(37) Dentro do primeiro elemento div.answer, aninhe um elemento select requerido com três elementos option.
+Dê ao primeiro elemento option um value de "" e o texto Select an option. 
+Dê ao segundo elemento option um value de yes e o texto Yes. 
+Dê ao terceiro elemento option um value de no e o texto No.-->
+
+<!--(38) Vincule o primeiro elemento label ao elemento select e dê ao elemento select um atributo name.
+ocê deve dar ao elemento select um id que corresponda ao atributo for do elemento label.-->
+
+<!--(39) Aninhe um elemento textarea dentro do segundo elemento div.
+    answer e defina o número de linhas e colunas que ele tem.
+    Em seguida, coloque na textarea um texto que sirva como exemplo de resposta.
+    Você deve dar à textarea um atributo rows com um número
+    Você deve dar à textarea um atributo cols com um número-->
+ 
+<!--(40) Assim como fez com os outros elementos input e label, vincule a textarea ao seu elemento label correspondente e dê a ela um atributo name.-->
 
 
 <main>
@@ -144,14 +162,22 @@ alternando os atributos class delas com question-block e answer. -->
     <section role="region" aria-labelledby="css-questions">
         <h2 id="css-questions">Css</h2>
     </section>
-    <div class="formrow">
+    <div class="formrow">  <!--(35)-->
         <div class="question-block">
+            <label for="custumer">Are you an frontend developer?</label> <!--(36-37)-->
         </div>
         <div class="answer">
+            <select id="custumer" name="custumer" required> <!--(37-38)-->
+                <option value="">Select an option</option> <!--37-->
+                <option value="yes">Yes</option> <!--37-->
+                <option valu="no">No</option> <!--37-->
+            </select>
         </div>
-        <div class="question-block">
+        <div class="question-block"> <!--(36)-->
+            <label for="constumer2">Do you have any questions:</label>
         </div>
         <div class="answer">
+            <textarea placeholder="who is flexbox" rows="1" cols="1" id="constumer2" name="constumer2"> <!--39-->
         </div>      
     </div>    
  </form>    
