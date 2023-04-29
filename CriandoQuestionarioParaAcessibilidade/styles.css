@@ -78,6 +78,24 @@ nav > ul > li {
 
 
 
+/* (46) No que se refere à acessibilidade visual, o contraste entre elementos é um fator fundamental. 
+Por exemplo, o contraste entre o texto e o plano de fundo de um título deve ser pelo menos 4,5:1.
+Altere a cor da fonte de todos os elementos "âncora" dentro dos elementos da lista
+para algo com uma proporção de contraste de pelo menos 7:1.
+Você deve dar ao elemento a uma propriedade color. */
+
+/* (47) Para fazer com que os botões de navegação se pareçam mais com botões típicos, remova o sublinhado das tags de âncora.
+Em seguida, crie um novo seletor direcionado aos elementos da lista de navegação, 
+para que quando o cursor passe por cima deles, a cor de fundo e a cor do texto sejam alternados, 
+e o cursor se torne um ponteiro. */
+
+li > a {
+    color: inherit; /*(46)*/
+    text-decoration: none;  /*(47)*/
+}
+
+
+
 /* O tipo de letra desempenha um papel importante na acessibilidade de uma página. 
 Algumas fontes são mais fáceis de ler do que outras. 
 Isso é especialmente verdadeiro em telas de baixa resolução.
