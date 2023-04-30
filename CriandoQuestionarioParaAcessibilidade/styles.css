@@ -94,6 +94,11 @@ li > a {
     text-decoration: none;  /*(47)*/
 }
 
+nav li:hover {
+    background-color: #dfdfe2; /*(47)*/
+    color: #1b1b32;
+    cursor: pointer;
+  }
 
 
 /* O tipo de letra desempenha um papel importante na acessibilidade de uma página. 
