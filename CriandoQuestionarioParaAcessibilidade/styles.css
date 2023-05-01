@@ -236,9 +236,33 @@ padding-top: 5px;
 
  }
 
+ /*  (59) Faça com que os elementos do parágrafo apareçam como uma prioridade mais alta, com as seguintes propriedades de CSS:
+
+        margin-top: 5px;
+        padding-left: 15px;
+        font-size: 20px;
+
+ */
+
+ p{
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+
+ }
+
 
 p::before {
     content: "Question #";
+}
+
+/* (60) É útil ver a borda padrão ao redor dos elementos fieldset durante o desenvolvimento. 
+No entanto, pode não ser o estilo que você deseja.
+Remova a borda e o preenchimento inferior nos elementos .question. */ 
+
+.question {
+    padding-bottom: 0;
+    border: none;   /* ou -0 */   
 }
 
 /* O texto .sr-only ainda está visível. Existe um padrão comum para ocultar visualmente o texto para que apenas os leitores de tela leiam.
