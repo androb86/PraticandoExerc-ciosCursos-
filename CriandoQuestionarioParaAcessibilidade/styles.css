@@ -188,6 +188,36 @@ input {
     font-size: 13px;     /* (54) */
 }
 
+/* (57) Para alinhar as caixas de entrada umas com as outras, 
+crie um novo conjunto de regras que envolva todos os elementos input e label dentro de um elemento .info 
+e defina a propriedade display como inline-block.
+Vocepode usar .info > label, .info > input ou .info label, .info input
+Além disso, alinhe o texto do elemento label à direita. */
+
+.info > label, .info > input {
+    display: inline-block;          /* (57) */
+    text-align: right;              /* (57) */
+}
+
+/* (55) Para dar uma aparência em linha à primeira seção, 
+selecione apenas os elementos input dentro dos elementos .info, 
+defina sua width como 50% e alinhe seu texto à esquerda. 
+
+Você deve usar o seletor .info input ou .info > input.*/ 
+
+.info input {
+    width: 50%;         /* (55) */
+    text-align: left;   /* (55) */
+}
+
+/* (56) Selecione todos os elementos label nos elementos .info, 
+defina sua width como 10% e faça com que eles não ocupem menos de 55px. */
+
+.info label {
+    width: 10%;
+    min-width: 55px;
+}
+
 p::before {
     content: "Question #";
 }
