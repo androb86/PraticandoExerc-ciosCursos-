@@ -19,9 +19,9 @@ header {
     background-color: #1b1b32;
     display: flex;
     justify-content: space-between;  /* (48)*/
-    align-items: center;  /* (48)*/
-    position: fixed;  /* (48)*/
-    top: 0;   /* (48)*/
+    align-items: center;             /* (48)*/
+    position: fixed;                 /* (48)*/
+    top: 0;                          /* (48)*/
 }
 
 /*Uma propriedade útil de um SVG (gráficos vetoriais escaláveis) é o atributo path (caminho), 
@@ -55,7 +55,7 @@ h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
     text-align: center;   /* (49) */
-    padding-top: 25px;  /* (49) */
+    padding-top: 25px;    /* (49) */
 }
 
 nav {
@@ -73,12 +73,12 @@ defina as seguintes propriedades CSS para alinhar corretamente o texto: */
 nav > ul {
     display: flex;
     justify-content: space-evenly;
-    display: flex;  /* (50) */
-    flex-wrap: wrap;  /* (50) */
-    align-items: center;   /* (50) */
-    padding-inline-start: 0;   /* (50) */
-    margin-block: 0;  /* (50) */
-    height: 100%;  /* (50) */
+    display: flex;              /* (50) */
+    flex-wrap: wrap;            /* (50) */
+    align-items: center;        /* (50) */
+    padding-inline-start: 0;    /* (50) */
+    margin-block: 0;            /* (50) */
+    height: 100%;               /* (50) */
 
 }
 
@@ -115,7 +115,7 @@ para que quando o cursor passe por cima deles, a cor de fundo e a cor do texto s
 e o cursor se torne um ponteiro. */
 
 li > a {
-    color: inherit; /*(46)*/
+    color: inherit;         /*(46)*/
     text-decoration: none;  /*(47)*/
 }
 
@@ -154,8 +154,12 @@ h1, h2 {
     font-family: Verdana, Tahoma;
 }
 
+/* (52) Substitua a margem superior dos elementos h2 por um padding superior de 60px  */
+
 h2 {
     border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;                            /* (52) */
+    padding-top: 60px;                       /* (52) */
 }
 
 /* Para prevenir repetição desnecessária, marque o pseudoelemento before do elemento p e dê a ele uma propriedade content de "Question #".
