@@ -218,6 +218,25 @@ defina sua width como 10% e faça com que eles não ocupem menos de 55px. */
     min-width: 55px;
 }
 
+/* (58) Para limpar os elementos .question-block, defina as seguintes propriedades de CSS:
+
+text-align: left;
+display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px;    
+*/
+
+ .question-block{
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+
+ }
+
+
 p::before {
     content: "Question #";
 }
