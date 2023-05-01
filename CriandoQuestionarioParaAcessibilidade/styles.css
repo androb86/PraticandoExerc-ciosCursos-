@@ -161,9 +161,32 @@ h2 {
     margin-top: 0;                            /* (52) */
     padding-top: 60px;                       /* (52) */
 }
-
 /* Para prevenir repetição desnecessária, marque o pseudoelemento before do elemento p e dê a ele uma propriedade content de "Question #".
 Você deve usar o seletor p::before. */
+
+/* (53) Adicione o espaçamento ao canto superior e esquerdo dos elementos .info e defina os outros valores para 0. */
+
+.info {
+    padding-top: 1px;     /* (53) */
+    padding-right: 0;     /* (53) */
+    padding-bottom: 0;    /* (53) */
+    padding-left: 1px;    /* (53) */
+}
+
+/* (54) Aplique padding à margem superior e aos blocos esquerdo e direito do elemento .formrow. Os outros valores de padding devem ser 0.
+Em seguida, aumente o tamanho da fonte para todos os elementos input. */
+
+.formrow {
+    margin-top: 1px;      /* (54) */
+    padding-top: 0;       /* (54) */
+    padding-right: 0;     /* (54) */
+    padding-bottom: 0;    /* (54) */
+    padding-left: 1px;    /* (54) */
+}
+
+input {
+    font-size: 13px;     /* (54) */
+}
 
 p::before {
     content: "Question #";
