@@ -78,7 +78,7 @@ nav > ul {
     align-items: center;   /* (50) */
     padding-inline-start: 0;   /* (50) */
     margin-block: 0;  /* (50) */
-    height: 100%;
+    height: 100%;  /* (50) */
 
 }
 
@@ -117,6 +117,23 @@ e o cursor se torne um ponteiro. */
 li > a {
     color: inherit; /*(46)*/
     text-decoration: none;  /*(47)*/
+}
+
+main {
+    padding-top: 50px;
+}
+
+/* (51) Defina a largura dos elementos section para 80% de seu contêiner pai. 
+Em seguida, use as margens para centralizar os elementos section, adicionando 10px à margem inferior.
+Além disso, certifique-se de que os elementos section não possam ter largura maior que 600px.  */
+
+section {
+    width: 80%;           /* (51)*/
+    margin-right: auto;   /* (51)*/
+    margin-top: 0;        /* (51)*/
+    margin-bottom: 10px;  /* (51)*/
+    margin-left: auto;    /* (51)*/
+    max-width: 600px;     /* (51)*/
 }
 
 nav li:hover {
