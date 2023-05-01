@@ -47,9 +47,15 @@ Por fim, adicione um padding de 0.4rem ao redor.*/
 /*Altere a cor da fonte h1 para #f1be32, 
 e defina o tamanho da fonte para min(5vw, 1.2em).*/
 
+/* (49)Quando a largura da tela é pequena, o h1 não envolve seu conteúdo de texto como deveria. 
+Alinhe ao centro o texto para o elemento h1.
+ocê deve dar ao main um padding-top de pelo menos 25px.*/ 
+
 h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;   /* (49) */
+    padding-top: 25px;  /* (49) */
 }
 
 nav {
@@ -60,9 +66,20 @@ nav {
 
 /*Marque os elementos da lista não ordenados dentro dos elementos nav e use Flexbox para espaçar igualmente os elementos filhos.*/
 
+/* (50) Em telas pequenas, a lista não ordenada na barra de navegação transborda do lado direito da tela.
+Corrija isso usando o Flexbox para encapsular o conteúdo do ul. Em seguida, 
+defina as seguintes propriedades CSS para alinhar corretamente o texto: */
+
 nav > ul {
     display: flex;
     justify-content: space-evenly;
+    display: flex;  /* (50) */
+    flex-wrap: wrap;  /* (50) */
+    align-items: center;   /* (50) */
+    padding-inline-start: 0;   /* (50) */
+    margin-block: 0;  /* (50) */
+    height: 100%;
+
 }
 
 /*(45) Voltemos ao estilo da página. Selecione os elementos da lista dentro da barra de navegação, e dê a eles os seguintes estilos:
