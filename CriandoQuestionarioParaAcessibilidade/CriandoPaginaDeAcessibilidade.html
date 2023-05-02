@@ -6,9 +6,9 @@
 <!-- Outro elemento meta importante para a acessibilidade e para a SEO é a description. 
 O valor do atributo content é usado pelos mecanismos de busca para fornecer uma descrição de sua página.
 Adicione um elemento meta com o atributo name definido como description, e dê a ele um atributo content. -->
-    <meta name="description" content="description" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
     <title>CriandoPaginaComAcessibilidade</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <!-- A navegação é uma parte fundamental da acessibilidade. 
@@ -33,7 +33,7 @@ Para poder navegar na página, dê a cada elemento âncora um href correspondent
 <nav>
     <ul>
        <l1><a href="#student-info">INFO</a></l1>   
-       <l1><a href="#html-questions">TML</a></l1>
+       <l1><a href="#html-questions">HTML</a></l1>
        <l1><a href="#css-questions">CSS</a></l1> 
     </ul>>
 </nav>
@@ -128,70 +128,77 @@ ocê deve dar ao elemento select um id que corresponda ao atributo for do elemen
 <!-- (44) O elemento address não precisa conter um local geográfico físico. Ele pode ser utilizado para fornecer um link para o assunto.
 Envolva o texto freeCodeCamp usando um link e defina sua localização como https://freecodecamp.org.-->
 
-<!--(45) Voltemos ao estilo da página. Selecione os elementos da lista dentro da barra de navegação, e dê a eles os seguintes estilos:
-
-                    color: #dfdfe2;
-                    margin: 0 0.2rem;
-                    padding: 0.2rem;
-                    display: block;
-
-                    Você deve usar o seletor nav li ou nav > ul > li.
-
--->
 
 
 
 <main>
- <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-    <section role="region" aria-labelledby="student-info">
+    <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <section role="region" aria-labelledby="student-info">
         <h2 id="student-info">Student Info</h2>
-    </section>
-     <div class="question-block">
-        <p>1</p>
-        <fieldset class="question" name="html-question-one">
-            <legend>O elemento legend representa uma legenda para o conteúdo de seu elemento fieldset pai</legend>
+        <div class="info">
+          <label for="student-name">Name:</label>
+          <input type="text" name="student-name" id="student-name" />
+        </div>
+        <div class="info">
+          <label for="student-email">Email:</label>
+          <input type="email" name="student-email" id="student-email" />
+        </div>
+        <div class="info">
+          <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+          <input type="date" name="birth-date" id="birth-date" />
+        </div>
+      </section>
+      <section role="region" aria-labelledby="html-questions">
+        <h2 id="html-questions">HTML</h2>
+        <div class="question-block">
+          <p>1</p>
+          <fieldset class="question" name="html-question-one">
+            <legend>
+              The legend element represents a caption for the content of its
+              parent fieldset element
+            </legend>
             <ul class="answers-list">
-                <li>
-                    <label for="q1-a1"><input type="radio" id="q1-a1" name="q1-a1" value="True"/>True</label>
-                </li>
-                <li>
-                    <label for="q1-a2"><input type="radio" id="q1-a2" value="False" name="q1-aq"/>False</label>
-                </li>
+              <li>
+                <label for="q1-a1">
+                  <input type="radio" id="q1-a1" name="q1" value="true" />
+                  True
+                </label>
+              </li>
+              <li>
+                <label for="q1-a2">
+                  <input type="radio" id="q1-a2" name="q1" value="false" />
+                  False
+                </label>
+              </li>
             </ul>
-        </fieldset>
-    </div>
-     <div class="question-block">
-        <p>2</p>
-        <fieldset class="question" name="html-question-one">
-            <legend>Um elemento de rótulo que aninha um elemento de entrada deve ter um atributo for com o mesmo valor que o id da entrada</legend>
+          </fieldset>
+        </div>
+        <div class="question-block">
+          <p>2</p>
+          <fieldset class="question" name="html-question-two">
+            <legend>
+              A label element nesting an input element is required to have a
+              for attribute with the same value as the input's id
+            </legend>
             <ul class="answers-list">
-                <li>
-                    <label for="q2-a1"><input type="radio" id="q2-a1" value="True" name="q2-a1"/>True</label>
-                </li>
-                <li>
-                    <label for="q2-a2"><input type="radio" id="q2-a2" Value="False" name="q2-a1"/>False</label>
-                </li>
+              <li>
+                <label for="q2-a1">
+                  <input type="radio" id="q2-a1" name="q2" value="true" />
+                  True
+                </label>
+              </li>
+              <li>
+                <label for="q2-a2">
+                  <input type="radio" id="q2-a2" name="q2" value="false" />
+                  False
+                </label>
+              </li>
             </ul>
-        </fieldset>
-    </div>
-     <div class="info">
-        <label for="student-name">Nome:</label>
-        <input id="student-name" type="text" name="student-name" />
-    </div>
-     <div class="info">
-        <label for="student-email">Email</label>
-        <input id="student-email" type="email" name="student-email" placeholder="Email" />
-    </div>
-     <div class="info">
-        <label for="birth-date">Data de Nascimento<span class="sr-only">(Date of Birth)</span></label>
-        <input id="birth-date" type="date" name="birth-date" placeholder="Data de Nascimento" />
-    </div>
-    <sectio role="region" aria-labelledby="html-questions">
-        <h2 id="html-questions">Html</h2>
-    </section>
-    <section role="region" aria-labelledby="css-questions">
-        <h2 id="css-questions">Css</h2>
-    </section>
+          </fieldset>
+        </div>
+      </section>
+      <section role="region" aria-labelledby="css-questions">
+        <h2 id="css-questions">CSS</h2>
     <div class="formrow">  <!--(35)-->
         <div class="question-block">
             <label for="custumer">Are you an frontend developer?</label> <!--(36-37)-->
@@ -200,14 +207,14 @@ Envolva o texto freeCodeCamp usando um link e defina sua localização como http
             <select id="custumer" name="custumer" required> <!--(37-38)-->
                 <option value="">Select an option</option> <!--37-->
                 <option value="yes">Yes</option> <!--37-->
-                <option valu="no">No</option> <!--37-->
+                <option value="no">No</option> <!--37-->
             </select>
         </div>
         <div class="question-block"> <!--(36)-->
             <label for="constumer2">Do you have any questions:</label>
         </div>
         <div class="answer">
-            <textarea placeholder="who is flexbox" rows="1" cols="1" id="constumer2" name="constumer2"> <!--39-->
+            <textarea id="css-question" name="css-question" rows="5" cols="24" placeholder="who is flexbox..." ></textarea> <!--39-->
         </div>      
     </div> 
     <button type="submit">Send</button>   
@@ -218,9 +225,7 @@ Envolva o texto freeCodeCamp usando um link e defina sua localização como http
         <a href="https://freecodecamp.org">FreeCodeCamp</a><br />
         San Francisco<br />
         California<br />
-        USA
-
-
+        USA 
     </address>
 </footer>      
 </body>
