@@ -281,6 +281,38 @@ border: 0;
 
 Use o padrão acima para definir a classe sr-only. */
 
+/* (61) Remova o estilo padrão 
+para os itens da lista de .answers-list e remova o preenchimento da lista não ordenada. */
+
+.answers-list {
+list-style: none;     /* (61) */
+padding: 0;           /* (61) */  
+
+}
+
+/* (62) Dê ao botão enviar um design no estilo do freeCodeCamp, com as seguintes propriedades de CSS:
+
+display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 23px;
+background: #d0d0d5;
+border: 3px solid #3b3b4f;
+ */ 
+
+ button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+
+ }
+ 
+
 .sr-only {
     position: absolute;
     width: 1px;
