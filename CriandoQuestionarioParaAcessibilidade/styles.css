@@ -309,10 +309,16 @@ border: 3px solid #3b3b4f;
     font-size: 23px;
     background: #d0d0d5;
     border: 3px solid #3b3b4f;
-
  }
- 
 
+    /* (63) Defina a cor de fundo do footer para #2a2a40 e use Flexbox para centralizar o texto horizontalmente*/
+
+    footer { 
+        background-color: #2a2a40;
+        display: flex;
+        justify-content: center;
+    }
+ 
 .sr-only {
     position: absolute;
     width: 1px;
