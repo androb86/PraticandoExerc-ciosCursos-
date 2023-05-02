@@ -314,11 +314,30 @@ border: 3px solid #3b3b4f;
     /* (63) Defina a cor de fundo do footer para #2a2a40 e use Flexbox para centralizar o texto horizontalmente*/
 
     footer { 
-        background-color: #2a2a40;
-        display: flex;
-        justify-content: center;
+        background-color: #2a2a40;   /* (63) */
+        display: flex;                 /* (63) */
+        justify-content: center;       /* (63) */
     }
+
+    /* (64) Agora, não podemos ler o texto. 
+    Selecione o footer e o elemento de ancoragem dentro dele 
+    para definir a cor da fonte para uma cor de relação de contraste adequada. */
  
+    footer, footer a {
+        color: #dfdfe2;
+        text-decoration: none;
+    }
+
+/* (65) Centralize horizontalmente todo o texto dentro do elemento address e adicione algum preenchimento */
+
+    address {
+        text-align: center;
+        padding-top: 1px;
+        padding-right: 1px;
+        padding-bottom: 1px;
+        padding-left: 1px;
+    }
+
 .sr-only {
     position: absolute;
     width: 1px;
