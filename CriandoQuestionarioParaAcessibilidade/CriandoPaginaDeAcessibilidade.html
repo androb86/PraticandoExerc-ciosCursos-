@@ -31,10 +31,10 @@ O h1 deve conter o texto HTML/CSS Quiz. -->
 O texto da lista de itens deve estar envolvido pelas tags de âncora. 
 Para poder navegar na página, dê a cada elemento âncora um href correspondente ao elemento id dos elementos h2. -->
 <nav>
-    <ul>
-       <l1><a href="#student-info">INFO</a></l1>   
-       <l1><a href="#html-questions">HTML</a></l1>
-       <l1><a href="#css-questions">CSS</a></l1> 
+    <ul> 
+       <l1><a href="#student-info" accesskey="s">INFO</a></l1>             <!--(68)-->
+       <l1><a href="#html-questions" accesskey="s">HTML</a></l1>           <!--(68)-->
+       <l1><a href="#css-questions" accesskey="s">CSS</a></l1>             <!--(68)-->
     </ul>>
 </nav>
 </header> 
@@ -128,6 +128,20 @@ ocê deve dar ao elemento select um id que corresponda ao atributo for do elemen
 <!-- (44) O elemento address não precisa conter um local geográfico físico. Ele pode ser utilizado para fornecer um link para o assunto.
 Envolva o texto freeCodeCamp usando um link e defina sua localização como https://freecodecamp.org.-->
 
+<!-- (68) 
+
+Finalmente, a acessibilidade de navegação pode ser melhorada fornecendo atalhos de teclado.
+
+O atributo accesskey aceita uma lista de teclas de acesso separadas por espaços. Por exemplo:
+
+<button type="submit" accesskey="s">Submit</button>
+
+Dê a cada um dos links de navegação uma tecla de acesso de uma única letra.
+
+Observação: nem sempre é aconselhável usar teclas de acesso, mas elas podem ser úteis
+
+Bom trabalho. Você concluiu o projeto prático Teste de acessibilidade. -->
+
 
 
 
@@ -211,18 +225,19 @@ Envolva o texto freeCodeCamp usando um link e defina sua localização como http
             </select>
         </div>
         <div class="question-block"> <!--(36)-->
-            <label for="constumer2">Do you have any questions:</label>
+            <label for="css-questions">Do you have any questions:</label>
         </div>
         <div class="answer">
-            <textarea id="css-question" name="css-question" rows="5" cols="24" placeholder="who is flexbox..." ></textarea> <!--39-->
+            <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="who is flexbox..." ></textarea> <!--39-->
         </div>      
-    </div> 
-    <button type="submit">Send</button>   
+    </div>
+    </section>> 
+    <button type="submit" accesskey="s">Send</button>      <!--(68)-->
  </form>    
 </main> 
 <footer>
     <address>
-        <a href="https://freecodecamp.org">FreeCodeCamp</a><br />
+        <a href="https://freecodecamp.org" accesskey="s">FreeCodeCamp</a><br />          <!--(68)-->
         San Francisco<br />
         California<br />
         USA 

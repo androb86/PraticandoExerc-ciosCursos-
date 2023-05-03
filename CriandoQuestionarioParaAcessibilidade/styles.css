@@ -1,10 +1,31 @@
 /* (66) Ao clicar nos links de navegação, você deverá levar o viewport para a seção relevante. No entanto, essa passagem pode desorientar alguns usuários.
 Selecione todos os elementos e defina o scroll-behavior para smooth.
-*/
+
 
 * {
     scroll-behavior: smooth;
 }
+*/
+
+/* (67) Certos tipos de animações baseadas em movimentos podem causar desconforto para alguns usuários. Em especial, as pessoas com desordens vestibulares têm sensibilidade a certos movimentos.
+
+A regra @media tem um recurso de mídia chamado prefers-reduced-motion para definir o CSS com base nas preferências do usuário. Ele pode receber um destes valores:
+
+    reduce
+    no-preference
+
+@media (feature: value) {
+  selector {
+    styles
+  }
+}
+  */  
+
+  @media (prefers-reduced-motion: no-preference) {
+    * { 
+      scroll-behavior: smooth;
+    }
+  }
 
 body {
     background: #f5f6f7;
