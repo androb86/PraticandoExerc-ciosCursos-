@@ -24,6 +24,22 @@ Este será o contêiner das suas tabelas.
 Dentro dela, adicione três elementos table. Você usará o CSS para estilizá-las em uma única tabela, 
 mas usar tabelas separadas ajudará os leitores de tela a entender o fluxo do documento.
 
+
+(8)
+Tabelas HTML usam o elemento caption para descrever sobre o que tratam. 
+O elemento caption sempre deve ser o primeiro filho de uma table, 
+porém, ele pode ser posicionado com a propriedade do CSS caption-side.
+
+Adicione um elemento caption na primeira table e insira nele o texto Assets
+
+(9)
+Os elementos thead and tbody são usados para indicar qual porção da tabela é o cabeçalho 
+e qual porção contém os dados primários ou o conteúdo.
+
+Adicione um thead e um tbody à primeira table, abaixo do elemento caption.
+
+
+
 -->
 
 
@@ -52,10 +68,18 @@ mas usar tabelas separadas ajudará os leitores de tela a entender o fluxo do do
         <span class="year">2021</span>    <!-- (6)-->
       </div>
       
-      <div class="table-wrap">
-        <table></table>
-        <table></table>
-        <table></table>
+      <div class="table-wrap">                     <!-- (7)-->
+        <table>                                    <!-- (7)-->
+          <caption>Assets</caption>                <!-- (8)-->
+          <thead></thead>                          <!-- (9)-->
+          <tbody></tbody>                          <!-- (9)-->
+        </table>
+
+        <table>                                    <!-- (7)-->
+        </table>                                    
+
+        <table>                                    <!-- (7)-->
+        </table>         
       </div>  
     </main>
   </body>
