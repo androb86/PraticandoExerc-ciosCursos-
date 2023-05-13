@@ -1,12 +1,14 @@
 <!-- 
-(4) Leitores de tela anunciam os elementos do HTML com base no fluxo do documento. 
+(4) 
+Leitores de tela anunciam os elementos do HTML com base no fluxo do documento. 
 No fim das contas, queremos que o balanço patrimonial tenha o título de "Balance Sheet" 
 e um subtítulo de "AcmeWidgetCorp". No entanto, essa ordem não faz sentido se anunciada por um leitor de tela.
 Dê ao span existente o atributo class definido como flex e adicione dois elementos span dentro dele. 
 Dê ao primeiro o texto AcmeWidgetCorp. Dê ao segundo o texto Balance Sheet. 
 Você usará o CSS para inverter a ordem do texto na página, mas a ordem do HTML fará mais sentido para um leitor de tela.
 
-(5) baixo do elemento h1, crie um elemento div. 
+(5) 
+baixo do elemento h1, crie um elemento div. 
 Dê a ele um atributo id definido como years. 
 Você quer que esse elemento específico esteja escondido dos leitores de tela, 
 então dê a ele o atributo aria-hidden definido como true.
@@ -14,6 +16,13 @@ então dê a ele o atributo aria-hidden definido como true.
 (6)
 Dentro do elemento div, adicione três elementos span. 
 Dê a cada um deles um atributo class definido como year e adicione os textos a seguir (em ordem): 2019, 2020 e 2021.
+
+(7)
+baixo do elemento div existente, adicione um novo elemento div com a class definida como table-wrap. 
+Este será o contêiner das suas tabelas.
+
+Dentro dela, adicione três elementos table. Você usará o CSS para estilizá-las em uma única tabela, 
+mas usar tabelas separadas ajudará os leitores de tela a entender o fluxo do documento.
 
 -->
 
@@ -38,9 +47,15 @@ Dê a cada um deles um atributo class definido como year e adicione os textos a 
       </h1>
 
       <div id="years" aria-hidden="true"> <!-- (5)-->
-        <span class="year">2019</span> 
-        <span class="year">2020</span> 
-        <span class="year">2021</span>
-      </div>>  
+        <span class="year">2019</span>    <!-- (6)-->
+        <span class="year">2020</span>    <!-- (6)-->
+        <span class="year">2021</span>    <!-- (6)-->
+      </div>
+      
+      <div class="table-wrap">
+        <table></table>
+        <table></table>
+        <table></table>
+      </div>  
     </main>
   </body>
