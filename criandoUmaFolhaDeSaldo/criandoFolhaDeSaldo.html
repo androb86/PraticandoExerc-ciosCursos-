@@ -38,7 +38,19 @@ e qual porção contém os dados primários ou o conteúdo.
 
 Adicione um thead e um tbody à primeira table, abaixo do elemento caption.
 
+(10)
+O elemento tr é usado para indicar uma linha de tabela. 
+Adicione um elemento tr dentro do elemento thead. No novo elemento tr, adicione um elemento td seguido por três elementos th.
 
+O elemento td indica uma célula de dados, enquanto o elemento th indica uma célula do cabeçalho.
+
+(11)
+Adicione elemento span em cada th com a class sr-only year e no ultimo elemento th adicione uma class current
+deixe o td vazio por enquanto.
+
+(12)
+Dentro do elemento tbody, adicione quatro elementos tr. 
+Dê aos três primeiros um atributo class definido como data e ao quarto um atributo class definido como total.
 
 -->
 
@@ -68,11 +80,24 @@ Adicione um thead e um tbody à primeira table, abaixo do elemento caption.
         <span class="year">2021</span>    <!-- (6)-->
       </div>
       
-      <div class="table-wrap">                     <!-- (7)-->
-        <table>                                    <!-- (7)-->
-          <caption>Assets</caption>                <!-- (8)-->
-          <thead></thead>                          <!-- (9)-->
-          <tbody></tbody>                          <!-- (9)-->
+      <div class="table-wrap">                                                          <!-- (7)-->
+        <table>                                                                         <!-- (7)-->
+          <caption>Assets</caption>                                                     <!-- (8)-->
+          <thead>                                                                       <!-- (9)-->
+            <tr>                                                                        <!-- (10)-->
+              <td></td>                                                                 <!-- (10)-->
+              <th><span class="sr-only year">2019</span></th>                           <!-- (10, 11)-->
+              <th><span class="sr-only year">2020</span></th>                           <!-- (10, 11)-->
+              <th class="current"><span class="sr-only year">2021</span></th>           <!-- (10, 11)-->
+            </tr>
+          </thead>                                 
+
+          <tbody>                                                                      <!-- (9)-->
+            <tr class="data"></tr>                                                     <!-- (12)-->   
+            <tr class="data"></tr>                                                     <!-- (12)-->
+            <tr class="data"></tr>                                                     <!-- (12)-->
+            <tr class="total"></tr>                                                    <!-- (12)-->
+          </tbody>
         </table>
 
         <table>                                    <!-- (7)-->
