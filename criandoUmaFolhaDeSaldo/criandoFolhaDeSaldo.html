@@ -52,6 +52,15 @@ deixe o td vazio por enquanto.
 Dentro do elemento tbody, adicione quatro elementos tr. 
 Dê aos três primeiros um atributo class definido como data e ao quarto um atributo class definido como total.
 
+(13)
+No primeiro tr, adicione um elemento th com o texto Cash This is the cash we currently have on hand.. 
+Envolva todo esse texto, exceto Cash, em um elemento span com a class definida como description.
+
+Depois disso, adicione três elementos td com os seguintes textos (em ordem): $25, $30 e $28. 
+Dê ao terceiro elemento td a class com o valor de current.
+
+
+
 -->
 
 
@@ -93,7 +102,12 @@ Dê aos três primeiros um atributo class definido como data e ao quarto um atri
           </thead>                                 
 
           <tbody>                                                                      <!-- (9)-->
-            <tr class="data"></tr>                                                     <!-- (12)-->   
+            <tr class="data">
+              <th>Cash <span class="description">This is the cash we currently have on hand.</span></th>       <!-- (12)--> 
+              <td>$25</td>
+              <td>$30</td>
+              <td class="current">$28</td>
+            </tr>                                                       
             <tr class="data"></tr>                                                     <!-- (12)-->
             <tr class="data"></tr>                                                     <!-- (12)-->
             <tr class="total"></tr>                                                    <!-- (12)-->
