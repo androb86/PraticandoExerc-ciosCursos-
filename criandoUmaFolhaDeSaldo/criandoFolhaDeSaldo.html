@@ -65,6 +65,11 @@ Envolva esse texto, exceto Checking, em um elemento span com o atributo class de
 Depois disso, adicione três elementos td com o seguinte texto (em ordem): $54, $56, $53. 
 Dê ao terceiro elemento td a class com o valor de current.
 
+(15)
+No terceiro elemento tr, adicione um elemento th com o texto Savings Funds set aside for emergencies.. 
+Encapsule esse texto, exceto Savings, em um elemento span com o atributo class definido como description.
+Depois disso, adicione três elementos td com o seguinte texto (em ordem): $500, $650, $728. 
+Dê ao terceiro elemento td a class com o valor de current.
 
 
 
@@ -123,8 +128,17 @@ Dê ao terceiro elemento td a class com o valor de current.
               <td>$56</td>
               <td class="current">$53</td>
             </tr>                                                     
-            <tr class="data"></tr>                                                     <!-- (12)-->
-            <tr class="total"></tr>                                                    <!-- (12)-->
+            <tr class="data">                                                          <!-- (12)-->
+              <th>
+                Savings <span class="description">Funds set aside for emergencies.</span>
+              </th>
+              <td>$500</td> 
+              <td>$650</td>
+              <td class="current">$728</td> 
+            </tr>                                                    
+            <tr class="total">                                                         <!-- (12)-->
+
+            </tr>                                                   
           </tbody>
         </table>
 
