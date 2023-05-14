@@ -59,6 +59,13 @@ Envolva todo esse texto, exceto Cash, em um elemento span com a class definida c
 Depois disso, adicione três elementos td com os seguintes textos (em ordem): $25, $30 e $28. 
 Dê ao terceiro elemento td a class com o valor de current.
 
+(14)
+No segundo elemento tr, adicione um elemento th com o texto Checking Our primary transactional account.. 
+Envolva esse texto, exceto Checking, em um elemento span com o atributo class definido como description.
+Depois disso, adicione três elementos td com o seguinte texto (em ordem): $54, $56, $53. 
+Dê ao terceiro elemento td a class com o valor de current.
+
+
 
 
 -->
@@ -108,7 +115,14 @@ Dê ao terceiro elemento td a class com o valor de current.
               <td>$30</td>                                                              <!-- (13)-->
               <td class="current">$28</td>                                              <!-- (13)-->
             </tr>                                                       
-            <tr class="data"></tr>                                                     <!-- (12)-->
+            <tr class="data">                                                          <!-- (12)-->
+              <th>
+                Checking <span class="description">primary transactional account.</span>
+              </th>
+              <td>$54</td>
+              <td>$56</td>
+              <td class="current">$53</td>
+            </tr>                                                     
             <tr class="data"></tr>                                                     <!-- (12)-->
             <tr class="total"></tr>                                                    <!-- (12)-->
           </tbody>
