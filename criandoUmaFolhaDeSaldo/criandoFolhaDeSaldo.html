@@ -91,6 +91,14 @@ com a classe definida como sr-only e os seguintes textos, em ordem: 2019, 2020 e
 Dentro do elemento tbody, adicione quatro elementos tr. 
 Dê aos três primeiros um atributo class definido como data e ao quarto um atributo class definido como total.
 
+(21)
+Dentro do primeiro tr, adicione um elemento th com o texto Loans The outstanding balance on our startup loan.. 
+Encapsule esse texto, exceto Loans, em um elemento span com a class definida como description.
+
+Adicione três elementos td abaixo disso, e dê a eles o seguinte texto, 
+em ordem: $500, $250 e $0. Dê ao terceiro elemento td a class com o valor de current.
+
+
 -->
 
 
@@ -174,10 +182,21 @@ Dê aos três primeiros um atributo class definido como data e ao quarto um atri
             </tr>
           </table>                                                            
             <tbody>                                                       <!--(17)-->
-              <tr class="data"></tr>                                      <!-- (20)-->
-              <tr class="data"></tr>                                      <!-- (20)-->
-              <tr class="data"></tr>                                      <!-- (20)-->
-              <tr class="total"></tr>                                     <!-- (20)-->              
+              <tr class="data">                         <!-- (20)-->         
+                <th>Loans <span class="description">The outstanding balance on our startup loan.</span></th>  <!-- (21)-->
+                <td>$500</td>                            <!-- (21)-->
+                <td>$250</td>                            <!-- (21)-->
+                <td class="current">$0</td>              <!-- (21)-->
+              </tr>                                      
+              <tr class="data">                         <!-- (20)-->
+
+              </tr>                                      
+              <tr class="data">                         <!-- (20)-->
+
+              </tr>                                      
+              <tr class="total">                        <!-- (20)-->
+
+              </tr>                                                
             </tbody>
         </table>                                    
 
