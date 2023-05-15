@@ -83,6 +83,14 @@ Adiconando caption, thead, tbody na segunda tabela.
 (18)
 Dentro do thead, adicione um tr. Dentro dele, adicione um td e três elementos th
 
+(19)
+Dê a cada um dos elementos th um elemento span 
+com a classe definida como sr-only e os seguintes textos, em ordem: 2019, 2020 e 2021.
+
+(20)
+Dentro do elemento tbody, adicione quatro elementos tr. 
+Dê aos três primeiros um atributo class definido como data e ao quarto um atributo class definido como total.
+
 -->
 
 
@@ -160,12 +168,16 @@ Dentro do thead, adicione um tr. Dentro dele, adicione um td e três elementos t
           <thead>                                                             <!-- (17)-->
             <tr>                                                              <!-- (18)-->
               <td></td>                                                       <!-- (18)-->                                       
-              <th></th>                                                       <!-- (18)-->
-              <th></th>                                                       <!-- (18)-->
-              <th></th>                                                       <!-- (18)-->
+              <th><span class="sr-only">2019</span></th>                                                       <!-- (18, 19)-->
+              <th><span class="sr-only">2020</span></th>                                                       <!-- (18, 19)-->
+              <th><span class="sr-only">2021</span></th>                                                       <!-- (18, 19)-->
             </tr>
           </table>                                                            
-            <tbody>                                                           <!--(17)--> 
+            <tbody>                                                       <!--(17)-->
+              <tr class="data"></tr>                                      <!-- (18)-->
+              <tr class="data"></tr>                                      <!-- (18)-->
+              <tr class="data"></tr>                                      <!-- (18)-->
+              <tr class="total"></tr>                                     <!-- (18)-->              
             </tbody>
         </table>                                    
 
