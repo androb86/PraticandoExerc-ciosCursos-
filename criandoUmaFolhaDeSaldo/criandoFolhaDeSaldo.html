@@ -105,6 +105,22 @@ Coloque esse texto, com exceção da palavra Expenses, envolto em um elemento sp
 Adicione três elementos td abaixo disso e insira neles os seguintes textos, 
 respectivamente: $200, $300 e $400. No terceiro elemento td, adicione uma class com o valor current.
 
+(23)
+Dentro do terceiro tr, adicione um elemento th com o texto Credit The outstanding balance on our credit card.. 
+Envolva esse texto, exceto Credit, em um elemento span com a class definida como description.
+
+Adicione três elementos td abaixo disso e insira neles os seguintes textos, respectivamente: $50, $50 e $75. 
+No terceiro elemento td, adicione uma class com o valor current.
+
+(24)
+No quarto elemento tr, adicione um elemento th com o texto Total Liabilities. 
+Envolva o texto Liabilities em um elemento span com o atributo class definido como sr-only.
+
+Depois disso, adicione três elementos td com o seguinte texto (em ordem): $750, $600, $475. 
+Dê ao terceiro elemento td a class com o valor de current.
+
+
+
 
 
 -->
@@ -197,16 +213,22 @@ respectivamente: $200, $300 e $400. No terceiro elemento td, adicione uma class 
                 <td class="current">$0</td>              <!-- (21)-->
               </tr>                                      
               <tr class="data">                         <!-- (20)-->
-                <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th>
-                <td>$200</td>
-                <td>$300</td>
-                <td class="current">$400</td>
+                <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th> <!-- (22)-->
+                <td>$200</td>                                                                      <!-- (22)-->
+                <td>$300</td>                                                                      <!-- (22)-->
+                <td class="current">$400</td>                                                      <!-- (22)-->
               </tr>                                      
               <tr class="data">                         <!-- (20)-->
-
+                <th>Credit <span class="description">The outstanding balance on our credit card.</span></th>  <!-- (23)-->
+                <td>$50</td>                                                                    <!-- (23)-->
+                <td>$50</td>                                                                    <!-- (23)-->
+                <td class="current">$75</td>                                                    <!-- (23)-->
               </tr>                                      
               <tr class="total">                        <!-- (20)-->
-
+                <th>Total <span class="sr-only">Liabilities</span></th>         <!-- (24)-->
+                <td>$750</td>                                             <!-- (24)-->
+                <td>$600</td>                                             <!-- (24)-->
+                <td class="current">$475</td>                             <!-- (24)-->
               </tr>                                                
             </tbody>
         </table>                                    
