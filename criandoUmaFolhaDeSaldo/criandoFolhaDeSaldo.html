@@ -122,7 +122,10 @@ Dê ao terceiro elemento td a class com o valor de current.
 (25)
 Para a terceira tabela, adicione uma caption com o texto Net Worth e defina um cabeçalho e um corpo de tabela.
 
-
+(26)
+Dentro do thead, crie um elemento tr. Dentro dele, adicione um td e três elementos th. 
+Dentro de cada um dos elementos th, 
+adicione um elemento span com a class definida como sr-only e os seguintes textos, em ordem: 2019, 2020 e 2021.
 
 -->
 
@@ -236,14 +239,17 @@ Para a terceira tabela, adicione uma caption com o texto Net Worth e defina um c
         </table>                                    
 
         <table>                                    <!-- (7)-->
-          <caption>Net Worth</caption>              <!-- (25)-->
-          <thead>                                   <!-- (25)-->
-              <td></td>                             <!-- (25)-->
-              <th></th>                             <!-- (25)-->
-              <th></th>                             <!-- (25)-->
-              <th></th>                             <!-- (25)-->
-          </thead>
-          <tbody></tbody>                           <!-- (25)-->
+          <caption>Net Worth</caption>             <!-- (25)-->
+            <thead>                                <!-- (25)-->
+              <tr>                                 <!-- (26)-->
+                <td></td>                          <!-- (26)-->
+                <th><span class="sr-only">2019</span></th>           <!-- (26)-->
+                <th><span class="sr-only">2020</span></th>           <!-- (26)-->
+                <th><span class="sr-only">2021</span></th>           <!-- (26)-->
+              </tr>
+            </thead>
+            <tbody>                                 <!--(25)-->
+            </tbody>
         </table>         
       </div>  
     </main>
