@@ -26,6 +26,23 @@ Defina o seletor span[class~="sr-only"] para que tenha uma propriedade clip de r
 A propriedade clip-path determina a forma que a propriedade clip receberá. 
 Defina a propriedade clip-path para que tenha o valor inset(50%), deixando o clip-path na forma de um retângulo dentro do elemento.
 
+(32)
+Agora, você precisa reduzir esses elementos. 
+Dê ao seletor span[class~="sr-only"] as propriedades width e height definidas como 1px.
+
+(33)
+Para evitar que o conteúdo do texto exceda os limites, dê ao seletor span[class~="sr-only"] 
+uma propriedade overflow definida como hidden e uma propriedade white-space definida como nowrap.
+
+
+(34)
+Por último, é necessário retirar estes elementos ocultos do fluxo do documento. Dê ao seletor span[class~="sr-only"] 
+a propriedade position definida como absolute, a propiedade padding definida como 0 e a propriedade margin definida como -1px. 
+Isso garantirá que não somente eles deixaram de ser visíveis, como também não estarão sequer na exibição de página.
+
+(35)
+Hora de estilizar o cabeçalho da tabela. Crie um seletor h1. Dê a ele uma propriedade max-width definida como 37.25rem, 
+uma propriedade margin definida como 0 auto e uma propriedade padding definida como 1.5rem 1.25rem.
 
 
 */
@@ -43,4 +60,18 @@ span[class~="sr-only"]{
     border: 0;                                  /*30*/
     clip: rect(1px, 1px, 1px, 1px);             /*31*/
     clip-path: inset(50%);                      /*31*/
+    width: 1px;                                 /*32*/
+    height: 1px;                                /*32*/
+    overflow: hidden;                           /*33*/
+    white-space: nowrap;                        /*33*/
+    position: absolute;                         /*34*/
+    padding: 0;                                 /*34*/
+    margin: -1px;                               /*34*/
+
 }
+
+h1 {
+    max-width: 37.25rem;          /*35*/
+    margin: 0 auto;               /*35*/
+    padding: 1.5rem 1.25rem;      /*35*/
+  }
