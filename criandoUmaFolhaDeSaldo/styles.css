@@ -1,0 +1,13 @@
+/* 
+
+(28)
+Hora de estilizar a sua tabela. Comece redefinindo o modelo de caixa. 
+Crie um seletor html e dê a ele uma propriedade box-sizing definida como border-box.
+
+
+
+*/
+
+html{
+    box-sizing: border-box;
+}
