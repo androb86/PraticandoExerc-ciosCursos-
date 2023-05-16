@@ -4,10 +4,43 @@
 Hora de estilizar a sua tabela. Comece redefinindo o modelo de caixa. 
 Crie um seletor html e dê a ele uma propriedade box-sizing definida como border-box.
 
+(29)
+Crie um seletor body e dê a ele a propriedade font-family definida como sans-serif e a propriedade color definida como #0a0a23.
+
+
+(30)
+Antes de irmos muito mais longe na estilização, devemos usar a classe sr-only. 
+Você pode usar o CSS para tornar os elementos dessa classe completamente ocultos na página visual, 
+mas ainda podendo ser anunciados pelos leitores de tela.
+
+O CSS que você está prestes a escrever é um conjunto comum de propriedades usadas para garantir que os elementos 
+estejam completamente ocultos visualmente.
+
+O seletor span[class~="sr-only"] selecionará qualquer elemento span cujo atributo class inclua sr-only. 
+Crie esse seletor e dê a ele uma propriedade border definida como 0.
+
+(31)
+A propriedade clip do CSS é usada para definir porções visíveis de um elemento. 
+Defina o seletor span[class~="sr-only"] para que tenha uma propriedade clip de rect(1px, 1px, 1px, 1px).
+
+A propriedade clip-path determina a forma que a propriedade clip receberá. 
+Defina a propriedade clip-path para que tenha o valor inset(50%), deixando o clip-path na forma de um retângulo dentro do elemento.
+
 
 
 */
 
 html{
-    box-sizing: border-box;
+    box-sizing: border-box;         /*28*/
+}
+
+body{
+    font-family: sans-serif;      /*29*/     
+    color: #0a0a23;             /*29*/
+}
+
+span[class~="sr-only"]{           
+    border: 0;                                  /*30*/
+    clip: rect(1px, 1px, 1px, 1px);             /*31*/
+    clip-path: inset(50%);                      /*31*/
 }
