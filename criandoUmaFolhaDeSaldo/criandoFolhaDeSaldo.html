@@ -127,6 +127,16 @@ Dentro do thead, crie um elemento tr. Dentro dele, adicione um td e três elemen
 Dentro de cada um dos elementos th, 
 adicione um elemento span com a class definida como sr-only e os seguintes textos, em ordem: 2019, 2020 e 2021.
 
+(27)
+
+
+Dentro de tbody, adicione uma tr com a class total. 
+Nela, adicione um th com o texto Total Net Worth e envolva Net Worth em um span com a class definida como sr-only.
+
+Em seguida, adicione três elementos td, dando ao terceiro uma class definida como current 
+e dando a cada uma o texto a seguir: $-171, $136 e $334.
+
+
 -->
 
 
@@ -249,6 +259,12 @@ adicione um elemento span com a class definida como sr-only e os seguintes texto
               </tr>
             </thead>
             <tbody>                                 <!--(25)-->
+              <tr class="total">                    <!-- (27)-->
+                <th>Total <span class="sr-only">Net Worth</span></th>   <!-- (27)-->
+                <td>$-171</td>                                          <!-- (27)-->
+                <td>$136</td>                                           <!-- (27)-->
+                <td class="current">$334</td>                           <!-- (27)-->
+              </tr>
             </tbody>
         </table>         
       </div>  
