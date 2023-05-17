@@ -66,6 +66,26 @@ Você envolveu a tabela em um elemento de seção - agora você pode estilizá-l
 Crie um seletor section e dê a ele uma propriedade max-width definida como 40rem para deixar o design responsivo. 
 Defina a propriedade margin como 0 auto para centralizá-la e defina a propriedade border como 2px solid #d0d0d5.
 
+(40)
+A última parte da tabela são os anos. Crie um seletor #years e ative o flexbox. 
+Justifique o conteúdo para o final da direção do flex e faça com que o elemento permaneça no lugar. 
+Prenda o elemento na parte superior do contêiner com top: 0.
+
+(41)
+Agora, aplique uma cor a #years. Dê ao texto a cor #fff e o fundo #0a0a23.
+
+(42)
+A função calc() é uma função do CSS que permite calcular um valor baseado em outros valores. 
+Por exemplo, você pode usá-la para calcular a largura da viewport menos a margem de um elemento:
+
+.example {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+Dê ao elemento #years uma margin de 0 -2px e um padding definido como 0.5rem calc(1.25rem + 2px) 0.5rem 0.
+
+
 
 */
 
@@ -116,4 +136,15 @@ h1 {
     max-width: 40rem;                       /*39*/
     margin: 0 auto;                         /*39*/
     border: 2px solid #d0d0d5;            /*39*/
+  }
+
+  #years {
+    display: flex;                                  /*40*/
+    justify-content: flex-end;                      /*40*/
+    position: sticky;                               /*40*/
+    top: 0;                                         /*40*/
+    color: #fff;                                  /*41*/
+    background-color: #0a0a23;                    /*41*/
+    margin: 0 -2px;                                 /*42*/
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*42*/
   }
