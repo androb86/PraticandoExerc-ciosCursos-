@@ -56,6 +56,15 @@ Lembre-se de que os elementos span estão invertidos visualmente, então esse pa
 
 Dê ao novo seletor uma propriedade font-size de 0.7em para que ele pareça com um subtítulo.
 
+(38)
+O pseudosseletor :last-of-type é utilizado para focar exatamente o oposto: o último elemento que corresponde ao seletor. 
+Crie um seletor h1 .flex span:last-of-type para focar no último span em seu contêiner flex 
+e dê a ele uma propriedade font-size definida como 1.2em para que se pareça com um cabeçalho.
+
+(39)
+Você envolveu a tabela em um elemento de seção - agora você pode estilizá-la para dar a ela uma borda. 
+Crie um seletor section e dê a ele uma propriedade max-width definida como 40rem para deixar o design responsivo. 
+Defina a propriedade margin como 0 auto para centralizá-la e defina a propriedade border como 2px solid #d0d0d5.
 
 
 */
@@ -97,4 +106,14 @@ h1 {
 
   h1 .flex span:first-of-type {             /*37*/
     font-size: 0.7em;                       /*37*/
+  }
+
+  h1 .flex span:last-of-type {              /*38*/
+    font-size: 1.2em;                       /*38*/
+  }
+
+  section {                                 /*39*/
+    max-width: 40rem;                       /*39*/
+    margin: 0 auto;                         /*39*/
+    border: 2px solid #d0d0d5;            /*39*/
   }
