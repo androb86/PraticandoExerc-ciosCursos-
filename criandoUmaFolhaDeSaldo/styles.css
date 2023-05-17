@@ -44,6 +44,19 @@ Isso garantirá que não somente eles deixaram de ser visíveis, como também n�
 Hora de estilizar o cabeçalho da tabela. Crie um seletor h1. Dê a ele uma propriedade max-width definida como 37.25rem, 
 uma propriedade margin definida como 0 auto e uma propriedade padding definida como 1.5rem 1.25rem.
 
+(36)
+Selecione o contêiner flex com um seletor h1 .flex. Dê a ele uma propriedade display definida como flex para ativar o layout do flexbox. 
+Então, defina a propriedade flex-direction como column-reverse - isso exibirá os elementos aninhados da parte inferior para a superior. 
+Por fim, defina a propriedade gap como 1rem para fornecer mais espaçamento entre os elementos.
+
+(37)
+O pseudosseletor :first-of-type é utilizado para focar no primeiro elemento que corresponde ao seletor. 
+Crie um seletor h1 .flex span:first-of-type para escolher o primeiro elemento span no contêiner .flex. 
+Lembre-se de que os elementos span estão invertidos visualmente, então esse parecerá ser o segundo elemento na página.
+
+Dê ao novo seletor uma propriedade font-size de 0.7em para que ele pareça com um subtítulo.
+
+
 
 */
 
@@ -74,4 +87,14 @@ h1 {
     max-width: 37.25rem;          /*35*/
     margin: 0 auto;               /*35*/
     padding: 1.5rem 1.25rem;      /*35*/
+  }
+
+  h1 .flex {                                /*36*/
+    display: flex;                          /*36*/
+    flex-direction: column-reverse;         /*36*/
+    gap: 1rem;                              /*36*/
+  }
+
+  h1 .flex span:first-of-type {             /*37*/
+    font-size: 0.7em;                       /*37*/
   }
