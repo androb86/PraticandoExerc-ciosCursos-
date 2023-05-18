@@ -85,6 +85,11 @@ Por exemplo, você pode usá-la para calcular a largura da viewport menos a marg
 
 Dê ao elemento #years uma margin de 0 -2px e um padding definido como 0.5rem calc(1.25rem + 2px) 0.5rem 0.
 
+(43)
+Adicionar a position sticky moveu o elemento para sua própria pilha. 
+Para garantir que seu elemento #years não fique escondido por pilhas diferentes, 
+adicione uma propriedade z-index definida como 999 na regra #years.
+
 
 
 */
@@ -147,4 +152,5 @@ h1 {
     background-color: #0a0a23;                    /*41*/
     margin: 0 -2px;                                 /*42*/
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*42*/
+    z-index: 999;                                   /*43*/
   }
