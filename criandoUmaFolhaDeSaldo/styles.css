@@ -116,7 +116,22 @@ independentemente da ordem ou da especificidade.
 
 Dê a cada propriedade do seletor span[class~="sr-only"] uma palavra-chave !important. Não altere nenhum dos valores.
 
+(48)
+Agora que você adicionou a palavra-chave !important, você pode remover o :not(.sr-only) do seletor span.
 
+(49)
+
+Crie um seletor table para utilizar com as tabelas. Defina a propriedade border-collapse como collapse, 
+o que permitirá que as bordas das células se recolham em uma única borda, 
+em vez de uma borda em torno de cada célula. Defina também a propriedade border como 0 para ocultar as bordas.
+
+(50)
+Certifique-se de que sua tabela preencha o contêiner com uma propriedade width definida como 100%, 
+então posicione-a relativamente e dê a ela uma margem superior de 3rem.
+
+(51)
+Em seguida, você precisa estilizar os elementos caption para que se pareçam mais com cabeçalhos. 
+Criar um seletor table caption. Defina o texto para que tenha uma cor #356eaf, um tamanho de 1.3em e um peso normal.
 
 
 
@@ -193,7 +208,20 @@ h1 {
     padding: 0 0.75rem 1.5rem 0.75rem;             /*45*/
   }
 
-  span:not(.sr-only) {
-    font-weight: normal;                          /*46*/
+  span {
+    font-weight: normal;                          /*46, 48*/
   }
 
+  table {
+    border-collapse: collapse;                    /*49*/
+    border: 0;                                    /*49*/  
+    width: 100%;                                  /*50*/
+    position: relative;                           /*50*/
+    margin: 3rem;                                 /*50*/
+  }
+
+  table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+  }
