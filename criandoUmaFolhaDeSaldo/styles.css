@@ -133,6 +133,13 @@ então posicione-a relativamente e dê a ela uma margem superior de 3rem.
 Em seguida, você precisa estilizar os elementos caption para que se pareçam mais com cabeçalhos. 
 Criar um seletor table caption. Defina o texto para que tenha uma cor #356eaf, um tamanho de 1.3em e um peso normal.
 
+(52)
+Agora, dê às legendas uma posição absoluta e desloque-as -2.25rem da parte superior e 0.5rem da esquerda.
+
+(53)
+Crie um seletor com foco nos elementos td dentro do corpo da tabela. Dê a eles uma largura para preencher a viewport, 
+com um mínimo e máximo de 4rem. Essa abordagem garante que a largura seja fixa, 
+enquanto configurar width permitiria especificamente aos elementos encolherem de acordo com o contêiner.
 
 
 */
@@ -221,7 +228,17 @@ h1 {
   }
 
   table caption {
-    color: #356eaf;
-    font-size: 1.3em;
-    font-weight: normal;
+    color: #356eaf;                            /*51*/
+    font-size: 1.3em;                            /*51*/
+    font-weight: normal;                         /*51*/
+    position: absolute;                          /*52*/
+    top: -2.25rem;                               /*52*/
+    left: 0.5rem;                                /*52*/
+
+  }
+
+  tbody td {
+    width: 100vw;                                 /*53*/
+    min-width: 4rem;                              /*53*/
+    max-width: 4rem;                              /*53*/
   }
