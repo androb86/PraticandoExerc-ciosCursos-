@@ -97,6 +97,26 @@ independentemente do valor do atributo.
 
 Dê ao novo seletor uma fonte bold, uma largura de 4.5rem e texto alinhado à direita.
 
+(45)
+Você envolveu as suas tabelas em um contêiner com a classe table-wrap. 
+Crie um seletor para aquela classe e dê a ela um padding definido como 0 0.75rem 1.5rem 0.75rem.
+
+(46)
+Antes de começar a entrar em detalhes na tabela, os elementos span estão atualmente em negrito. 
+Crie um seletor span:not(.sr-only) e dê a ele uma propriedade font-weight definida como normal.
+
+O pseudosseletor :not() é usado para direcionar todos os elementos que não coincidem com o seletor - neste caso, 
+qualquer dos elementos span que não possua a classe sr-only. 
+Isso garante que as regras anteriores para o seletor span[class~="sr-only"] não sejam substituídas.
+
+(47)
+Ao invés de ter que verificar constantemente se você não está substituindo as propriedades anteriores, 
+você pode usar a palavra-chave !important para garantir que essas propriedades sejam sempre aplicadas, 
+independentemente da ordem ou da especificidade.
+
+Dê a cada propriedade do seletor span[class~="sr-only"] uma palavra-chave !important. Não altere nenhum dos valores.
+
+
 
 
 
@@ -112,16 +132,16 @@ body{
 }
 
 span[class~="sr-only"]{           
-    border: 0;                                  /*30*/
-    clip: rect(1px, 1px, 1px, 1px);             /*31*/
-    clip-path: inset(50%);                      /*31*/
-    width: 1px;                                 /*32*/
-    height: 1px;                                /*32*/
-    overflow: hidden;                           /*33*/
-    white-space: nowrap;                        /*33*/
-    position: absolute;                         /*34*/
-    padding: 0;                                 /*34*/
-    margin: -1px;                               /*34*/
+    border: 0 !important;                                  /*30, 47*/
+    clip: rect(1px, 1px, 1px, 1px) !important;             /*31, 47*/
+    clip-path: inset(50%) !important;                      /*31, 47*/
+    width: 1px !important;                                 /*32, 47*/
+    height: 1px !important;                                /*32, 47*/
+    overflow: hidden !important;                           /*33, 47*/
+    white-space: nowrap !important;                        /*33, 47*/
+    position: absolute !important;                         /*34, 47*/
+    padding: 0 !important;                                 /*34, 47*/
+    margin: -1px !important;                               /*34, 47*/
 
 }
 
@@ -168,3 +188,12 @@ h1 {
     width: 4.5rem;                                  /*44*/ 
     text-align: right;                              /*44*/ 
   }
+
+  .table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;             /*45*/
+  }
+
+  span:not(.sr-only) {
+    font-weight: normal;                          /*46*/
+  }
+
