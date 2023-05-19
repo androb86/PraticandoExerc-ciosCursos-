@@ -90,6 +90,14 @@ Adicionar a position sticky moveu o elemento para sua própria pilha.
 Para garantir que seu elemento #years não fique escondido por pilhas diferentes, 
 adicione uma propriedade z-index definida como 999 na regra #years.
 
+(44)
+Estilize o texto dentro do elemento #years criando um seletor #years span[class]. 
+A sintaxe span[class] terá como destino qualquer elemento span que tenha um atributo class definido, 
+independentemente do valor do atributo.
+
+Dê ao novo seletor uma fonte bold, uma largura de 4.5rem e texto alinhado à direita.
+
+
 
 
 */
@@ -153,4 +161,10 @@ h1 {
     margin: 0 -2px;                                 /*42*/
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*42*/
     z-index: 999;                                   /*43*/
+  }
+
+  #years span[class] {                              /*44*/ 
+    font-weight: bold;                              /*44*/ 
+    width: 4.5rem;                                  /*44*/ 
+    text-align: right;                              /*44*/ 
   }
