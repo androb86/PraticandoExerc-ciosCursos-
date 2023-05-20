@@ -141,6 +141,9 @@ Crie um seletor com foco nos elementos td dentro do corpo da tabela. Dê a eles 
 com um mínimo e máximo de 4rem. Essa abordagem garante que a largura seja fixa, 
 enquanto configurar width permitiria especificamente aos elementos encolherem de acordo com o contêiner.
 
+(54)
+Agora, coloque em foco os elementos th dentro do corpo da tabela e dê a eles a largura do contêiner inteiro menos 12rem.
+O seletor tbody th deve ter a propriedade width definida como calc(100% - 12rem)
 
 */
 
@@ -242,3 +245,8 @@ h1 {
     min-width: 4rem;                              /*53*/
     max-width: 4rem;                              /*53*/
   }
+
+  tbody th {
+  width: calc(100% - 12rem);                      /*54*/
+  
+}
