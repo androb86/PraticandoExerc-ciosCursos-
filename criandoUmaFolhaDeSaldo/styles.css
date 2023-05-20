@@ -145,6 +145,25 @@ enquanto configurar width permitiria especificamente aos elementos encolherem de
 Agora, coloque em foco os elementos th dentro do corpo da tabela e dê a eles a largura do contêiner inteiro menos 12rem.
 O seletor tbody th deve ter a propriedade width definida como calc(100% - 12rem)
 
+(55)
+O seletor [attribute="value"] visa qualquer elemento que tenha um atributo com um valor específico. 
+Crie um seletor tr[class="total"] para focar especificamente nos elementos tr com a classe total. 
+Dê a ele uma borda inferior de 4px double #0a0a23 e deixe a fonte em negrito.
+
+(56)
+Usando a mesma sintaxe de seletor, tenha como alvo os elementos th dentro das linhas da tabela onde a class é total. 
+Alinha o texto à esquerda e dê-lhes um espaçamento de 0.5rem 0 0.25rem 0.5rem.
+
+(57)
+A diferença principal entre tr[class="total"] e tr.total é que o primeiro 
+selecionará os elementos tr onde a classe for apenas total. 
+O segundo selecionará os elementos tr em que a(s) class(es) incluam total.
+
+Nesse caso, tr.total servirá. Você pode usar esse seletor com foco nos elementos td dentro das linhas .total. 
+Alinha o texto à esquerda e dê a eles um preenchimento (padding) de 0 0.25rem.
+
+
+
 */
 
 html{
@@ -249,4 +268,19 @@ h1 {
   tbody th {
   width: calc(100% - 12rem);                      /*54*/
   
+}
+
+tr[class="total"] {
+  border: 4px double #0a0a23;                 /*55*/
+  font-weight: bold;                            /*55*/
+}
+
+tr[class="total"] th {
+  text-align: left;                             /*56*/
+  padding: 0.5rem 0 0.25rem 0.5rem;             /*56*/
+}
+
+tr.total td {
+  text-align: right;                            /*57*/
+  padding: 0 0.25rem;                           /*57*/
 }
