@@ -162,6 +162,14 @@ O segundo selecionará os elementos tr em que a(s) class(es) incluam total.
 Nesse caso, tr.total servirá. Você pode usar esse seletor com foco nos elementos td dentro das linhas .total. 
 Alinha o texto à esquerda e dê a eles um preenchimento (padding) de 0 0.25rem.
 
+(58)
+O pseudosseletor :nth-of-type() é usado para focar em elementos específicos com base em sua ordem entre irmãos do mesmo tipo. 
+Use esse pseudosseletor com foco no terceiro elemento td dentro das linhas da tabela total. 
+Dê a ele um preenchimento (padding) de 0.5rem.
+
+Você deve ter um seletor tr.total td:nth-of-type(3).
+
+
 
 
 */
@@ -283,4 +291,8 @@ tr[class="total"] th {
 tr.total td {
   text-align: right;                            /*57*/
   padding: 0 0.25rem;                           /*57*/
+}
+
+tr.total td:nth-of-type(3) {                    /*58*/
+  padding: 0.5rem;                              /*58*/
 }
