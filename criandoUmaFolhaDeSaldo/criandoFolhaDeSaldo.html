@@ -144,129 +144,132 @@ e dando a cada uma o texto a seguir: $-171, $136 e $334.
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance Sheet</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
 
-  <body>
-    <main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Sheet</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <section>
       <h1>
-        <span class="flex">  <!-- (4)-->
-          <span>AcmeWidgetCorp</span> <span>Balance Sheet</span>
+        <span class="flex"> <!-- (4)-->
+          <span>AcmeWidgetCorp</span>
+          <span>Balance Sheet</span>
         </span>
       </h1>
 
       <div id="years" aria-hidden="true"> <!-- (5)-->
-        <span class="year">2019</span>    <!-- (6)-->
-        <span class="year">2020</span>    <!-- (6)-->
-        <span class="year">2021</span>    <!-- (6)-->
+        <span class="year">2019</span> <!-- (6)-->
+        <span class="year">2020</span> <!-- (6)-->
+        <span class="year">2021</span> <!-- (6)-->
       </div>
-      
-      <div class="table-wrap">                                                          <!-- (7)-->
-        <table>                                                                         <!-- (7)-->
-          <caption>Assets</caption>                                                     <!-- (8)-->
-          <thead>                                                                       <!-- (9)-->
-            <tr>                                                                        <!-- (10)-->
-              <td></td>                                                                 <!-- (10)-->
-              <th><span class="sr-only year">2019</span></th>                           <!-- (10, 11)-->
-              <th><span class="sr-only year">2020</span></th>                           <!-- (10, 11)-->
-              <th class="current"><span class="sr-only year">2021</span></th>           <!-- (10, 11)-->
-            </tr>
-          </thead>                                 
 
-          <tbody>                                                                      <!-- (9)-->
-            <tr class="data">                                                         <!-- (12)-->
-              <th>Cash <span class="description">This is the cash we currently have on hand.</span></th>    <!-- (13)--> 
-              <td>$25</td>                                                              <!-- (13)-->
-              <td>$30</td>                                                              <!-- (13)-->
-              <td class="current">$28</td>                                              <!-- (13)-->
-            </tr>                                                       
-            <tr class="data">                                                          <!-- (12)-->
-              <th>
-                Checking <span class="description">primary transactional account.</span>    <!-- (14)-->
-              </th>
-              <td>$54</td>                                                                  <!-- (14)-->
-              <td>$56</td>                                                                  <!-- (14)-->                                                              
-              <td class="current">$53</td>                                                  <!-- (14)-->
-            </tr>                                                     
-            <tr class="data">                                                          <!-- (12)-->
-              <th>
-                Savings <span class="description">Funds set aside for emergencies.</span>     <!-- (15)-->
-              </th>
-              <td>$500</td>                                                                   <!-- (15)-->
-              <td>$650</td>                                                                   <!-- (15)-->
-              <td class="current">$728</td>                                                   <!-- (15)-->
-            </tr>                                                    
-            <tr class="total">                                                         <!-- (12)-->
-              <th>Total <span class="sr-only">Assets</span></th>                       <!-- (16)-->
-              <td>$579</td>                                                            <!-- (16)-->
-              <td>$736</td>                                                            <!-- (16)-->
-              <td class="current">$809</td>                                            <!-- (16)-->
-            </tr>                                                   
+      <div class="table-wrap"> <!-- (7)-->
+        <table> <!-- (7)-->
+          <caption>Assets</caption> <!-- (8)-->
+          <thead> <!-- (9)-->
+            <tr> <!-- (10)-->
+              <td></td> <!-- (10)-->
+              <th><span class="sr-only year">2019</span></th> <!-- (10, 11)-->
+              <th><span class="sr-only year">2020</span></th> <!-- (10, 11)-->
+              <th class="current"><span class="sr-only year">2021</span></th> <!-- (10, 11)-->
+            </tr>
+          </thead>
+
+          <tbody> <!-- (9)-->
+            <tr class="data"> <!-- (12)-->
+              <th>Cash <span class="description">This is the cash we currently have on hand.</span></th> <!-- (13)-->
+              <td>$25</td> <!-- (13)-->
+              <td>$30</td> <!-- (13)-->
+              <td class="current">$28</td> <!-- (13)-->
+            </tr>
+            <tr class="data"> <!-- (12)-->
+              <th>Checking <span class="description">primary transactional account.</span></th> <!-- (14)-->
+              <td>$54</td> <!-- (14)-->
+              <td>$56</td> <!-- (14)-->
+              <td class="current">$53</td> <!-- (14)-->
+            </tr>
+            <tr class="data"> <!-- (12)-->
+              <th>Savings <span class="description">Funds set aside for emergencies.</span></th> <!-- (15)-->
+              <td>$500</td> <!-- (15)-->
+              <td>$650</td> <!-- (15)-->
+              <td class="current">$728</td> <!-- (15)-->
+            </tr>
+            <tr class="total"> <!-- (12)-->
+              <th>Total <span class="sr-only">Assets</span></th> <!-- (16)-->
+              <td>$579</td> <!-- (16)-->
+              <td>$736</td> <!-- (16)-->
+              <td class="current">$809</td> <!-- (16)-->
+            </tr>
           </tbody>
         </table>
 
-        <table>                                                               <!-- (7)-->
-          <caption>Liabilities</caption>                                      <!-- (17)-->
-          <thead>                                                             <!-- (17)-->
-            <tr>                                                              <!-- (18)-->
-              <td></td>                                                       <!-- (18)-->                                       
-              <th><span class="sr-only">2019</span></th>                                                       <!-- (18, 19)-->
-              <th><span class="sr-only">2020</span></th>                                                       <!-- (18, 19)-->
-              <th><span class="sr-only">2021</span></th>                                                       <!-- (18, 19)-->
+        <table> <!-- (7)-->
+          <caption>Liabilities</caption> <!-- (17)-->
+          <thead> <!-- (17)-->
+            <tr> <!-- (18)-->
+              <td></td> <!-- (18)-->
+              <th><span class="sr-only">2019</span></th> <!-- (18, 19)-->
+              <th><span class="sr-only">2020</span></th> <!-- (18, 19)-->
+              <th><span class="sr-only">2021</span></th> <!-- (18, 19)-->
             </tr>
-          </thead>  
-          </table>                                                            
-            <tbody>                                                       <!--(17)-->
-              <tr class="data">                         <!-- (20)-->         
-                <th>Loans <span class="description">The outstanding balance on our startup loan.</span></th>  <!-- (21)-->
-                <td>$500</td>                            <!-- (21)-->
-                <td>$250</td>                            <!-- (21)-->
-                <td class="current">$0</td>              <!-- (21)-->
-              </tr>                                      
-              <tr class="data">                         <!-- (20)-->
-                <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th> <!-- (22)-->
-                <td>$200</td>                                                                      <!-- (22)-->
-                <td>$300</td>                                                                      <!-- (22)-->
-                <td class="current">$400</td>                                                      <!-- (22)-->
-              </tr>                                      
-              <tr class="data">                         <!-- (20)-->
-                <th>Credit <span class="description">The outstanding balance on our credit card.</span></th>  <!-- (23)-->
-                <td>$50</td>                                                                    <!-- (23)-->
-                <td>$50</td>                                                                    <!-- (23)-->
-                <td class="current">$75</td>                                                    <!-- (23)-->
-              </tr>                                      
-              <tr class="total">                        <!-- (20)-->
-                <th>Total <span class="sr-only">Liabilities</span></th>         <!-- (24)-->
-                <td>$750</td>                                             <!-- (24)-->
-                <td>$600</td>                                             <!-- (24)-->
-                <td class="current">$475</td>                             <!-- (24)-->
-              </tr>                                                
-            </tbody>
-        </table>                                    
+          </thead>
 
-        <table>                                    <!-- (7)-->
-          <caption>Net Worth</caption>             <!-- (25)-->
-            <thead>                                <!-- (25)-->
-              <tr>                                 <!-- (26)-->
-                <td></td>                          <!-- (26)-->
-                <th><span class="sr-only">2019</span></th>           <!-- (26)-->
-                <th><span class="sr-only">2020</span></th>           <!-- (26)-->
-                <th><span class="sr-only">2021</span></th>           <!-- (26)-->
-              </tr>
-            </thead>
-            <tbody>                                 <!--(25)-->
-              <tr class="total">                    <!-- (27)-->
-                <th>Total <span class="sr-only">Net Worth</span></th>   <!-- (27)-->
-                <td>$-171</td>                                          <!-- (27)-->
-                <td>$136</td>                                           <!-- (27)-->
-                <td class="current">$334</td>                           <!-- (27)-->
-              </tr>
-            </tbody>
-        </table>         
-      </div>  
-    </main>
-  </body>
+          <tbody> <!--(17)-->
+            <tr class="data"> <!-- (20)-->
+              <th>Loans <span class="description">The outstanding balance on our startup loan.</span></th> <!-- (21)-->
+              <td>$500</td> <!-- (21)-->
+              <td>$250</td> <!-- (21)-->
+              <td class="current">$0</td> <!-- (21)-->
+            </tr>
+            <tr class="data"> <!-- (20)-->
+              <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th>
+              <!-- (22)-->
+              <td>$200</td> <!-- (22)-->
+              <td>$300</td> <!-- (22)-->
+              <td class="current">$400</td> <!-- (22)-->
+            </tr>
+            <tr class="data"> <!-- (20)-->
+              <th>Credit <span class="description">The outstanding balance on our credit card.</span></th> <!-- (23)-->
+              <td>$50</td> <!-- (23)-->
+              <td>$50</td> <!-- (23)-->
+              <td class="current">$75</td> <!-- (23)-->
+            </tr>
+            <tr class="total"> <!-- (20)-->
+              <th>Total <span class="sr-only">Liabilities</span></th> <!-- (24)-->
+              <td>$750</td> <!-- (24)-->
+              <td>$600</td> <!-- (24)-->
+              <td class="current">$475</td> <!-- (24)-->
+            </tr>
+          </tbody>
+        </table>
+
+        <table> <!-- (7)-->
+          <caption>Net Worth</caption> <!-- (25)-->
+          <thead> <!-- (25)-->
+            <tr> <!-- (26)-->
+              <td></td> <!-- (26)-->
+              <th><span class="sr-only">2019</span></th> <!-- (26)-->
+              <th><span class="sr-only">2020</span></th> <!-- (26)-->
+              <th><span class="sr-only">2021</span></th> <!-- (26)-->
+            </tr>
+          </thead>
+          <tbody> <!--(25)-->
+            <tr class="total"> <!-- (27)-->
+              <th>Total <span class="sr-only">Net Worth</span></th> <!-- (27)-->
+              <td>$-171</td> <!-- (27)-->
+              <td>$136</td> <!-- (27)-->
+              <td class="current">$334</td> <!-- (27)-->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -183,6 +183,20 @@ Selecione os elementos tr com a class definida como data. Dê a eles uma imagem 
 
 */
 
+span[class~="sr-only"]{           
+  border: 0 !important;                                  /*30, 47*/
+  clip: rect(1px, 1px, 1px, 1px) !important;             /*31, 47*/
+  clip-path: inset(50%) !important;                      /*31,47*/
+  height: 1px !important;                                /*32, 47*/                     
+  width: 1px !important;                                 /*32, 47*/  
+  position: absolute !important;                         /*34, 47*/
+  overflow: hidden !important;                           /*33, 47*/
+  white-space: nowrap !important;                        /*33, 47*/
+  padding: 0 !important;                                 /*34, 47*/
+  margin: -1px !important;                               /*34, 47*/
+
+}
+
 html{
     box-sizing: border-box;         /*28*/
 }
@@ -192,19 +206,7 @@ body{
     color: #0a0a23;             /*29*/
 }
 
-span[class~="sr-only"]{           
-    border: 0 !important;                                  /*30, 47*/
-    clip: rect(1px, 1px, 1px, 1px) !important;             /*31, 47*/
-    clip-path: inset(50%) !important;                      /*31, 47*/
-    width: 1px !important;                                 /*32, 47*/
-    height: 1px !important;                                /*32, 47*/
-    overflow: hidden !important;                           /*33, 47*/
-    white-space: nowrap !important;                        /*33, 47*/
-    position: absolute !important;                         /*34, 47*/
-    padding: 0 !important;                                 /*34, 47*/
-    margin: -1px !important;                               /*34, 47*/
 
-}
 
 h1 {
     max-width: 37.25rem;          /*35*/
@@ -236,12 +238,12 @@ h1 {
     display: flex;                                  /*40*/
     justify-content: flex-end;                      /*40*/
     position: sticky;                               /*40*/
-    top: 0;                                         /*40*/
-    color: #fff;                                  /*41*/
-    background-color: #0a0a23;                    /*41*/
-    margin: 0 -2px;                                 /*42*/
-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*42*/
     z-index: 999;                                   /*43*/
+    top: 0;                                         /*40*/
+    background-color: #0a0a23;                    /*41*/
+    color: #fff;                                  /*41*/
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;   /*42*/
+    margin: 0 -2px;                                 /*42*/
   }
 
   #years span[class] {                              /*44*/ 
@@ -263,7 +265,7 @@ h1 {
     border: 0;                                    /*49*/  
     width: 100%;                                  /*50*/
     position: relative;                           /*50*/
-    margin: 3rem;                                 /*50*/
+    margin-top: 3rem;                                 /*50*/
   }
 
   table caption {
@@ -288,7 +290,7 @@ h1 {
 }
 
 tr[class="total"] {
-  border: 4px double #0a0a23;                 /*55*/
+  border-bottom: 4px double #0a0a23;                 /*55*/
   font-weight: bold;                            /*55*/
 }
 
