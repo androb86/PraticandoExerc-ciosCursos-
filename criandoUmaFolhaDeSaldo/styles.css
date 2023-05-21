@@ -169,6 +169,15 @@ Dê a ele um preenchimento (padding) de 0.5rem.
 
 Você deve ter um seletor tr.total td:nth-of-type(3).
 
+(59)
+Dê aos elementos tr.total um efeito ao passar o mouse sobre eles que altera o fundo para #99c9ff.
+
+(60)
+Selecione os elementos td com o valor de class current e deixe a fonte em itálico.
+
+(61)
+Selecione os elementos tr com a class definida como data. Dê a eles uma imagem de fundo de linear-gradient(to bottom, 
+#dfdfe2 1.845rem, white 1.845rem).
 
 
 
@@ -295,4 +304,16 @@ tr.total td {
 
 tr.total td:nth-of-type(3) {                    /*58*/
   padding: 0.5rem;                              /*58*/
+}
+
+tr.total:hover {                                /*59*/
+  background-color: #99c9ff;                  /*59*/
+}
+
+td.current {
+  font-style: italic;                            /*60*/
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);    /*61*/
 }
