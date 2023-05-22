@@ -182,11 +182,15 @@ Selecione os elementos tr com a class definida como data. Dê a eles uma imagem 
 (62)
 Os elementos span agora têm estilos mais específicos, o que significa que você pode remover a regra para span.
 
-(63)
+(65)
 Os valores em dólar estão desalinhados no momento. Crie um seletor com foco nos elementos td dentro dos elementos tr.data. 
 Alinhe verticalmente o texto na parte superior, alinhe o texto horizontalmente à direita e defina o preenchimento (padding) como 0.3rem 0.25rem 0.
 
+(66)
+Crie outro seletor para os elementos td dentro do elemento tr.data, mas selecione especificamente o último. 
+Dê a ele um preenchimento (padding) à direita de 0.5rem.
 
+Com isso, o balanço patrimonial está completo!
 
 */
 
@@ -324,7 +328,11 @@ tr.data {
 }
 
 tr.data td {
-  vertical-align: top;                                      /*63*/
-  text-align: right;                                        /*63*/
-  padding: 0.3rem 0.25rem 0;                                /*63*/
+  vertical-align: top;                                      /*65*/
+  text-align: right;                                        /*65*/
+  padding: 0.3rem 0.25rem 0;                                /*65*/
+}
+
+tr.data td:last-of-type {
+  padding: 0.5rem;                                          /*66*/
 }
