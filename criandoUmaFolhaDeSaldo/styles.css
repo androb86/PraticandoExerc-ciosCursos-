@@ -182,6 +182,10 @@ Selecione os elementos tr com a class definida como data. Dê a eles uma imagem 
 (62)
 Os elementos span agora têm estilos mais específicos, o que significa que você pode remover a regra para span.
 
+(63)
+Os valores em dólar estão desalinhados no momento. Crie um seletor com foco nos elementos td dentro dos elementos tr.data. 
+Alinhe verticalmente o texto na parte superior, alinhe o texto horizontalmente à direita e defina o preenchimento (padding) como 0.3rem 0.25rem 0.
+
 
 
 */
@@ -317,4 +321,10 @@ td.current {
 
 tr.data {
   background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);    /*61*/
+}
+
+tr.data td {
+  vertical-align: top;                                      /*63*/
+  text-align: right;                                        /*63*/
+  padding: 0.3rem 0.25rem 0;                                /*63*/
 }
