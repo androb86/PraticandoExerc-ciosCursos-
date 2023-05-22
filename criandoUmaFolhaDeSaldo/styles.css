@@ -179,6 +179,9 @@ Selecione os elementos td com o valor de class current e deixe a fonte em itáli
 Selecione os elementos tr com a class definida como data. Dê a eles uma imagem de fundo de linear-gradient(to bottom, 
 #dfdfe2 1.845rem, white 1.845rem).
 
+(62)
+Os elementos span agora têm estilos mais específicos, o que significa que você pode remover a regra para span.
+
 
 
 */
@@ -254,10 +257,6 @@ h1 {
 
   .table-wrap {
     padding: 0 0.75rem 1.5rem 0.75rem;             /*45*/
-  }
-
-  span {
-    font-weight: normal;                          /*46, 48*/
   }
 
   table {
