@@ -1,12 +1,29 @@
 /* Passo 5 
 Para começar com a pintura, dê ao elemento body uma background-color de rgb(184, 132, 46). 
 
+Passo 7
+Use um seletor de id para dar ao elemento com o id back-wall uma background-color de #8B4513.
 
+Passo 8
+Dê ao elemento #back-wall uma width de 100% e uma height de 60%.
 
+Passo 9
+Normalmente, o HTML é renderizado de cima para baixo. Os elementos na parte superior do código são posicionados na parte superior da página. No entanto, muitas vezes você pode querer mover os elementos para posições diferentes. Você pode fazer isso com a propriedade position.
+
+Defina a propriedade position do elemento #back-wall como absolute. Uma posição absolute retira o elemento daquele fluxo do documento de cima para baixo e permite que você o ajuste relativo ao contêiner.
+
+Quando um elemento é posicionado manualmente, você pode mudar seu layout com top, left, righte bottom. Defina o elemento #back-wall de modo que tenha um valor de top de 0 e um valor de left de 0.
 
 
 */
 
 body {
-    background-color: rgb(184, 132, 46);
+    background-color: rgb(184, 132, 46);        /*5*/
 }
+
+#back-wall {
+    background-color: #8B4513;
+    width: 100%;                          /*8*/
+    height: 60%;
+}
+
