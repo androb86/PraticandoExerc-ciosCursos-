@@ -25,5 +25,9 @@ body {
     background-color: #8B4513;
     width: 100%;                          /*8*/
     height: 60%;
+    Position: absolute;                  /*9*/
+    top: 0;                              /*9*/
+    left: 0;                             /*9*/
+    
 }
 
