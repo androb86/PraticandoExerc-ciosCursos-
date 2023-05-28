@@ -14,6 +14,14 @@ Defina a propriedade position do elemento #back-wall como absolute. Uma posiçã
 
 Quando um elemento é posicionado manualmente, você pode mudar seu layout com top, left, righte bottom. Defina o elemento #back-wall de modo que tenha um valor de top de 0 e um valor de left de 0.
 
+Passo 10
+A propriedade z-index é usada para criar "camadas" para os elementos HTML. Se você já está familiarizado com as ferramentas de edição de imagem, deve ter trabalhado com camadas antes. Este é um conceito semelhante.
+
+Elementos com um valor de z-index maior aparecerão como se estivessem sobrepostos aos elementos com um valor de z-index inferior. Elas podem ser combinadas com o posicionamento da lição anterior para criar efeitos exclusivos.
+
+Como o elemento back-wall precisará aparecer "atrás" dos outros elementos que você vai criar, dê ao elemento back-wall um z-index de -1.
+
+
 
 */
 
@@ -28,6 +36,8 @@ body {
     Position: absolute;                  /*9*/
     top: 0;                              /*9*/
     left: 0;                             /*9*/
+    z-index: -1;                         /*10*/
     
 }
+
 
