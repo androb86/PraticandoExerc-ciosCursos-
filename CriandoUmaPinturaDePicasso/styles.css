@@ -21,7 +21,8 @@ Elementos com um valor de z-index maior aparecerão como se estivessem sobrepost
 
 Como o elemento back-wall precisará aparecer "atrás" dos outros elementos que você vai criar, dê ao elemento back-wall um z-index de -1.
 
-
+Passo 16
+Usando um seletor de id, crie uma regra para o elemento com o id offwhite-character. Dê a ele uma width de 300px, uma height de 550px e uma background-color de GhostWhite.
 
 */
 
@@ -39,5 +40,11 @@ body {
     z-index: -1;                         /*10*/
     
 }
+
+#offwhite-character {
+    width: 300px;                       /*16*/                                    
+    height: 550px;                      /*16*/   
+    background-color: Ghostwhite;     /*16*/   
+  }
 
 
