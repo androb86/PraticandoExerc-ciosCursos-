@@ -57,6 +57,23 @@ Agora, mova o elemento para o lugar certo com uma position absolute, um valor de
 Passo 27
 Defina o z-index como 1.
 
+Passo 28
+Use um seletor de classe para criar uma regra para os elementos com a classe black-dot. Defina a width como 10px, a height como 10px e a background-color como rgb(45, 31, 19).
+
+Passo 29
+Esses pontos estão um pouco quadrados demais. Dê à classe black-dot um border-radius de 50% para corrigi-lo.
+
+Passo 30
+Mova os pontos para o lugar certo definindo display como block, a margin como auto e margin-top como 65%.
+
+Passo 31
+Use um seletor de id para estilizar o elemento com id tan-table. Dê a ele uma width de 450px, uma height de 140px e uma background-color de #D2691E.
+
+Passo 32
+Agora, mova a tabela para o lugar certo dando a ela uma position absolute, um valor de top de 275px e um valor de left de 15px.
+
+Dê à tabela um z-index de 1.
+
 
 */
 
@@ -119,3 +136,25 @@ body {
     z-index: 1;                                     /*27*/
   }
 
+.black-dot {
+    width: 10px;                                   /*28*/
+    height: 10px;                                  /*28*/
+    background-color: rgb(45, 31, 19);           /*28*/
+    border-radius: 50%;                            /*29*/
+    display: block;                                /*30*/
+    margin: auto;                                  /*30*/
+    margin-top: 65%;                               /*30*/
+
+
+}
+
+#tan-table {
+    width: 450px;                                   /*31*/
+    height: 140px;                                  /*31*/
+    background-color: #d2691e;                    /*31*/
+    position: absolute;                             /*32*/
+    top: 275px;                                     /*32*/    
+    left: 15px;                                     /*32*/
+    z-index: 1;                                     /*33*/
+
+}

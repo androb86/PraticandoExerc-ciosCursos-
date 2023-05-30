@@ -26,6 +26,25 @@ Esse personagem precisa de olhos. Crie dois elementos div dentro do elemento #bl
 Passo 15
 Crie alguns "pontos" para o instrumento. Adicione cinco elementos div dentro do elemento #gray-instrument. Defina a class de cada um como black-dot
 
+Passo 34
+Depois do elemento div#offwhite-character, adicione uma div com o id black-character.
+
+Passo 35
+Dentro do novo elemento #black-character, adicione três elementos div com os seguintes valores de id, em ordem: black-hat, gray-mask e white-paper.
+
+Passo 36
+A máscara precisa de olhos. Dentro do elemento #gray-mask, adicione dois elementos div. O primeiro deve ter a class definida como eyes left e o segundo deve ter a class definida como eyes right.
+
+Passo 37
+Hora de usar alguns ícones FontAwesome.
+
+O elemento i é usado para texto idiomático ou para texto separado do conteúdo de texto "normal". Isso pode valer para o texto em itálico, em termos científicos ou para ícones como os fornecidos por FontAwesome.
+
+Dentro do elemento #white-paper, adicione quatro elementos i. Dê a todos eles o valor de class de fas fa-music.
+
+Essa classe especial é como FontAwesome determina qual ícone carregar. fas indica a categoria de ícones (FontAwesome Solid, aqui), enquanto fa-music seleciona o ícone específico.
+
+
 -->
 
 <!DOCTYPE html>
@@ -38,47 +57,60 @@ Crie alguns "pontos" para o instrumento. Adicione cinco elementos div dentro do 
     <title>Picasso Painting</title>
 </head>
 <body>
-    <div id="back-wall">                 <!-- 6-->
+    <div id="back-wall">                           <!--6-->
     </div>    
-    <div class="characters">                <!-- 11-->
-        <div id="offwith-character">        <!-- 12-->
+    <div class="characters">                       <!--11-->
+        <div id="offwith-character">               <!--12-->
             <div id="">
 
             </div>
 
-            <div id="whit-hat">             <!-- 13-->
+            <div id="whit-hat">                    <!--13-->
 
             </div>
 
-            <div id="black-mask">           <!-- 13-->
-                <div class="eyes left">     <!-- 14-->
+            <div id="black-mask">                  <!--13-->
+                <div class="eyes left">            <!--14-->
 
                 </div>
-                <div class="eyes right">    <!-- 14-->
+                <div class="eyes right">           <!--14-->
 
                 </div>
             </div>
 
-            <div id="gray-instrument">      <!-- 13-->
+            <div id="gray-instrument">              <!--13-->
                 <div class="black-dot"></div>
-                    <div class="black-dot">       <!-- 15-->
+                    <div class="black-dot">        <!--15-->
 
                     </div>
-                    <div class="black-dot">        <!-- 15-->
+                    <div class="black-dot">        <!--15-->
 
                     </div>
-                    <div class="black-dot">        <!-- 15-->
+                    <div class="black-dot">        <!--15-->
 
                     </div>
-                    <div class="black-dot">        <!-- 15-->
+                    <div class="black-dot">        <!--15-->
 
                     </div>       
             </div>
 
-            <div id="tan-table">            <!-- 13-->
+            <div id="tan-table">                   <!--13-->
 
             </div>
         </div>
+         <div id="black-character">                <!--34-->
+            <div id="black-hat"></div>             <!--35-->
+            <div id="gray-mask">                   <!--35-->
+                <div class="eyes left"></div>      <!--36-->
+                <div class="eyes right"></div>     <!--36-->
+            </div>    
+            <div id="white-paper">                 <!--35-->
+                <i class="fas fa-music"></i>       <!--36-->
+                <i class="fas fa-music"></i>       <!--36-->
+                <i class="fas fa-music"></i>       <!--36-->
+                <i class="fas fa-music"></i>       <!--36-->
+            </div>          
+         </div>       
     </div>      
 </body>
 </html>
