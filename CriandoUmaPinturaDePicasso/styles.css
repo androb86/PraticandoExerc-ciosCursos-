@@ -74,6 +74,14 @@ Agora, mova a tabela para o lugar certo dando a ela uma position absolute, um va
 
 Dê à tabela um z-index de 1.
 
+Passo 38
+Use um seletor de id para criar uma regra para o elemento com o id black-character. Defina a width como 300px, a height como 500px e a background-color como rgb(45, 31, 19).
+
+Passo 39
+Mova o elemento #black-character para a posição correta com uma position absolute, um top de 30% e um left de 59%.
+
+Passo 40
+Use um seletor de id para criar uma regra para o elemento com o id black-hat. Dê a ele uma width de 0, uma height de 0 e um border-style de solid.
 
 */
 
@@ -157,4 +165,19 @@ body {
     left: 15px;                                     /*32*/
     z-index: 1;                                     /*33*/
 
+}
+
+#black-character {
+  width: 300px;                                     /*38*/
+  height: 500px;                                    /*38*/
+  background-color: rgb(45, 31, 19);             /*38*/
+  position: absolute;                              /*39*/
+  top: 30%;                                        /*39*/
+  left: 59%;                                       /*39*/
+}
+
+#black-hat {
+  width: 0;                                        /*40*/
+  height: 0;                                       /*40*/
+  border-style: solid;                             /*40*/
 }
