@@ -110,6 +110,21 @@ Defina o z-index do elemento #white-paper como 1.
 Passo 49
 Os ícones de FontAwesome vêm com seu próprio estilo para definir o ícone. No entanto, você também pode definir o estilo por conta própria para mudar coisas como a cor e o tamanho. Por enquanto, use um seletor de classe para selecionar os ícones com a classe fa-music. Defina display como inline-block, margin-top como 8% e margin-left como 13%.
 
+Passo 51
+Use um seletor de classe para selecionar os novos elementos com a classe blue. Defina abackground-color como #1E90FF.
+
+Passo 52
+Selecione o elemento com o id blue-left usando um seletor de id. Dê a ele uma width de 500px e uma height de 300px.
+
+Passo 53
+Agora, defina a position como absolute, top como 20% e left como 20%.
+
+Passo 54
+Em seguida, selecione o elemento com o id blue-right usando um seletor de id. Defina a width como 400px e a height como 300px.
+
+Passo 55
+Dê ao elemento #blue-right o posicionamento correto com position definida como absolute, top definido como 50% e left definido como 40%.
+
 */
 
 body {
@@ -240,4 +255,24 @@ body {
   display: inline-block;                          /*49*/         
   margin-top: 8%;                                 /*49*/
   margin-left: 13%;                               /*49*/
+}
+
+.blue {
+  background-color: #1e90ff;                    /*51*/
+}
+
+#blue-left {
+  width: 500px;                                    /*52*/
+  height: 300px;                                   /*52*/
+  position: absolute;                              /*53*/      
+  top: 20%;                                        /*53*/
+  left: 20%;                                       /*53*/
+}
+
+#blue-right {
+  width: 400px;                                   /*54*/
+  height: 300px;                                  /*54*/
+  position: absolute;
+  top: 50%;                                       /*55*/    
+  left: 40%;                                      /*55*/
 }
