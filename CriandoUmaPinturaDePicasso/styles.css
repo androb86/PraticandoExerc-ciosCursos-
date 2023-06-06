@@ -92,6 +92,24 @@ Assim como em #white-hat, você deve estilizar a borda do elemento #black-hat. D
 Passo 43
 Agora, posicione o elemento #black-hat. Dê a ele uma position absolute, um valor de top de -150px e um valor de left de 0.
 
+Passo 44
+Usando um seletor de ids, estilize o elemento com id gray-mask. Dê a ele uma width de 150px, uma height de 150px e uma background-color de rgb(167, 162, 117).
+
+Passo 45
+Posicione o elemento #gray-mask definindo position como absolute, top como -10px e left como 70px.
+
+Passo 46
+Usando um seletor de id, crie uma regra para o elemento white-paper. Defina a width como 400px, a height como 100px e a background-color como GhostWhite.
+
+Passo 47
+Dê a #white-paper uma position absolute, um top de 250px e um left de -150px para colocá-lo no lugar certo.
+
+Passo 48
+Defina o z-index do elemento #white-paper como 1.
+
+Passo 49
+Os ícones de FontAwesome vêm com seu próprio estilo para definir o ícone. No entanto, você também pode definir o estilo por conta própria para mudar coisas como a cor e o tamanho. Por enquanto, use um seletor de classe para selecionar os ícones com a classe fa-music. Defina display como inline-block, margin-top como 8% e margin-left como 13%.
+
 */
 
 body {
@@ -197,4 +215,29 @@ body {
   position: absolute;                              /*43*/       
   top: -150px;                                     /*43*/
   left: 0;                                         /*43*/
+}
+
+#gray-mask {
+  width: 150px;                                    /*44*/
+  height: 150px;                                   /*44*/
+  background-color: rgb(167, 162, 117);          /*44*/
+  position: absolute;                              /*45*/
+  top: -10px;                                      /*45*/
+  left: 70px;                                      /*45*/
+}
+
+#white-paper {
+  width: 400px;                                    /*46*/                                                    
+  height: 100px;                                   /*46*/  
+  background-color: ghostwhite;                  /*46*/
+  position: absolute;                              /*47*/
+  top: 250px;                                      /*47*/
+  left: -150px;                                    /*47*/
+  z-index: 1;                                      /*48*/
+}
+
+.fa-music {
+  display: inline-block;                          /*49*/         
+  margin-top: 8%;                                 /*49*/
+  margin-left: 13%;                               /*49*/
 }
