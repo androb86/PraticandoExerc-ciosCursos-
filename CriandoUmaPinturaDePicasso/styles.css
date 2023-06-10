@@ -134,6 +134,40 @@ Dê ao elemento #orange-character uma position absolute, um top de 25% e um left
 Passo 64
 Estilize o elemento com o id black-round-hat usando um seletor de id. Defina a width como 180px, a height como 150px e a background-color como rgb(45, 31, 19).
 
+Passo 65
+O elemento #black-round-hat provavelmente deve ser redondo. Dê a ele um border-radius de 50% para corrigir isso.
+
+Passo 66
+Mova o elemento #black-round-hat para o lugar com uma position absolute, um top de -100px e um left de 5px.
+
+Passo 67
+Coloque o elemento #black-round-hat na camada correta com um z-index de -1.
+
+Passo 68
+Use um seletor de id para criar uma regra para o elemento com o id eyes-div. Defina a width como 180px e a height como 50px.
+
+Passo 69
+Agora, mova o elemento #eyes-div para a posição correta com position definida como absolute, top definido como -40px e left definido como 20px.
+
+Passo 70
+Dê ao elemento #eyes-div um z-index de 3.
+
+Passo 71
+Marque o elemento com o id triangles usando um seletor de id. Defina a width como 250px e a height como 550px.
+
+Passo 72
+Crie um seletor de classe para os elementos com a classe triangle. Defina a width como 0 e a height como 0.
+
+Passo 73
+Estilize a borda dos elementos .triangle. Defina o border-style como solid e a border-width como 42px 45px 45px 0.
+
+
+
+
+
+
+
+
 
 
 */
@@ -301,6 +335,31 @@ body {
 #black-round-hat {
   width: 180px;                                   /*64*/
   height: 150px;                                  /*64*/
-  background-color: rgb(45, 31, 19);            /*64*/     
+  background-color: rgb(45, 31, 19);            /*64*/  
+  border-radius: 50%;                             /*65*/
+  position: absolute;                             /*66*/
+  top: -100px;                                    /*66*/
+  left: 5px;                                      /*66*/
+  z-index: -1;                                    /*67*/
 }
 
+#eyes-div {
+  width: 180px;                                   /*68*/
+  height: 50px;                                   /*68*/
+  position: absolute;                             /*69*/
+  top: -40px;                                     /*69*/
+  left: 20px;                                     /*69*/
+  z-index: 3;                                     /*70*/
+}
+
+#triangles {
+  width: 250px;                                   /*71*/                              
+  height: 550px;                                  /*71*/
+}
+
+.triangle {
+  width: 0;                                       /*72*/
+  height: 0;                                      /*72*/
+  border-style: solid;                            /*73*/
+  border-width: 42px 45px 45px 0;                 /*73*/
+}
