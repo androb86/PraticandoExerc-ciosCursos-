@@ -161,9 +161,8 @@ Crie um seletor de classe para os elementos com a classe triangle. Defina a widt
 Passo 73
 Estilize a borda dos elementos .triangle. Defina o border-style como solid e a border-width como 42px 45px 45px 0.
 
-
-
-
+Passo 74
+Dê aos elementos .triangle a cor correta. Defina a border-top-color, a border-bottom-color e a border-left-color como transparent. Defina a border-right-color como Gold.
 
 
 
@@ -362,4 +361,8 @@ body {
   height: 0;                                      /*72*/
   border-style: solid;                            /*73*/
   border-width: 42px 45px 45px 0;                 /*73*/
+  border-top-color: transparent;                  /*74*/
+  border-bottom-color: transparent;               /*74*/
+  border-left-color: transparent;                 /*74*/
+  border-right-color: gold;                     /*74*/
 }
