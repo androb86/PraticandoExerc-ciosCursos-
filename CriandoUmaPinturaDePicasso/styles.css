@@ -164,6 +164,39 @@ Estilize a borda dos elementos .triangle. Defina o border-style como solid e a b
 Passo 74
 Dê aos elementos .triangle a cor correta. Defina a border-top-color, a border-bottom-color e a border-left-color como transparent. Defina a border-right-color como Gold.
 
+Passo 75
+Ajuste o layout dos elementos .triangle com um display de inline-block.
+
+Passo 76
+Agora, use um seletor de id para guitar. Defina a width como 100% e a height como 100px.
+
+Passo 77
+No mesmo seletor #guitar, defina position como absolute, top como 120px e left como 0px.
+
+Passo 78
+Dê à regra #guitar um z-index de 3.
+
+Passo 79
+Agora, use um seletor class para selecionar guitar. Isto estilizará as duas "metades" do violão. Defina a width como 150px, 
+height como 120px, background-color como Goldenrod e border-radius como 50%.
+
+Passo 80
+Selecione o id com valor guitar-left e também defina position como absolute. defina left como 0px.
+
+Passo 81
+Selecione o id com valor guitar-right e também defina position como absolute. Dessa vez, defina left como 100px.
+
+Passo 82
+Agora, você precisa mover os ícones de barra para o lugar certo. Crie um seletor class para a classe fa-bars. 
+Defina display como block, margin-top como 30% e margin-left como 40%.
+
+Passo 83
+Use um seletor de id para criar uma regra para o id guitar-neck. Defina a width como 200px, 
+a height como 30px e a background-color como #D2691E.
+
+
+
+
 
 
 
@@ -365,4 +398,43 @@ body {
   border-bottom-color: transparent;               /*74*/
   border-left-color: transparent;                 /*74*/
   border-right-color: gold;                     /*74*/
+  display: inline-block;                          /*75*/
+}
+
+#guitar {
+  width: 100%;                                    /*76*/
+  height: 100px;                                  /*76*/
+  position: absolute;                             /*77*/
+  top: 120px;                                     /*77*/
+  left: 0px;                                      /*77*/
+  z-index: 3;                                     /*78*/
+}
+
+.guitar {
+  width: 150px;                                   /*79*/
+  height: 120px;                                  /*79*/
+  background-color: goldenrod;                  /*79*/
+  border-radius: 50%;                             /*79*/
+}
+
+#guitar-left{
+  position: absolute;                             /*80*/
+  left: 0px;                                      /*80*/
+}
+
+#guitar-right {
+  position: absolute;                             /*81*/
+  left: 100px;                                    /*81*/
+}
+
+.fa-bars {
+  display: block;                                 /*82*/                         
+  margin-top: 30%;                                /*82*/
+  margin-left: 40%;                               /*82*/
+}
+
+guitar-neck {
+  width: 200px;                                   /*83*/
+  height: 30px;                                   /*83*/
+  background-color: #d2691e;                    /*83*/
 }
