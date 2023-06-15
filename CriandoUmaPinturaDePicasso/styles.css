@@ -194,10 +194,18 @@ Passo 83
 Use um seletor de id para criar uma regra para o id guitar-neck. Defina a width como 200px, 
 a height como 30px e a background-color como #D2691E.
 
+Passo 84
+Agora, mova o elemento #guitar-neck com uma position absolute, um valor de top de 45px e um valor de left de 200px.
 
+Passo 85
+Dê ao elemento #guitar-neck um z-index de 3.
 
+Passo 86
+É a hora de estilizar os elementos com a classe eyes. Use um seletor class para definir a width como 35px, height como 20px, 
+background-color como #8B4513 e border-radius como 20px 50%.
 
-
+Passo 87
+Vincule a class com o valor right e defina a position como absolute, top como 15px e right como 30px.
 
 
 
@@ -225,7 +233,7 @@ body {
     background-color: Ghostwhite;     /*16*/  
     position: absolute;                 /*17*/        
     top: 20%;                           /*17*/
-    left: 17,5%;                        /*17*/
+    left: 17.5%;                        /*17*/
 
   }
 
@@ -437,4 +445,21 @@ guitar-neck {
   width: 200px;                                   /*83*/
   height: 30px;                                   /*83*/
   background-color: #d2691e;                    /*83*/
+  position: absolute;                             /*84*/
+  top: 45px;                                      /*84*/
+  left: 200px;                                    /*84*/
+  z-index: 3;                                     /*85*/
+}
+
+.eyes {
+width: 35px;                                      /*86*/
+height: 20px;                                     /*86*/               
+background-color: #8b4513;                      /*86*/
+border-radius: 20px 50%;                          /*86*/
+}
+
+.right {
+  position: absolute;                             /*87*/
+  top: 15px;                                      /*87*/
+  right: 30px                                     /*87*/
 }
