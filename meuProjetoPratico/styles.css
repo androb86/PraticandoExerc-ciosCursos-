@@ -1,12 +1,3 @@
-body {
-    font-weight: 400;
-    font-family: Lato, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 2.2em;
-    color: #818181;
-    margin: 0;
-
-}
 
 header {
     background-color: #3a7375;
@@ -34,25 +25,3 @@ h2 {
 }
 
 
-table {
-    width: 100%;
-}
-
-table td {
-    color: #303030;
-    padding: 5px;
-
-}
-
-table tr:nth-child(even) {
-    background-color: #e9e9e9;
-}
-
-table tr:nth-child(odd) {
-    background-color: #bdbdbdbd;
-}
-
-table thead th {
-    background-color: #e0a853;
-    color: white;
-}
