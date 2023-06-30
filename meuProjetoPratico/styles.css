@@ -4,17 +4,10 @@ header {
     font-weight: 600;
 }
 
-section, footer {
-    margin: 40px;
-}
-
-
 h1 {
-    font-size: 35px;
+    font-size: 63px;
     color: #303030;
-    padding: 15px;
-    color: white;
-    text-align: left;
+    
 }
 
 h2 {
