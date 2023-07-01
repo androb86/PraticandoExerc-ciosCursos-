@@ -1,12 +1,11 @@
 
-header {
-    background-color: #3a7375;
-    font-weight: 600;
+header p{
+   color: #ffffff;
 }
 
 h1 {
     font-size: 63px;
-    color: #303030;
+    color: #ffffff;
     
 }
 
@@ -16,5 +15,6 @@ h2 {
     color: #303030;
     font-weight: 600;
 }
+
 
 
