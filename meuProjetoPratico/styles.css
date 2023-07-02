@@ -18,3 +18,14 @@ h2 {
 
 
 
+nav a img {
+   width: 50px;
+   padding: 5px;
+   color: #ffffff;
+}
+
+.card {
+    margin: 0;
+    top: 0;
+}
+
