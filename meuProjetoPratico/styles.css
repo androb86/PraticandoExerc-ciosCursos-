@@ -1,19 +1,18 @@
-
-header p{
+header p {
    color: #ffffff;
 }
 
 h1 {
-    font-size: 63px;
-    color: #ffffff;
-    
+   font-size: 63px;
+   color: #ffffff;
+
 }
 
 h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
+   font-size: 24px;
+   text-transform: uppercase;
+   color: #303030;
+   font-weight: 600;
 }
 
 
@@ -28,3 +27,24 @@ nav a img {
    text-align: center;
 }
 
+.sbn {
+   width: 86em;
+   height: 300px;
+   overflow: hidden;
+}
+
+.carousel-caption h5,
+#carousel {
+   color: #ffc107;
+   text-shadow: 2px 2px 2px black;
+}
+
+.card-principal {
+   width: 25em;
+   height: 100px;
+   overflow: hidden;
+}
+
+.ilustrativo {
+   margin-right: 100px;
+}
