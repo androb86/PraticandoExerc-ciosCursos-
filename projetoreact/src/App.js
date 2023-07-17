@@ -1,7 +1,8 @@
+import { HomePage } from "./pages/Home/HomePage";
 function App() {
   return (
     <div className="App">
-      DiscomPin
+      <HomePage />
     </div>
   );
 }
