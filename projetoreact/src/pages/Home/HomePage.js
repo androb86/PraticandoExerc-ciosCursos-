@@ -1,5 +1,17 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Card } from '../../components/Card/Card';
+
 export const HomePage = () => {
     return (
-        <h1> Home page!</h1>
+        <Container fluid>
+            <Row>
+                <Col xs={12} md={2}><Card /></Col>
+                <Col xs={12} md={2}><Card /></Col>
+                <Col xs={12} md={2}><Card /></Col>
+                <Col xs={12} md={2}><Card /></Col>
+            </Row>
+        </Container>
     )
 }
