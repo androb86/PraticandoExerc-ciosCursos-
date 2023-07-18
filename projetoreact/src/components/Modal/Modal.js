@@ -12,9 +12,10 @@ export const Modal = ({ title, children, open, controls = [] }) => {
                     <Button key={controlIndex} 
                     variant={control.variant} 
                     onClick={control.onClick}
-                    label="Salvar"
-                    loadingLabel="Salvando"
-                    loading={true}
+                    label={control.label}
+                    loadingLabel={control.loadingLabel}
+                    loading={control.loading}
+                    disabled={control.disabled}
                     />
             
                 ))}
