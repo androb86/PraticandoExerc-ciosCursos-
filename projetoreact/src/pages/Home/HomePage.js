@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Card } from '../../components/Card/Card';
-import { Modal } from '../../components/Modal/Modal';
 import { ModalSavePin } from '../../containers/ModalSavePin/ModalSavePin';
 import { ModalCreateFolder } from '../../containers/ModalCreateFolder/ModalCreateFolder';
 

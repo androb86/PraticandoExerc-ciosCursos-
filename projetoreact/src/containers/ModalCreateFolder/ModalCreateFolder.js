@@ -23,7 +23,7 @@ export const ModalCreateFolder = ({ open }) => {
                     variant: 'secondary',
                     loading: false,
                     type: 'submit',
-                    form: 'form-criar-pasta'
+                    form: 'form-criar-pasta',
                     onclick: () => { }
                 }
             ]}
