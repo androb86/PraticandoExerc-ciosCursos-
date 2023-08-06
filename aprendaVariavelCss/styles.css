@@ -1,6 +1,9 @@
 /* Passo 7
 Você pode ver o body (ele é a caixa mais interna na página); a caixa em torno dele é o elemento html. Faça o body preencher toda a viewport dando a ele uma height de 100vh. Remova a margin padrão do body definindo a margin como 0. Finalmente, defina a propriedade overflow como hidden para ocultar quaisquer barras de rolagem que aparecem quando algo se estende além da janela de visualização.
 
+Passo 14
+Agora você tem algo que começa a se parecer com um edifício. Você está pronto para criar sua primeira variável. Declarações de variáveis começam com dois traços (-) e recebem um nome e um valor como este: --variable-name: value;. Na regra para a classe bb1, crie uma variável chamada --building-color1 e dê a ela um valor de #999.
+
 */
 
 * {
@@ -26,6 +29,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    --building-color1: #999;
+    
   }
 
 .bb1a {
