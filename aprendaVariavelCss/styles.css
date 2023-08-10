@@ -12,7 +12,23 @@ Adicione a variável --building-color1 que você criou no passo anterior como o 
 Passo 17
 Altere o valor da variável de #999 para #aa80ff e você poderá ver como ela é aplicada em todos os lugares em que você usou a variável. Esta é a principal vantagem do uso de variáveis, podendo alterar rapidamente muitos valores na folha de estilo apenas alterando o valor de uma variável.
 
+Passo 23
+Isso não funcionou. Você deve adicionar um valor substituto para uma variável colocando-o como o segundo valor de onde você usa a variável desta maneira: var(--variable-name, fallback-value). A propriedade usará o valor substituto quando houver um problema com a variável. Adicione um valor substituto green à background-color de .bb2.
+
+Passo 25
+Isso não funcionou, pois as variáveis que você declarou em .bb1 não são reproduzidas nos elementos irmãos .bb2 e .bb3. É assim que o CSS funciona. Por causa disso, as variáveis são frequentemente declaradas no seletor :root. Esse é o seletor de nível mais alto no CSS; colocar as variáveis lá as tornará utilizáveis em todos os lugares. Adicione o seletor :root ao topo da folha de estilos e mova todas as váriaveis declaráveis para lá.
+
+Passo 26
+Agora que você resolveu os erros e os prédios estão com a cor correta, você pode remover os valores alternativos (de fallback) nos dois lugares em que eles foram usados. Vá em frente e faça isso agora.
+
 */
+
+:root {
+  --building-color1: #aa80ff; /*25*/
+  --building-color2: #66cc99; /*25*/
+  --building-color3: #cc6699; /*25*/
+  --building-color4: #538cc6;
+}
 
 * {
     border: 1px solid black;
@@ -40,8 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    --building-color1: #aa80ff;
-    --building-color2: #66cc99;
     
   }
 
@@ -71,21 +85,40 @@ body {
 
   .bb2 {
     width: 10%;
-    height: 50%;
-    background-color: var(--building-color2);
+  height: 50%;
+  background-color: var(--building-color2); /* 23*/
   }
   
   
   .bb3 {
     width: 10%;
     height: 55%;
+    background-color: var(--building-color3);
   }
   
   
   .bb4 {
     width: 11%;
     height: 58%;
+    background-color: var(--building-color4);
   }
+
+  .foreground-buildings { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+
+.fb1 {width: 10%; height: 60%}
+.fb2 {width: 10%; height: 40%}
+.fb3 {width: 10%; height: 35%}
+.fb4 {width: 8%; height: 45%}
+.fb5 {width: 10%; height: 33%}
+.fb6 {width: 9%; height: 38%}
 
   
   
