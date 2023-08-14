@@ -38,6 +38,33 @@ gradient-type(
 );
 No exemplo, color1 é sólido no topo, color2 é sólido na parte inferior, e entre elas as transições acontecem igualmente de uma para a outra. Em .bb1a, adicione uma propriedade background abaixo da propriedade background-color. Defina-a como um gradiente do tipo linear-gradient, que usa --building-color1 como a primeira cor e --window-color1 como a segunda.
 
+Passo 41
+Você quer adicionar o mesmo gradiente às próximas duas seções. Em vez de fazer isso, crie um seletor de classe chamado bb1-window e mova as propriedades de valores de height e background de .bb1a para o novo seletor de classe.
+
+Passo 46
+Você pode especificar onde você deseja completar uma transição gradiente adicionando-a à cor como esta:
+
+gradient-type(
+  orange,
+  var( )20%,
+  var( )
+);
+Aqui, ele mudará de color1 para color2 entre 0% e 20% do elemento e depois mudar para color3 para o resto. Adicione 80% à cor --building-color1 do gradiente .bb1d para que você possa vê-lo em ação.
+
+Passo 47
+Remova orange do gradiente de .bb1d e altere o valor de 80% para 50%. Isso fará com que --building-color1 seja sólida para a metade superior e depois mude para --window-color1 na metade inferior.
+
+Passo 51
+As transições gradientes muitas vezes mudam gradualmente de uma cor para outra. Você pode fazer a alteração uma linha sólida como esta:
+
+linear-gradient(
+  var(--first-color) 0%,
+  var(--first-color) 40%,
+  var(--second-color) 40%,
+  var(--second-color) 80%
+);
+No .bb2b, adicione um linear-gradient que usa --building-color2 de 0% a 6% e --window-color2 de 6% a 9%.
+
 */
 
 :root {
@@ -46,6 +73,7 @@ No exemplo, color1 é sólido no topo, color2 é sólido na parte inferior, e en
   --building-color3: #cc6699; /*25*/
   --building-color4: #538cc6;
   --window-color1: black;
+  --window-color2: #8cd9b3;
 }
 
 * {
@@ -79,33 +107,36 @@ body {
     
   }
 
+  .bb1-window {
+    height: 10%;
+    background: linear-gradient(
+        var(--building-color1),
+        var(--window-color1)
+      );
+  }
+
 .bb1a {
     width: 70%;
-    height: 10%;
-    background-color: var(--building-color1);
-    background: 
-    linear-gradient(                  /*40*/
-    var(--building-color1),           /*40*/
-    var(--window-color1)              /*40*/
-    );
+    
   }
   
   .bb1b {
     width: 80%;
-    height: 10%;
-    background-color: var(--building-color1);
+  
   }
   
   .bb1c {
     width: 90%;
-    height: 10%;
-    background-color: var(--building-color1);
+    
   }
   
   .bb1d {
     width: 100%;
     height: 70%;
-    background-color: var(--building-color1);
+    background: linear-gradient(
+      var(--building-color1)50%, /*46*/ /*47*/
+      var(--window-color1)
+    );
   }
 
   .bb2 {
@@ -114,6 +145,16 @@ body {
   background-color: var(--building-color2); /* 23*/
   }
   
+  .bb2b {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient (       /*51*/
+    var(--building-color2) 0%,          /*51*/
+    var(--building-color2) 6%,          /*51*/
+    var(--window-color2) 6%,            /*51*/
+    var(--window-color2) 9%             /*51*/
+  )
+  }
   
   .bb3 {
     width: 10%;
