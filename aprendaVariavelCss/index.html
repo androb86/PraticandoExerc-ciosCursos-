@@ -1,3 +1,12 @@
+<!--Passo 67
+Adicione a nova classe building-wrap aos elementos .bb1 e .bb4. Isto aplicará as propriedades de centralização aos prédios que precisam desse ajuste.
+
+Passo 69
+Insira quatro novos elementos div em .bb4c e dê a eles a classe bb4-window. Essas serão as janelas deste edifício.
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +20,7 @@
    <div class="background-buildings">
     <div></div>
     <div></div>
-    <div class="bb1">
+    <div class="bb1 building-wrap">
         <div class="bb1a bb1-window"></div>
         <div class="bb1b bb1-window"></div>
         <div class="bb1c bb1-window"></div>
@@ -23,7 +32,16 @@
         </div>
         <div class="bb3"></div>
         <div></div>
-        <div class="bb4"></div>
+        <div class="bb4 building-wrap">
+            <div class="bb4a"></div>
+            <div class="bb4b"></div>
+            <div class="bb4c window-wrap">  <!--72-->
+                <div class="bb4-window"></div>    <!--69-->
+                <div class="bb4-window"></div>
+                <div class="bb4-window"></div>
+                <div class="bb4-window"></div>
+            </div>
+        </div>
         <div></div>
         <div></div>
    </div> 
