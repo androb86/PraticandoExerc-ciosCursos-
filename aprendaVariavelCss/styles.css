@@ -99,7 +99,19 @@ As janelas estão empilhadas em cima umas das outras à esquerda da seção, atr
 Passo 72
 adicione a classe window-wrap na div bb4c
 
+Passo 79
+Você vai usar mais alguns truques de borda para a seção superior. Adicione um border-bottom com um valor de 7vh solid var(--building-color4) to .fb1a. Isto colocará uma borda de 7vh de altura na parte inferior. Mas como o elemento tem tamanho zero, só aparece como uma linha de 2px de largura da borda de 1px que está em todos os elementos.
+
+
+Passo 80
+Quando se aumenta o tamanho das bordas da esquerda e da direita, a borda inferior vai expandir e ocupar a largura das larguras combinadas da esquerda e da direita. Adicione 2vw solid transparent como o valor das propriedades border-left e border-right de .fb1a. Eles serão invisíveis, mas deixarão a borda na parte inferior com 4vw de largura.
+
+Passo 87
+Para .fb2a, adicione uma border-bottom de 10vh solid var(--building-color3), uma border-left e uma border-right de 1vw solid transparent. Desta vez, o truque de borda vai criar uma forma de trapezoides.
+
 */
+
+
 
 :root {
   --building-color1: #aa80ff; /*25*/
@@ -256,6 +268,12 @@ body {
     
   }
 
+  .fb1a {
+    border-bottom: 7vh solid var(--building-color4);  /*79*/
+    border-left: 2vw solid transparent;               /*80*/
+  border-right: 2vw solid transparent;                /*80*/
+  }
+
   .fb1b {
     width: 60%;
     height: 10%;
@@ -266,17 +284,43 @@ body {
     height: 80%;
     background: repeating-linear-gradient(
     90deg,
-    var(--building-color4)0%,
-    var(--building-color4)10%,
-    transparent 10%,
-    transparent 15%
+    var(--building-color4),
+      var(--building-color4) 10%,
+      transparent 10%,
+      transparent 15%
+    ),
+
+    repeating-linear-gradient(
+      var(--building-color4),
+      var(--building-color4) 10%,
+      var(--window-color4) 10%,
+      var(--window-color4) 90%
     );
   }
   
   .fb2 {
     width: 10%;
     height: 40%;
-    background-color: var(--building-color3)
+  }
+
+  .fb2a {
+    width: 100%;
+    width: 100%;
+    border-bottom: 10vh solid var(--building-color3);
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
+  }
+  
+  .fb2b {
+   width: 100%;
+   height: 75%;
+   background-color: var(--building-color3);
+  }
+
+  .fb2-window {
+    width: 22%;
+    height: 100%;
+    background-color: var(--window-color3);
   }
   
   .fb3 {
