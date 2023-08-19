@@ -109,6 +109,12 @@ Quando se aumenta o tamanho das bordas da esquerda e da direita, a borda inferio
 Passo 87
 Para .fb2a, adicione uma border-bottom de 10vh solid var(--building-color3), uma border-left e uma border-right de 1vw solid transparent. Desta vez, o truque de borda vai criar uma forma de trapezoides.
 
+Passo 95
+Com as variáveis do CSS, você pode alterar valores sem pesquisar em todos os lugares da folha de estilos. Altere o valor de --window-color1 para #bb99ff.
+
+Passo 100
+Dê aos elementos .fb4-window uma width de 30%, uma height de 10% e um border-radius de 50%. Isso criará algumas janelas circulares para esse prédio.
+
 */
 
 
@@ -118,7 +124,7 @@ Para .fb2a, adicione uma border-bottom de 10vh solid var(--building-color3), uma
   --building-color2: #66cc99; /*25*/
   --building-color3: #cc6699; /*25*/
   --building-color4: #538cc6;
-  --window-color1: black;
+  --window-color1: #bb99ff;
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
@@ -326,15 +332,44 @@ body {
   .fb3 {
     width: 10%;
     height: 35%;
+    
+  }
+
+  .fb3a {
+    width: 80%;
+    height: 15%;
     background-color: var(--building-color1);
+  }
+  .fb3b {
+    width: 100%;
+    height: 35%;
+    background-color: var(--building-color1);
+  }
+
+  .fb3-window {
+    width: 25%;
+    height: 80%;
+    background-color: var(--window-color1);
   }
   
   .fb4 {
     width: 8%;
     height: 45%;
-    background-color: var(--building-color1);
     position: relative;
     left: 10%;
+  }
+
+  .fb4b {
+    width: 100%;
+    height: 89%;
+    background-color: var(--building-color1);
+  }
+
+  .fb4-window {
+    width: 30%;
+    height: 10%;
+    border-radius: 50%;
+  
   }
   
   .fb5 {
