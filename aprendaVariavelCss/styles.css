@@ -1,4 +1,6 @@
-/* Passo 7
+/* 
+
+Passo 7
 Você pode ver o body (ele é a caixa mais interna na página); a caixa em torno dele é o elemento html. Faça o body preencher toda a viewport dando a ele uma height de 100vh. Remova a margin padrão do body definindo a margin como 0. Finalmente, defina a propriedade overflow como hidden para ocultar quaisquer barras de rolagem que aparecem quando algo se estende além da janela de visualização.
 
 Passo 14
@@ -121,6 +123,33 @@ As janelas estão empilhadas em cima umas das outras no prédio roxo mais à dir
 Passo 105
 Adicione outro repeating-linear-gradient abaixo daquele que você acabou de adicionar. Dê a ele uma direção de 90deg, use a cor do edifício de 0% a 12% e a cor da janela de 12% a 44%. Isso criará várias janelas retangulares.
 
+Passo 112
+Dê a classe sky um radial-gradient. Use #ffcf33 de 0% a 20%, #ffff66 a 21% e #bbeeff a 100%. Isso adicionará um gradiente circular ao fundo, que será o sol.
+
+Passo 113
+Na parte superior da lista de cores gradientes do céu, onde você colocaria uma direção para o gradiente, adicione circle closest-corner at 15% 15%,. Isso moverá o início do gradiente para 15% da parte superior e da esquerda. Ele o fará terminar no closest-corner e manterá uma forma circle. Estas são algumas palavras-chave embutidas em gradientes para descrever como ele se comporta
+
+Passo 114
+Uma media query (ou consulta de mídia) pode ser usada para alterar estilos com base em certas condições. Elas têm essa aparência:
+
+@media (condition) {
+
+}  
+Adicione uma media query vazia na parte inferior da folha de estilo com a condição max-width: 1000px. Os estilos adicionados aqui terão efeito quando o tamanho do documento for de 1000px de largura ou menos.
+
+Passo 115
+Copie e cole toda a classe sky com todas as propriedades e valores na media query. Você vai criar outro esquema de cores para o horizonte que se altera do dia para noite.
+
+Observação: você precisará rolar para além da região editável para copiar a classe.
+
+Passo 117
+Adicione um seletor :root ao topo da media query. Em seguida, redefina todas as quatro variáveis --building-color para que usem o valor #000 lá.
+
+Passo 118
+Por último, no seletor :root da media query, redefina todas as quatro variáveis de --window-color para que usem #777. Quando você terminar, redimensione a janela e observe-a passando de dia para noite.
+
+As variáveis são usadas principalmente com cores. É assim que você as usa aqui. Elas, no entanto, podem receber qualquer valor e ser usadas em qualquer propriedade. O projeto parece ótimo!
+
 */
 
 
@@ -179,6 +208,16 @@ body {
   align-items: center;
   justify-content: space-evenly;
 
+}
+
+.sky {
+  background: radial-gradient(              /*112,113*/
+              circle closest-corner at 15% 15%,
+              #ffcf33,
+              #ffcf33 20%,
+              #ffff66 21%,
+              #bbeeff 100%
+  )
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -447,4 +486,29 @@ body {
       var(--window-color3) 10%,
       var(--window-color3) 30%
       );
+}
+
+@media (max-width: 1000px) {       /*114, 117, 118 */
+
+  :root {                              
+    --building-color1: #000;
+     --building-color2: #000;
+     --building-color3: #000;
+     --building-color4: #000;
+     /*--window-color1: #777;
+    --window-color2: #777;
+    --window-color3: #777;                   
+    --window-color4: #777;*/                    
+   }
+
+  .sky {
+    background: radial-gradient(
+        closest-corner circle at 15% 15%,
+        #ccc,
+        #ccc 20%,
+        #445 21%,
+        #223 100%
+      );
+  }
+  
 }
