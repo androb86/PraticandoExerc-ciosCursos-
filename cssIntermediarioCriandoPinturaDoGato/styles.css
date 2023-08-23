@@ -1,3 +1,24 @@
+/*
+9
+CSS positioning lets you set how you want an element to be positioned in the browser. It has a position property you can set to static, absolute, relative, sticky or fixed.
+
+Once you set the position property of the element, you can move the element around by setting a pixel or a percentage value for one or more of the top, right, left, or bottom properties.
+
+static is the default positioning for all elements. If you assign it to an element, you won't be able to move it around with top, right, left, or bottom.
+
+Dê uma propriedade de , em seguida, defina as propriedades e para cada uma..cat-headpositionstatictopleft100px
+
+10
+Dava para ver que nada acontece. O elemento não se movia apesar de definir um e de cada um. Mas esse não é o caso do posicionamento..cat-headtopleft100pxrelative
+
+Quando você usa o valor, o elemento ainda é posicionado de acordo com o fluxo normal do documento, mas os valores , , e se tornam ativos.relativetopleftbottomright
+
+Em vez de , dê-lhe uma posição de , e deixe ambos e propriedades como estão.static.cat-headrelativetopleft
+
+*/
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +28,9 @@ body {
   }
 
   .cat-head {
+    position: relative;                     /*9,10*/
+    top: 100px;                           /*9*/
+    left: 100px;                          /*9*/
     width: 205px;
     height: 180px;
     border: 1px solid #000;
