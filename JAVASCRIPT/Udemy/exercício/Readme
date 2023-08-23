@@ -1,0 +1,12 @@
+Resolver o Problema alterando os valores das variaveis,
+Quero que o valor de let varA tenha o Valor de 'B', a variavel
+let varB tenha o valor de  'C' e por fim a variavel let varC tenha o
+valor de 'A'.
+
+let varA = 'A';
+let varB = 'B';
+let varC = 'C';
+
+[varA, varB, varC] = [varB, varC, varA];
+
+console.log(varA, varB, varC);
