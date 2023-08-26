@@ -30,12 +30,21 @@ body {
   }
 
   .cat-head {
-    position: relative;                     /*9,10*/
+    position: sticky;                     /*9,10*/
     top: 100px;                           /*9*/
-    left: 100px;                          /*9*/
+                                          /*9, 15*/
     width: 205px;
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+  }
+
+  .box {
+    width: 200px;
+    height: 600px;
+    background-color: #000;
+    position: absolute;
+    top: 800px;
+    left: 650px;
   }
