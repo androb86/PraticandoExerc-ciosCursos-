@@ -15,6 +15,11 @@ Quando você usa o valor, o elemento ainda é posicionado de acordo com o fluxo 
 
 Em vez de , dê-lhe uma posição de , e deixe ambos e propriedades como estão.static.cat-headrelativetopleft
 
+16
+You should now center the cat head.
+
+Give the .cat-head element a position property set to absolute. Set a value of 0 for the right, left, top, bottom properties, then set its margin property on all sides to auto. That's one way to center an element vertically and horizontally using CSS positioning.
+
 
 
 */
@@ -22,29 +27,34 @@ Em vez de , dê-lhe uma posição de , e deixe ambos e propriedades como estão.
 
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #c9d2fc;
-  }
+  background-color: #c9d2fc;
+}
 
-  .cat-head {
-    position: sticky;                     /*9,10*/
-    top: 100px;                           /*9*/
-                                          /*9, 15*/
-    width: 205px;
-    height: 180px;
-    border: 1px solid #000;
-    border-radius: 46%;
-    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
-  }
+.cat-head {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 205px;
+  height: 180px;
+  border: 1px solid #000;
+  border-radius: 46%;
+  background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+}
 
-  .box {
-    width: 200px;
-    height: 600px;
-    background-color: #000;
-    position: absolute;
-    top: 800px;
-    left: 650px;
-  }
+.cat-left-ear {
+  position: absolute;
+  top: -26px;
+  left: -31px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #5e5e5e;
+}
