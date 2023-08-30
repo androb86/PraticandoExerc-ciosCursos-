@@ -20,6 +20,37 @@ You should now center the cat head.
 
 Give the .cat-head element a position property set to absolute. Set a value of 0 for the right, left, top, bottom properties, then set its margin property on all sides to auto. That's one way to center an element vertically and horizontally using CSS positioning.
 
+26
+Para posicionar a orelha esquerda corretamente, você pode usar a transformação CSS para girá-la em um certo grau.
+
+A propriedade transform permite modificar a forma, a posição e o tamanho de um elemento sem alterar o layout ou afetar os elementos circundantes. Possui funções como traduzir(), girar(), escala(), inclinação() e matriz().
+
+Defina a propriedade transform como rotate(-45deg) e veja o que acontece.
+
+Agora você pode trabalhar na orelha direita do gato. Você já tem o HTML para isso.
+
+Usando um seletor de classe, dê ao elemento .cat-right-ear uma borda esquerda e direita de 35px sólida e transparente cada. Além disso, defina a borda inferior como 70px sólido #5e5e5e
+
+31
+As orelhas devem sempre ser colocadas acima da parte da cabeça que elas se sobrepõem. Você pode fazer isso com a propriedade z-index.
+
+z-index é uma propriedade que você pode usar para definir a ordem dos elementos HTML sobrepostos. Qualquer elemento com índice z mais alto sempre será posicionado sobre um elemento com índice z mais baixo.
+
+Para ver o índice z em ação, defina a propriedade do índice z da orelha esquerda como -1.
+
+32
+Esse não é o comportamento que você deseja. Você deve *fazer* as orelhas aparecerem acima da cabeça para que as bordas que se sobrepõem a elas não apareçam.
+
+Em vez de -1, defina a propriedade z-index da orelha esquerda como 1.
+
+34 
+*A maioria* dos gatos tem cores diferentes *na* orelha e na parte interna da *mesma* orelha. Você pode implementar o mesmo *também*. É *por isso* que você definiu um elemento div para os ouvidos internos direito e esquerdo há algum tempo.
+
+Usando um seletor de classe, dê ao seu elemento .cat-left-inner-ear uma borda esquerda e direita de 20px sólida transparente cada. Dê também uma borda inferior de 40px sólido #3b3b4f.
+
+35
+Mova o ouvido interno para a posição com uma propriedade de posição definida como absoluta, uma parte superior de 22px e uma esquerda de -20px.
+
 
 
 */
@@ -52,9 +83,37 @@ body {
   position: absolute;
   top: -26px;
   left: -31px;
+  z-index: 1;                              /*31*/
   border-top-left-radius: 90px;
   border-top-right-radius: 10px;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
   border-bottom: 70px solid #5e5e5e;
+  transform: rotate(-45deg);               /*26*/
+}
+
+.cat-right-ear {    
+  position: absolute;
+  top: -26px;
+  left: 163px;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;            /*27*/
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #5e5e5e;
+}
+
+.cat-left-inner-ear {                      /*34*/
+  position: absolute;
+  top: 22px;
+  left: -20px;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #3b3b4f;
 }
