@@ -57,6 +57,23 @@ Mova o ouvido interno para a posição com uma propriedade de posição definida
 39
 As you did for the left inner ear, remove the sharp edges of the right inner ear by setting a bottom-right and bottom-left border radius of 40%, a top-left border radius of 90px, and a top-right border radius of 10px.
 
+43
+Using a class selector, give your .cat-left-eye element a width of 30px and a height of 40px. Also, give it a background-color of #000.
+
+44
+Move the left eye into position with a position property of absolute a top of 54px, and a left of 39px.
+
+45
+To make the left eye look like an eye, give it a border radius of 60%. Also, using the transform property, rotate it at 25 degrees.
+
+49
+Those look like eyes, but you can still make them better. That's why you created two inner eyes div elements.
+
+Using a class selector, give your .cat-left-inner-eye element a width of 10px and a height of 20px. Also, give it a background color of #fff.
+
+50
+Move the left inner eye into position with a position property of absolute, a top of 8px, and a left of 2px. Also, give it a border radius of 60% and rotate it at 10 degrees.
+
 
 */
 
@@ -134,4 +151,48 @@ body {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 40px solid #3b3b4f;
-}         
+} 
+
+.cat-left-eye{                      /*43*/
+  position: absolute;
+  top: 54px;
+  left: 39px;
+  border-radius: 60%;
+  transform: rotate(25deg);
+  width: 30px;
+  height: 40px;
+  background-color: #000;
+}
+
+.cat-right-eye {
+  position: absolute;
+  top: 54px;
+  left: 134px;
+  border-radius: 60%;
+  transform: rotate(-25deg);
+  width: 30px;
+  height: 40px;
+  background-color: #000;
+}
+
+.cat-left-inner-eye{   /*49, 50*/
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  border-radius: 60%;
+  transform: rotate(10deg);
+  width: 10px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.cat-right-inner-eye{
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  border-radius: 60%;
+  transform: rotate(-5deg);
+  width: 10px;
+  height: 20px;
+  background-color: #fff;
+}
