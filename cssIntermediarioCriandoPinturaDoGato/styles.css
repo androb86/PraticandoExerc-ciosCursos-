@@ -92,6 +92,9 @@ Você vai criar duas linhas para a boca do gato no formato de uma elipse. So, gi
 61
 Using a class selector, give your .cat-mouth-line-left element a position of absolute, a top of 88px and a left of 74px. This would move it into the right position.
 
+77
+Agora, você moverá os bigodes da direita para o lugar certo. Use um seletor de classe que tenha como objetivo o elemento .cat-whisker-right-top e coloque-o no lugar com uma position absolute, um top de 120px e um left de 109px.
+
 */
 
 
@@ -247,4 +250,58 @@ body {
   top: 88px;
   left: 91px;
   transform: rotate(165deg);
+}
+
+.cat-whiskers-left div{
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+}
+
+.cat-whiskers-right div{
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+}
+
+.cat-whisker-left-top {
+  position: absolute;
+  top: 120px;
+  left: 52px;
+  transform: rotate(10deg);
+}
+
+.cat-whisker-left-middle {
+  position: absolute;
+  top: 127px;
+  left: 52px;
+  transform: rotate(3deg);
+}
+
+.cat-whisker-left-bottom{
+  position: absolute;
+  top: 134px;
+  left: 52px;
+  transform: rotate(-3deg);
+}
+
+.cat-whisker-right-top {    /*77*/
+  position: absolute;
+  top: 120px;
+  left: 109px;
+  transform: rotate(-10deg);
+}
+
+.cat-whisker-right-middle {
+  position: absolute;
+  top: 127px;
+  left: 109px;
+  transform: rotate(-3);
+}
+
+.cat-whisker-right-bottom {
+  position: absolute;
+  top: 134px;
+  left: 109px;
+  transform: rotate(3deg);
 }
