@@ -7,8 +7,27 @@ Defina as propriedades padding e margin como 0 e defina a propriedade box-sizing
 
 Isto facilitará para você trabalhar com unidades rem mais tarde, já que 2rem seria 20px.
 
-* 
+* 32. Agora você está pronto para começar a montar o layout da grade. O CSS Grid oferece um layout baseado em uma grade bidimensional, permitindo que você centralize itens horizontalmente e verticalmente enquanto ainda mantém o controle para fazer coisas como sobrepor elementos.
 
+Comece criando um seletor main e dando a ele a propriedade display definida como grid.
+
+* 33. Agora você pode estilizar o layout da sua grade. CSS Grid é similar ao Flexbox, na medida em que possui uma propriedade especial para os elementos pai quanto para os elementos filhos.
+
+Neste caso, o elemento pai é o elemento main. Defina o conteúdo para ter um layout de três colunas adicionando a propriedade grid-template-columns com o valor de 1fr 94rem 1fr. Isso criará três colunas onde a coluna do meio tem 94rem de largura e as primeiras e últimas colunas são ambas 1 fração do espaço restante no contêiner da grade.
+
+* 34. Use a função minmax para tornar suas colunas responsivas em qualquer dispositivo. A função minmax recebe dois argumentos, sendo o primeiro o valor mínimo e o segundo o máximo. Esses valores podem ser um comprimento, porcentagem, fr ou até mesmo uma palavra-chave como max-content.
+
+Envolva cada um dos seus valores já definidos da propriedade grid-template-columns em uma função minmax, usando cada valor como o segundo argumento. O primeiro argumento deve ser 2rem, min-content e 2rem, respectivamente.
+
+* 35. Para adicionar espaço entre as linhas no layout de grade, você pode usar a propriedade row-gap. Dê ao seletor main a propriedade row-gap definida como 3rem.
+
+* 36. A revista terá três seções primárias. Você já definiu o layout geral na regra main, mas pode ajustar o posicionamento nas regras dos elementos filhos.
+
+Uma opção é a propriedade grid-column, que é a propriedade abreviada de grid-column-start e grid-column-end. A propriedade grid-column informa ao item de grade em qual linha de grade começar e terminar.
+
+Crie uma regra .heading e defina a propriedade grid-column como 2 / 3. Isso dirá ao elemento .heading para começar na linha de grade 2 e terminar na linha de grade 3.
+
+* 37. Crie um seletor .text e dê a ele uma propriedade grid-column definida como 2 / 3.
 
 
 
@@ -26,5 +45,31 @@ body {
     background-color: rgb(20, 30, 40);
   }
 
+  h1 {
+    font-family: Anton, sans-serif;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: Raleway, sans-serif
+  }
+
+  a {
+    text-decoration: none;
+    color: linen;
+  }
+
+  main {
+    display: grid;    /*32*/
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);  /*33,34*/
+    row-gap: 3rem;     /*35*/
+  }
+
+  .heading {
+    grid-column: 2 / 3;  /*36*/
+  }
+
+  .text {
+    grid-column: 2 / 3;   /*37*/
+  }
   
 
