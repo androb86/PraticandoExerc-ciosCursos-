@@ -29,7 +29,25 @@ Crie uma regra .heading e defina a propriedade grid-column como 2 / 3. Isso dir�
 
 * 37. Crie um seletor .text e dê a ele uma propriedade grid-column definida como 2 / 3.
 
+* 39. A função CSS repeat() é usada para repetir um valor, em vez de escrevê-la manualmente, e é útil para layouts de grade. Por exemplo, definindo a propriedade grid-template-columns para repeat(20, 200px) criaria 20 colunas a cada 200px de largura.
 
+Dê ao elemento .heading uma propriedade de grid-template-columns definida como repeat(2, 1fr) para criar duas colunas de igual largura.
+
+* 41.
+Lembre-se de que a propriedade grid-column determina em quais colunas um elemento começa e termina. Pode haver momentos em que você não terá a certeza de quantas colunas a grade terá, mas você quer um elemento que pare na última coluna. Para fazer isso, você pode usar -1 para a coluna final.
+
+Crie um seletor .hero e dê a ele a propriedade grid-column definida como 1 / -1. Isto dirá ao elemento para abranger toda a largura da grade.
+
+
+* 44. Crie um seletor img e dê a ele a propriedade width definida como 100% e a propriedade object-fit definida como cover.
+
+A propriedade object-fit diz ao navegador como posicionar o elemento dentro do contêiner. Nesse caso, cover definirá a imagem para preencher o contêiner, recortando conforme necessário para evitar alterar a proporção.
+
+* 46. A legenda também precisa ser estilizada. Crie um seletor .hero-subtitle e dê a ele a propriedade font-size com 2.4rem, a propriedade color definida com orangered e a propriedade text-align definida com center.
+
+*  46. Crie um seletor .author-name a:hover e dê a ele a propriedade background-color definida como #306203.
+
+Isto criará um efeito de pairar somente para o elemento a dentro do .author-name, mostrando o verde original do freeCodeCamp em segundo plano.
 
 */
 
@@ -67,10 +85,45 @@ body {
   .heading {
     grid-column: 2 / 3;  /*36*/
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
   }
 
   .text {
     grid-column: 2 / 3;   /*37*/
   }
-  
 
+  .hero {
+    grid-column: 1 / -1;   /*41*/
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-title {
+    text-align: center;
+    color: orangered;
+    font-size: 8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2.4rem;
+    color: orangered;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+  }
+
+  .author-name a:hover {
+    background-color: #306203;
+  }
+
+  .publish-date {
+    color: rgba(255, 255, 255, 0.5);
+  }
