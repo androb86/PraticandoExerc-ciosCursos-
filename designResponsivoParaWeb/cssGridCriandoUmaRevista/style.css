@@ -49,6 +49,15 @@ A propriedade object-fit diz ao navegador como posicionar o elemento dentro do c
 
 Isto criará um efeito de pairar somente para o elemento a dentro do .author-name, mostrando o verde original do freeCodeCamp em segundo plano.
 
+* 51. As configurações padrão para o CSS Grid criarão linhas adicionais, conforme necessário, ao contrário do Flexbox. Dê ao seletor .social-icons a propriedade grid-template-columns definida como repeat(5, 1fr) para organizar os ícones em uma única linha.
+
+* 52. Se você quiser adicionar mais ícones sociais, mas mantê-los na mesma linha, você precisa atualizar grid-template-columns para criar colunas adicionais. Como alternativa, você pode usar a propriedade grid-auto-flow.
+
+Essa propriedade recebe row ou column como o primeiro valor, com um segundo valor opcional de dense. grid-auto-flow usa um algoritmo de posicionamento automático para ajustar o layout de grade. Defini-lo como column dirá ao algoritmo para criar colunas para o conteúdo conforme necessário. O valor dense permite que o algoritmo reveja seus passos e preencha os espaços na grade com itens menores, o que pode fazer com que os itens apareçam fora de ordem.
+
+Para o seletor .social-icons, defina a propriedade grid-auto-flow como column.
+
+
 */
 
 *, ::before, ::after {
@@ -126,4 +135,11 @@ body {
 
   .publish-date {
     color: rgba(255, 255, 255, 0.5);
+  }
+
+  .social-icons {
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
   }
