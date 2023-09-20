@@ -57,6 +57,34 @@ Essa propriedade recebe row ou column como o primeiro valor, com um segundo valo
 
 Para o seletor .social-icons, defina a propriedade grid-auto-flow como column.
 
+* 53. Agora o algoritmo de autoposicionamento será exibido quando você adicionar um novo elemento de ícone. No entanto, o algoritmo tem auto como padrão para a largura da nova coluna, o que não corresponde às colunas atuais.
+
+Você pode substituir isso pela propriedade grid-auto-columns. Dê ao seletor .social-icons a propriedade grid-auto-columns definida como 1fr.
+
+* 54. Muito parecido com o Flexbox, com o CSS Grid você pode alinhar o conteúdo de itens de grade com align-items e justify-items. align-items alinhará os elementos filhos ao longo do eixo da coluna e justify-items alinhará os elementos filhos ao longo do eixo da linha.
+
+Dê ao seletor .social-icons a propriedade align-items definida com center.
+
+* 56. O elemento .text não é uma grade do CSS, mas você pode criar colunas dentro de um elemento sem usar o Grid usando a propriedade column-width.
+
+Dê ao seletor .text uma propriedade column-width definida como 25rem.
+
+
+* 57. Revistas geralmente usam texto justificado em seu conteúdo impresso para estruturar o layout e controlar o fluxo do conteúdo. Embora isso funcione na forma impressa, o texto justificado em sites pode ser uma preocupação em termos de acessibilidade, por exemplo, apresentando desafios para pessoas com dislexia.
+
+Para fazer com que o projeto pareça uma revista impressa, dê ao seletor .text uma propriedade text-align definida como justify.
+
+* 58. O pseudosseletor ::first-letter permite que você tenha como alvo a primeira letra do conteúdo de texto de um elemento.
+
+Crie um seletor .first-paragraph::first-letter e defina a propriedade font-size como 6rem. Também dê a ele uma propriedade color definida como orangered para torná-lo mais destacado.
+
+* 58. O outro texto foi deslocado para fora de lugar. Mova-o para a posição dando ao seletor .first-paragraph::first-letter uma propriedade float definida como left e uma propriedade margin-right definida como 1rem.
+
+* 61. Para dar uma cor a hr, você precisa ajustar a propriedade border. Dê ao seletor de hr uma border definida como 1px solid rgba(120, 120, 120, 0.6).
+
+
+
+
 
 */
 
@@ -100,6 +128,10 @@ body {
 
   .text {
     grid-column: 2 / 3;   /*37*/
+    font-size: 1.8rem;
+    letter-spacing: 0.6px;
+    column-width: 25rem;
+    text-align: justify;
   }
 
   .hero {
@@ -142,4 +174,25 @@ body {
     font-size: 3rem;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+  }
+
+  .first-paragraph::first-letter {
+    font-size: 6rem;
+    color: orangered;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  hr {
+    margin: 1.5rem 0;
+    border: 1px solid rgba(120, 120, 120, 0.6)
+  }
+
+  .quote {
+    color: #00beef;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: Raleway, sans-serif;
   }
