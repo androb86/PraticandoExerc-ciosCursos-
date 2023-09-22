@@ -82,6 +82,21 @@ Crie um seletor .first-paragraph::first-letter e defina a propriedade font-size 
 
 * 61. Para dar uma cor a hr, você precisa ajustar a propriedade border. Dê ao seletor de hr uma border definida como 1px solid rgba(120, 120, 120, 0.6).
 
+* 64. Uma citação não é, de fato, uma citação sem as aspas adequadas. Você pode adicionar esses pseudosseletores de CSS.
+
+Crie um seletor .quote::before e defina a propriedade content como " com um espaço seguindo-o.
+
+Além disso, crie um seletor .quote::after e defina a propriedade content como " com um espaço precedendo-o.
+
+* 65. Agora, vamos estilizar a terceira section. Observe que ela tem os valores de text e text-with-images para o atributo class, o que significa que já está herdando os estilos da regra .text.
+
+Crie um seletor .text-with-images e defina a propriedade display como grid.
+
+* 66. Você precisará ter uma coluna para texto e outra para imagens. Dê ao seletor .text-with-images uma propriedade grid-template-columns definida como 1fr 2fr. Também defina a propriedade column-gap como 3rem para fornecer mais espaçamento entre as colunas.
+
+* 73. As imagens devem estar dentro de um layout de duas colunas e três linhas.
+
+Dê ao seletor .image-wrapper uma propriedade grid-template-columns definida como 2fr 1fr e uma propriedade grid-template-rows definida como repeat(3, min-content). Isso dará a nossas linhas de grade o ajuste em altura com base no conteúdo, mas as colunas permanecerão com uma largura fixa baseada no contêiner.
 
 
 
@@ -196,3 +211,38 @@ body {
     text-align: center;
     font-family: Raleway, sans-serif;
   }
+
+  .quote::before {
+  content:'" ';
+}
+
+.quote::after {
+  content:' "';
+}
+
+.text-with-images {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.lists {
+  list-style-Type: none;
+  margin-top: 2rem;
+}
+
+.lists li {
+  margin-bottom: 1.5rem;
+}
+
+.list-title, .list-subtitle {
+  color: #00beef;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3,min-content);
+  
+}
