@@ -98,7 +98,26 @@ Crie um seletor .text-with-images e defina a propriedade display como grid.
 
 Dê ao seletor .image-wrapper uma propriedade grid-template-columns definida como 2fr 1fr e uma propriedade grid-template-rows definida como repeat(3, min-content). Isso dará a nossas linhas de grade o ajuste em altura com base no conteúdo, mas as colunas permanecerão com uma largura fixa baseada no contêiner.
 
+* 74. A propriedade gap é uma forma abreviada para definir o valor de column-gap e row-gap ao mesmo tempo. Se receber um valor, ele define column-gap e row-gap para esse valor. Se receber dois valores, ele define row-gap para o primeiro valor e column-gap para o segundo.
 
+Dê ao seletor .image-wrapper uma propriedade gap definida como 2rem.
+
+* 75. A propriedade place-items pode ser usada para definir os valores de align-items e justify-items ao mesmo tempo. A propriedade place-items recebe um ou dois valores. Se um valor for fornecido, ele é usado para as propriedades align-items e justify-items. Se forem fornecidos dois valores, o primeiro valor é usado para a propriedade align-items e o segundo valor é usado para a propriedade justify-items.
+
+Dê ao seletor .image-wrapper uma propriedade place-items definida como center.
+
+
+* 76. Crie uma regra .image-1, .image-3 e dê a ela a propriedade grid-column definida como 1 / -1. Isso permitirá que as primeiras e as terceiras imagens tomem a largura total da grade.
+
+* 77. Agora que o layout de revista está terminado, você precisa torná-lo responsivo.
+
+Inicie uma @media query para only screen com uma max-width de 720px. Dentro, crie um seletor .image-wrapper e dê a ele uma propriedade grid-template-columns de 1fr.
+
+Isto recolherá as três imagens em uma única coluna em telas menores.
+
+* 78. Crie outra @media query para only screen com uma max-width de 600px. Dentro, crie um seletor .text-with-images e dê a ele uma propriedade grid-template-columns de 1fr.
+
+Isto recolherá a área de texto mais abaixo em uma única coluna em telas menores.
 
 
 */
@@ -244,5 +263,43 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3,min-content);
-  
+  gap: 2rem; 
+  place-items: center;
+}
+
+.image-1, .image-3 {
+  grid-column: 1 / -1
+}
+
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-with-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+  .hero-subtitle, .author, .quote, .list-title {
+    font-size: 1.8rem;
+  }
+  .social-icons {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
 }
