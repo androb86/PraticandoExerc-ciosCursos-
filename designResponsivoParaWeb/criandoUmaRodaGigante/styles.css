@@ -1,0 +1,65 @@
+/* 8. 
+
+A propriedade transform-origin é usada para definir o ponto em torno do qual uma transformação CSS é aplicada. 
+Por exemplo, ao executar um rotate (o que você fará mais tarde neste projeto), 
+o transform-origin determina em torno de qual ponto o elemento é girado.
+
+Defina o seletor .line para ter uma transform-origin de 0% 0%. 
+Isso definirá que o ponto de origem seja deslocado 0% da esquerda e 0% a partir de cima, 
+posicionando-o no meio da borda superior do elemento.
+
+9. A propriedade transform-origin é usada para definir o ponto em torno do qual uma transformação CSS é aplicada. 
+Por exemplo, ao executar um rotate (o que você fará mais tarde neste projeto), 
+o transform-origin determina em torno de qual ponto o elemento é girado.
+
+Defina o seletor .line para ter uma transform-origin de 0% 0%. 
+Isso definirá que o ponto de origem seja deslocado 0% da esquerda e 0% a partir de cima, 
+posicionando-o no meio da borda superior do elemento.
+
+
+
+
+
+*/
+
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    width: 55vw;
+    height: 55vw;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {                    /*9*/
+    transform: rotate(60deg);     
+}
+
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
