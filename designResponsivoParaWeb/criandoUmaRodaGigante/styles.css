@@ -16,8 +16,46 @@ Defina o seletor .line para ter uma transform-origin de 0% 0%.
 Isso definirá que o ponto de origem seja deslocado 0% da esquerda e 0% a partir de cima, 
 posicionando-o no meio da borda superior do elemento.
 
+13. Defina o .cabin para ter uma propriedade transform-origin de 50% 0%. 
+Isso definirá que o ponto de origem seja deslocado 50% da esquerda e 0% a partir de cima, 
+posicionando-o no meio da borda superior do elemento.
 
+14. Hora de posicionar as cabines ao redor do roda. Selecione o primeiro elemento .cabin. 
+Defina a propriedade right como -8.5% e a propriedade top para 50%.
 
+15. Continuando o padrão, selecione os elementos .cabin a seguir e aplique as regras específicas a eles:
+
+    O segundo .cabin deve ter a propriedade right definida como 17% e a propriedade top definida como 93.5%.
+    O terceiro .cabin deve ter a propriedade right definida como 67% e a propriedade top definida como 93.5%.
+    O quarto .cabin deve ter a propriedade left definida como -8.5% e a propriedade top definida como 50%.
+    O quinto .cabin deve ter a propriedade left definida como 17% e a propriedade top definida como 7%.
+    O sexto .cabin deve ter a propriedade right definida como 17% e a propriedade top definida como 7%.
+
+16. A regra @keyframes é usada para definir o fluxo de uma animação CSS. 
+Dentro da regra @keyframes, você pode criar seletores para pontos específicos na sequência de animação, 
+tais como 0% ou 25%, ou usar from e to para definir o início e o fim da sequência.
+
+Regras @keyframes requerem que um nome seja atribuído a elas, 
+que por sua vez você usará em outras regras para referência. 
+Por exemplo, a regra @keyframes freeCodeCamp { } seria nomeada freeCodeCamp.
+
+Hora de começar a animar. Crie uma regra de @keyframes chamada wheel.
+
+17. Agora, você precisa definir como deve começar sua animação. 
+Para fazer isso, crie uma regra 0% dentro da sua regra @keyframes wheel. 
+As propriedades que você definiu neste seletor aninhado serão aplicadas no início de sua animação.
+
+18. Dê a regra 0% uma propriedade transform de rotate(0deg). Isso iniciará uma animação sem rotação.
+
+20. 
+
+A propriedade animation-name é usada para vincular uma regra @keyframes a um seletor CSS.
+ O valor dessa propriedade deve corresponder ao nome da regra @keyframes.
+ Dê ao seletor .wheel a propriedade animation-name definida para wheel.
+
+A propriedade animation-duration é usada para definir quanto tempo a sequência da animação deve durar até ser concluída.
+ O tempo deve ser especificado em segundos (s) ou em milissegundos (ms).
+ Dê ao seletor .wheel a propriedade animation-duration definida para 10s.
 
 
 */
@@ -31,6 +69,8 @@ posicionando-o no meio da borda superior do elemento.
     height: 55vw;
     max-height: 500px;
     max-width: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
 }
 
 .line {
@@ -63,3 +103,51 @@ posicionando-o no meio da borda superior do elemento.
     transform: rotate(300deg);
 }
 
+.cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+}
+
+.cabin:nth-of-type(1) {
+  right: -8.5%;
+  top: 50%;
+}
+
+.cabin:nth-last-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(4) { 
+    left: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-last-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
