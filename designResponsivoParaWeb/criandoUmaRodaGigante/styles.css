@@ -47,15 +47,51 @@ As propriedades que você definiu neste seletor aninhado serão aplicadas no in�
 
 18. Dê a regra 0% uma propriedade transform de rotate(0deg). Isso iniciará uma animação sem rotação.
 
-20. 
-
-A propriedade animation-name é usada para vincular uma regra @keyframes a um seletor CSS.
+20. A propriedade animation-name é usada para vincular uma regra @keyframes a um seletor CSS.
  O valor dessa propriedade deve corresponder ao nome da regra @keyframes.
  Dê ao seletor .wheel a propriedade animation-name definida para wheel.
 
 A propriedade animation-duration é usada para definir quanto tempo a sequência da animação deve durar até ser concluída.
  O tempo deve ser especificado em segundos (s) ou em milissegundos (ms).
  Dê ao seletor .wheel a propriedade animation-duration definida para 10s.
+
+ 21. A propriedade animation-iteration-count define quantas vezes sua animação deve repetir. 
+Isso pode ser definido como um número, ou como infinite para repetir indefinidamente a animação. 
+Sua roda-gigante nunca deve parar, então defina o seletor de .wheel para ter um animation-iteration-count 
+definido como infinite.
+
+A propriedade animation-timing-function define como a animação deve progredir ao longo do tempo. 
+Existem alguns valores diferentes para essa propriedade, mas você quer que a animação da roda-gigante 
+funcione com a mesma taxa de início a fim. Defina animation-timing-function como linear no seletor.wheel.
+
+22. Crie uma regra de @keyframes com o nome cabins. Use as mesmas propriedades de sua @keyframes wheel, 
+copiando as regras de 0% e 100%, mas defina a propriedade transform do seletor 100% para rotate(-360deg).
+
+
+23. Com o seletor de .wheel, você criou quatro propriedades diferentes para controlar a animação. 
+Para o seu seletor de .cabin, você pode usar a propriedade animation para definir tudo ao mesmo tempo.
+
+Defina a propriedade animation da regra .cabin para cabins 10s linear infinite. 
+Isso definirá as propriedades de animation-name, animation-duration, 
+animation-timing-function e animation-iteration-count nessa ordem.
+
+24. Para fazer com que a animação de cabine pareça mais com um movimento natural de balanço, 
+você pode usar a função de tempo de ease-in-out. Essa configuração diz para a animação iniciar e 
+terminar em um ritmo mais lento, mas que se mova mais rapidamente no meio do ciclo.
+
+No seletor .cabin substitua linear por ease-in-out.
+
+25. Você pode usar as regras @keyframes para controlar mais do que apenas a transformação de um elemento. 
+No seletor 0% do @keyframes cabins, defina background-color para yellow.
+
+
+26. Entre os seletores 0% e 100%, adicione um seletor 50%. Isso será aplicado no meio do ciclo de animação. 
+Defina abackground-color para purple.
+
+27. Como a animação está em um loop infinito e as cores de início e fim não são iguais, 
+a transição ficará em branco quando ela voltar para amarelo depois do vermelho.
+
+Para começar a corrigir isso, remova a cor de fundo background-color do seu seletor 0%.
 
 
 */
@@ -71,6 +107,8 @@ A propriedade animation-duration é usada para definir quanto tempo a sequência
     max-width: 500px;
     animation-name: wheel;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .line {
@@ -110,6 +148,7 @@ A propriedade animation-duration é usada para definir quanto tempo a sequência
     position: absolute;
     border: 2px solid;
     transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
 }
 
 .cabin:nth-of-type(1) {
@@ -149,5 +188,27 @@ A propriedade animation-duration é usada para definir quanto tempo a sequência
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: purple;
+    }
+
+    75% {
+        background-color: yellow;
+    }
+
+    100% {
+        transform: rotate(-360deg);
     }
 }
