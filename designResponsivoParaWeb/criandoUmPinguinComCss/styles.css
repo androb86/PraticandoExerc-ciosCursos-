@@ -1,3 +1,22 @@
+/*
+ 16. Para fazer com que a montanha pareça mais com uma montanha, você pode usar a função de transformação skew, que recebe dois argumentos. O primeiro é um ângulo para alinhar o eixo x e o segundo é um ângulo para alinhar o eixo y.
+ Use a propriedade transform para alinhar a montanha em 0deg no eixo x e 44deg no eixo y.
+
+! 17. Defina o nível de pilha do elemento da montanha de modo que permaneça diretamente atrás do elemento .ground.
+
+* 21. Defina a propriedade position de .back-mountain para impedir que ocupe espaço no layout da página.
+
+ 31. A maioria dos pinguins não tem uma cabeça quadrada.
+
+Dê ao pinguim uma cabeça ligeiramente oval definindo o raio dos cantos superiores como 70% e o raio dos cantos inferiores como 65%
+
+ */
+
+
+
+
+
+
 body {
     background: linear-gradient(45deg, rgb(118,201, 255), rgb(247,255, 222));
     margin: 0;
@@ -14,6 +33,38 @@ body {
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
     z-index: 3;
     position: absolute;
+    margin-top: -58px;
+}
+
+.left-mountain {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+    position: absolute;
+    transform: skew(0deg, 44deg);          /*16*/
+    z-index: 2;                            /*!17*/
+    margin-top: 100px;
+}
+
+.back-mountain {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+    position: absolute;       /**21*/
+    z-index: 1;
+    rotate: 45deg;
+    left: 110px;
+    top: 225px;
+}
+
+.sun {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 50%;
+    top: -75px;
+    right: -75px;   
 }
 
 .penguin {
@@ -21,4 +72,13 @@ body {
     height: 300px;
     margin: auto;
     margin-top: 75px;
+    position: relative;
+    z-index: 4;
+}
+
+.penguin-head {
+    width: 50%;
+    height: 45%;
+    background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+    border-radius: 70% 70% 65% 65%;    /*31*/
 }
