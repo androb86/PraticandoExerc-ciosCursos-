@@ -10,6 +10,12 @@
 
 Dê ao pinguim uma cabeça ligeiramente oval definindo o raio dos cantos superiores como 70% e o raio dos cantos inferiores como 65%
 
+! 34. Vincule todos os elementos descendentes do elemento .penguin e dê a eles uma position absolute.
+
+? 38. Para dar ao corpo do pinguim uma crista, crie um pseudoelemento que é o primeiro filho do elemento .penguin-body. Defina a propriedade content do pseudoelemento como uma string vazia.
+
+* 39. Posiciona o pseudoelemento em relação ao seu ancestral mais próximo.
+
  */
 
 
@@ -67,12 +73,12 @@ body {
     right: -75px;   
 }
 
-.penguin {
+.penguin *{
     width: 300px;
     height: 300px;
     margin: auto;
     margin-top: 75px;
-    position: relative;
+    position: absolute;   /*!34*/
     z-index: 4;
 }
 
@@ -81,4 +87,24 @@ body {
     height: 45%;
     background: linear-gradient(45deg, gray, rgb(239, 240, 228));
     border-radius: 70% 70% 65% 65%;    /*31*/
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+}
+
+.penguin-body {
+    width: 53%;
+    height: 45%;
+    background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
+    border-radius: 80% 80% 100% 100%;
+    top: 40%;
+    left: 23.5%;
+}
+
+;.penguin-body::before {
+    content: "";                /*?38*/
+    position: absolute;         /**39*/
+    width: 50%;
+    height: 45%;
+    background-color: gray;
 }
