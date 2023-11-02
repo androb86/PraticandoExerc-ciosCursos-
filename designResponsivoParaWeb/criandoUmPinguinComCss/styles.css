@@ -16,6 +16,8 @@ Dê ao pinguim uma cabeça ligeiramente oval definindo o raio dos cantos superio
 
 * 39. Posiciona o pseudoelemento em relação ao seu ancestral mais próximo.
 
+! 49. Vincule o elemento .face com a classe left e posicione-o 5% à esquerda do elemento pai.
+
  */
 
 
@@ -92,6 +94,18 @@ body {
     z-index: 1;
 }
 
+.face {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-radius: 70% 70% 60% 60%; 
+    top: 15%
+}
+
+.face.left {
+    left: 5%;
+}
+
 .penguin-body {
     width: 53%;
     height: 45%;
@@ -107,4 +121,7 @@ body {
     width: 50%;
     height: 45%;
     background-color: gray;
+    border-radius: 0% 0% 100% 100%;
+    opacity: 70%;
+
 }
