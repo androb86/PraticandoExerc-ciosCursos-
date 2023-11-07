@@ -18,13 +18,18 @@ Dê ao pinguim uma cabeça ligeiramente oval definindo o raio dos cantos superio
 
 ! 49. Vincule o elemento .face com a classe left e posicione-o 5% à esquerda do elemento pai.
 
+54. Até agora, os elementos .face e .chin têm a mesma background-color.
+
+Crie uma variável do CSS personalizada chamada --penguin-face e defina como white.
+
+
  */
 
 
 
 
 :root {
-    --penguin-face: white;
+    --penguin-face: white;    /*54*/
 }
 
 body {
@@ -37,19 +42,10 @@ body {
     
 }
 
-.ground {
-    width: 100vw;
-    height: 400px;
-    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
-    z-index: 3;
-    position: absolute;
-    margin-top: -58px;
-}
-
 .left-mountain {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+width: 300px;
+height: 300px;
+background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     position: absolute;
     transform: skew(0deg, 44deg);          /*16*/
     z-index: 2;                            /*!17*/
@@ -62,7 +58,7 @@ body {
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     position: absolute;       /**21*/
     z-index: 1;
-    rotate: 45deg;
+    transform: rotate(45deg);
     left: 110px;
     top: 225px;
 }
@@ -77,14 +73,19 @@ body {
     right: -75px;   
 }
 
-.penguin *{
+.penguin {
     width: 300px;
     height: 300px;
     margin: auto;
     margin-top: 75px;
-    position: absolute;   /*!34*/
     z-index: 4;
+    position: relative;   /*!34*/
 }
+
+.penguin * {
+    position: absolute;
+}
+
 
 .penguin-head {
     width: 50%;
@@ -96,10 +97,11 @@ body {
     z-index: 1;
 }
 
+
 .face {
     width: 60%;
     height: 70%;
-    background-color: white;
+    background-color: var(--penguin-face);
     border-radius: 70% 70% 60% 60%; 
     top: 15%
 }
@@ -115,10 +117,32 @@ body {
 .chin   {
     width: 90%;
     height: 70%;
-    background-color: white;
+    background-color: var(--penguin-face);
     top: 25%;
     left: 5%;
     border-radius: 70% 70% 100% 100%;
+}
+
+.eye {
+    width: 15%;
+    left: 17%;
+    background-color: black;
+    top: 45%;
+    border-radius: 50%;
+}
+
+.eye.left {
+    left: 25%;
+}
+
+.eye.right {
+    right: 25%;
+}
+
+.eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: var(--penguin-face);
 }
 
 .penguin-body {
@@ -136,7 +160,18 @@ body {
     width: 50%;
     height: 45%;
     background-color: gray;
+    top: 10%;
+    left: 25%;
     border-radius: 0% 0% 100% 100%;
     opacity: 70%;
+    
+}
 
+.ground {
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    z-index: 3;
+    position: absolute;
+    margin-top: -58px;
 }
