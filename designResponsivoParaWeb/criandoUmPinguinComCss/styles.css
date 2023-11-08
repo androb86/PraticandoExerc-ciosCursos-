@@ -22,6 +22,8 @@ Dê ao pinguim uma cabeça ligeiramente oval definindo o raio dos cantos superio
 
 Crie uma variável do CSS personalizada chamada --penguin-face e defina como white.
 
+* 75. Em alguns navegadores, o emoji de coração pode parecer um pouco diferente daquele que vemos no passo anterior. Isso ocorre porque algumas das propriedades do caractere foram sobrescritas pelo estilo font-weight bold.Torne-o fixo, vinculando a div com o emoji de coração, e definindo o font-weight para o valor original
+
 
  */
 
@@ -125,7 +127,7 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
 
 .eye {
     width: 15%;
-    left: 17%;
+    height: 17%;
     background-color: black;
     top: 45%;
     border-radius: 50%;
@@ -143,6 +145,55 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     width: 150%;
     height: 100%;
     background-color: var(--penguin-face);
+    top: 25%;
+    left: -23%;
+    border-radius: 50%;
+}
+
+.blush {
+    width: 15%;
+    height: 10%;
+    background-color: pink;
+    top: 65%;
+    border-radius: 50%;
+}
+
+.blush.left {
+    left: 15%;
+}
+
+.blush.right {
+    right: 15%;
+}
+
+.beak {
+    height: 10%;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.beak.top {
+    width: 20%;
+    top: 60%;
+    left: 40%;
+}
+
+.beak.bottom {
+    width: 16%;
+    top: 65%;
+    left: 42%;
+}
+
+.shirt {
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;  /*posso usar de forma reduzida: font: bold 25px Helvetica, sans-serif;*/
+    font-weight: bold;
+}
+
+.shirt div {
+    font-weight: normal;  /**75*/
+    top: 22.5px;
+    left: 12px;
 }
 
 .penguin-body {
