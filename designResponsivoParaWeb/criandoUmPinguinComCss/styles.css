@@ -229,6 +229,7 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     background-color: var(--penguin-picorna);
     top: 85%;
     border-radius: 50%;
+    z-index: -1;
 }
 
 .foot.left {
