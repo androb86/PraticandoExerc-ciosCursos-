@@ -33,6 +33,7 @@ Crie uma variável do CSS personalizada chamada --penguin-face e defina como whi
 :root {
     --penguin-face: white;    /*54*/
     --penguin-picorna: orange;
+    --penguin-skin: gray;
 }
 
 body {
@@ -93,7 +94,7 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
 .penguin-head {
     width: 50%;
     height: 45%;
-    background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+    background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
     border-radius: 70% 70% 65% 65%;    /*31*/
     top: 10%;
     left: 25%;
@@ -204,23 +205,33 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
 .penguin-body {
     width: 53%;
     height: 45%;
-    background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
+    background: linear-gradient(
+      45deg,
+      rgb(134, 133, 133) 0%,
+      rgb(234, 231, 231) 25%,
+      white 67%
+    );
     border-radius: 80% 80% 100% 100%;
     top: 40%;
     left: 23.5%;
-}
+  }
 
 ;.penguin-body::before {
-    content: "";                /*?38*/
-    position: absolute;         /**39*/
+    content: "";
+    position: absolute;
     width: 50%;
     height: 45%;
-    background-color: gray;
+    background-color: var(--penguin-skin);
     top: 10%;
     left: 25%;
     border-radius: 0% 0% 100% 100%;
     opacity: 70%;
-    
+  }
+
+.arm {
+    width: 30%;
+    height: 60%;
+    background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
 }
 
 .foot {
