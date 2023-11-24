@@ -25,6 +25,20 @@ Crie uma variável do CSS personalizada chamada --penguin-face e defina como whi
 * 75. Em alguns navegadores, o emoji de coração pode parecer um pouco diferente daquele que vemos no passo anterior. Isso ocorre porque algumas das propriedades do caractere foram sobrescritas pelo estilo font-weight bold.Torne-o fixo, vinculando a div com o emoji de coração, e definindo o font-weight para o valor original
 
 
+! 90. No seletor .arm.left, altere a origem da função transform para o canto superior esquerdo de seu pai,
+! transform-origin: 0% 0% ou top left.
+
+* 91. Para manter o gradiente linear sobre o lado correto do braço esquerdo do pinguim, primeiro gire-o 130deg, depois inverta o eixo x. Você deve dar a .arm.left uma transform de rotate(130deg) scaleX(-1).
+
+? 95. Agora, você usará animações do CSS para fazer o pinguim acenar.Defina um novo @keyframes chamado wave.
+
+! 96. Dê a wave quatro pontos de divisão, começando em 10% e aumentando a cada 10%.
+10% {   
+
+    }
+
+* 98. No segundo ponto de divisão, gire 130deg e mantenha o dimensionamento do braço esquerdo.
+
  */
 
 
@@ -232,6 +246,41 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     width: 30%;
     height: 60%;
     background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
+    border-radius: 30% 30% 30% 120%;
+    z-index: -1;
+}
+
+.arm.left {
+    top: 35%;
+    left: 5%;
+    transform-origin: top left;             /*!90*/
+    transform: rotate(130deg) scaleX(-1);    /*91*/
+}
+
+.arm.right {
+    top: 0%;
+    right: -5%;
+    transform: rotate(-45deg);
+}
+
+@keyframes wave {
+
+    10% {
+        transform: rotate(110deg) scaleX(-1);
+    }
+
+    20% {
+        transform: rotate(130deg) scaleX(-1);
+    }
+
+    30% {
+
+    }
+
+    40% {
+
+    }
+    
 }
 
 .foot {
