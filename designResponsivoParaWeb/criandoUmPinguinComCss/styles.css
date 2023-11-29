@@ -98,12 +98,19 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     margin-top: 75px;
     z-index: 4;
     position: relative;   /*!34*/
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
 }
 
 .penguin * {
     position: absolute;
 }
 
+.penguin:active {
+    transform: scale(1.5);
+    cursor: not-allowed;
+}
 
 .penguin-head {
     width: 50%;
@@ -255,6 +262,10 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     left: 5%;
     transform-origin: top left;             /*!90*/
     transform: rotate(130deg) scaleX(-1);    /*91*/
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .arm.right {
@@ -274,11 +285,11 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     }
 
     30% {
-
+        transform: rotate(110deg) scaleX(-1);
     }
 
     40% {
-
+        transform: rotate(130deg) scaleX(-1);
     }
     
 }
@@ -304,7 +315,7 @@ background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
 
 .ground {
     width: 100vw;
-    height: 400px;
+    height: calc(100vh - 300px);
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
     z-index: 3;
     position: absolute;
